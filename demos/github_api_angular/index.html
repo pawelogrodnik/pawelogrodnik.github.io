@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>github api - displaying statistics</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-app="githubApp">
+	<div class="container text-center">
+		<div class="page-header">
+			<h1>Displaying statistics <small>GitHub API + AngularJS example</small></h1>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-default" href="#forks">Forks</a>
+			<a class="btn btn-default" href="#contributions">Contributions</a>
+		</div>
+	</div>
+	<div class="container">
+		<div ng-view></ng-view>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+</body>
+</html>

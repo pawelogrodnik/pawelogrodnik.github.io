@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Lista transakcji</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- zadania.html -->
+	<form action="#" method="post" id="theForm">
+	    <fieldset><legend>Wpisz transakcję</legend>
+        <h3 style="text-align: center">1 EURO = <span id="euro"></span> PLN</h3>
+	        <div><label for="nazwa">Nazwa Transakcji</label><input type="text" name="nazwa" id="nazwa" required></div>
+            <div><label for="kwota">Kwota w EUR</label><input type="number" name="kwota" id="kwota" step="0.01" required></div>
+	        <button id="submit" type="button">Dodaj!</button>
+            <div id="top"></div>
+            <div id="akum"></div>
+            <div id="info"></div>
+            <div id="output"></div>
+	    </fieldset>
+	</form>
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/tasks2.js"></script>      
+</body>
+</html>
