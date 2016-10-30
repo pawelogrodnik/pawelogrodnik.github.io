@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,inherit,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="container">
+      <div class="lokacja"></div>
+      <div class="info-top">
+        <div class="temperatura"></div>
+        <div class="img-pogoda"></div>
+      </div>
+      <div class="wilgotnosc-info">
+          <img class="ikona-wilgotnosc" src="images/Droplet.svg">
+          <div class="wilgotnosc"></div>
+        </div>
+        <div class="wiatr-info">
+          <img class="ikona-wiatr" src="images/Wind.svg">
+          <div class="predkosc-wiatru"></div>   
+        </div>  
+         <div class="tabela"></div> 
+      <div id="wykres" style="width:600px; height:400px;"></div>      
+      </div>
+      <div id="mapa"></div>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="js/pogoda.js"></script>
+
+</body>
+</html>
