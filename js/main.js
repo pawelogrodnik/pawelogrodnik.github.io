@@ -1,6 +1,6 @@
 function makeRequestToOpenWeather(onSuccess, onFailure, cityname) {
 	const request = new XMLHttpRequest();
-	request.open('GET', '//api.openweathermap.org/data/2.5/weather?q='+cityname+'&units=Metric&appid=6b4d3d9e5ae8cc4b5f1585c87b5a160e', true);
+	request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q='+cityname+'&units=Metric&appid=6b4d3d9e5ae8cc4b5f1585c87b5a160e', true);
 
 	request.onload = function() {
 		if (request.status === 200) {
