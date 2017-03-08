@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Pawel Ogrodnik - portfolio website</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:example@gmail.com">email</a></li>
-        		<li><a href="https://github.com/pawelogrodnik">github.com/pawelogrodnik</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="main-content">
+<section id="weatherApp">
+	<input type="text" id="search" placeholder="Search for the weather...">
+		<a href="#" id="button">Get Weather</a>
+		<div id="weatherApp-city-name"></div>
+		<div id="weatherApp__temp"></div>
+		<div class="loader__wrapper" id="loader">
+			<div class="loader"></div>
+		</div>
+</section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>

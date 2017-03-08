@@ -1,0 +1,88 @@
+$base-line-height: 24px;
+$white: rgb(255,255,255);
+$off-white: rgba($white, 0.2);
+$spin-duration: 1s;
+$pulse-duration: 750ms;
+
+@keyframes pulse {	
+  50% { 
+    background: $white;
+  } 
+}
+
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+}
+.main-content {
+	position: relative;
+}
+#weatherApp {
+	height: 500px;
+	max-width: 500px;
+	margin: 0 auto;
+	border: 1px solid black;
+	background-color: black;
+	position: relative;
+}
+#weatherApp-city-name {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 70px;
+}
+input {
+	margin: 30px auto;
+}
+a {
+	padding: 10px;
+	border: 1px solid;
+}
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: ($base-line-height / 4);
+  height: $base-line-height;
+  background: $off-white;
+  animation: pulse $pulse-duration infinite;
+  animation-delay: ($pulse-duration / 3);
+  margin: 0 auto;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: ($base-line-height / 1.5);
+    width: ($base-line-height / 4);
+    background: $off-white;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pulse $pulse-duration infinite;
+  }
+  &:before {
+    left: -($base-line-height / 2);
+  }
+  &:after {
+    left: ($base-line-height / 2);
+    animation-delay: ($pulse-duration / 1.5);
+  }
+  &__wrapper {
+  	display: none;
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100vh;
+  	// background: rgba(255,255,255, 0.3);
+  	background-color: black;
+  }
+}
+

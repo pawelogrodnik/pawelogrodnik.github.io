@@ -1,0 +1,10 @@
+
+node_modules/\.bin/
+
+node_modules/gulp-connect/
+
+node_modules/gulp-sass/
+
+node_modules/gulp/bin/
+
+node_modules/gulp/
