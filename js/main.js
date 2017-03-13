@@ -5,7 +5,8 @@ function makeRequest(onSuccess, onFailure, url) {
 	request.onload = function() {
 		if (request.status === 200) {
 			console.log(request.responseText);
-			const data = JSON.parse(request.responseText);
+			const data = request.responseText ; 
+			// JSON.parse(request.responseText);
 			console.log(data);
 			onSuccess(data);
 		} 
@@ -32,7 +33,8 @@ function showData(data) {
 }
 
 document.getElementById("button").onclick = () => searchWeather(document.getElementById("search").value, showData);
-document.getElementById("lol-button").onclick = () => getSummonerID(document.getElementById("regions").value, document.getElementById("searchLoL").value);
+// document.getElementById("lol-button").onclick = () => getSummonerID(document.getElementById("regions").value, document.getElementById("searchLoL").value);
+
 function searchWeather(city, fn) {
 	const site_url_weather = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&units=Metric&appid=6b4d3d9e5ae8cc4b5f1585c87b5a160e';
 	document.querySelector('.loader__wrapper').style.display = 'block';
@@ -40,14 +42,36 @@ function searchWeather(city, fn) {
 }
 
 function getSummonerID(region, name) {
-	const site_url_lol = 'https://'+region+'.api.pvp.net/api/lol/'+region+'/v1.4/summoner/by-name/'+name+'?api_key=RGAPI-91320e30-0c54-42a3-84bd-bdb8c61e3b4b'
+	// const site_url_lol = 'https://'+region+'.api.pvp.net/api/lol/'+region+'/v1.4/summoner/by-name/'+name+'?api_key=RGAPI-91320e30-0c54-42a3-84bd-bdb8c61e3b4b'
+	const site_url_lol = "proxy.php";
 	makeRequest(ShowLolData, LolDataErr, site_url_lol);
 }
 
+
+
+//  LOL SECTION
+
+document.getElementById("lol-button").onclick = () => getData(ShowLolData, LolDataErr);
+
+
+function getData(success, err) {
+	$.ajax({
+	  type: 'Get',
+	  url: 'https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/xarieli?api_key=RGAPI-91320e30-0c54-42a3-84bd-bdb8c61e3b4b',
+	  // jsonpCallback: ShowLolData(data),
+	  dataType: 'jsonp',
+	  success: function (data) {
+	  	console.log(data);
+	  },
+	  error: err
+	});
+}
+
 function ShowLolData(data) {
-	document.getSummonerID("lol-name").innerHTML = data.id;
+	document.getElementById("lol-name").innerHTML = data.id;
 }
 
 function LolDataErr () {
 	console.log('ERROR LOL DATA FETCHING');
 }
+
