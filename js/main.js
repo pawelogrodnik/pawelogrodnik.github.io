@@ -32,3 +32,9 @@ $('.slides--wrapper').slick({
   nextArrow: '<button type="button" class="slick-next"></button>',
   prevArrow: '<button type="button" class="slick-prev"></button>'
 });
+
+$('.arrow-up').on('click', function() {
+  $('body').animate({
+    scrollTop: 0
+  }, 700);
+});

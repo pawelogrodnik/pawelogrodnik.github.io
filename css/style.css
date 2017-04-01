@@ -634,7 +634,8 @@ section.features .features--single {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   padding: 15px 30px 15px 35px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 30px; }
   section.features .features--single:before {
     position: absolute;
     font-family: FontAwesome;
@@ -675,7 +676,8 @@ footer {
   background-color: #70706f;
   width: 100%;
   min-height: 50px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  position: relative; }
   footer .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -691,7 +693,8 @@ footer {
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 30px; }
     @media (max-width: 650px) {
       footer .container {
         -webkit-box-orient: vertical;
@@ -746,3 +749,20 @@ footer {
         font-size: 20px;
         line-height: 24px;
         left: -25px; }
+  footer .arrow-up {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    height: 30px;
+    width: 30px;
+    -webkit-transition: .1s all linear;
+    -o-transition: .1s all linear;
+    -moz-transition: .1s all linear;
+    transition: .1s all linear; }
+    footer .arrow-up i {
+      font-size: 30px;
+      height: 100%;
+      color: #bc9412; }
+    footer .arrow-up:hover {
+      top: 25px;
+      cursor: pointer; }

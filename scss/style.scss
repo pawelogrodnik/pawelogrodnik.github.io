@@ -623,6 +623,7 @@
                 flex: 0 1 50%;
                 padding: 15px 30px 15px 35px;
                 position: relative;
+                margin-bottom: 30px;
                 &:before {
                     position: absolute;
                     font-family: FontAwesome;
@@ -662,10 +663,12 @@
         width: 100%;
         min-height: 50px;
         margin-top: 50px;
+        position: relative;
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 30px;
             @media (max-width: 650px) {
               flex-direction: column;
               p {
@@ -721,5 +724,22 @@
                   }
                 }
             }
+        }
+        .arrow-up {
+          position: absolute;
+          right: 0;
+          top: 30px;
+          height: 30px;
+          width: 30px;
+          transition: .1s all linear;
+          i {
+            font-size: 30px;
+            height: 100%;
+            color: $mainColor;
+          }
+          &:hover {
+            top: 25px;
+            cursor: pointer;
+          }
         }
     }
