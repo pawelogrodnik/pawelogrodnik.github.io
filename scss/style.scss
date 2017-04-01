@@ -656,7 +656,7 @@
                     }
                 }
                 @media (max-width: 700px) {
-                  flex-basis: auto;
+                    flex-basis: auto;
                 }
             }
         }
@@ -674,11 +674,11 @@
             align-items: center;
             padding: 30px;
             @media (max-width: 650px) {
-              flex-direction: column;
-              p {
-                padding: 10px
-                flex-basis: auto;
-              }
+                flex-direction: column;
+                p {
+                    padding: 10px;
+                    flex-basis: auto;
+                }
             }
             p {
                 flex: 0 1 25%;
@@ -709,42 +709,48 @@
                     }
                 }
                 &.email {
-                  &:before {
-                    content: '\f003';
-                    position: absolute;
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    line-height: 24px;
-                    left: -30px;
-                  }
+                    &:before {
+                        content: '\f003';
+                        position: absolute;
+                        font-family: FontAwesome;
+                        font-size: 20px;
+                        line-height: 24px;
+                        left: -30px;
+                    }
                 }
                 &.adres {
-                  &:before {
-                    content: '\f041';
-                    position: absolute;
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    line-height: 24px;
-                    left: -25px;
-                  }
+                    &:before {
+                        content: '\f041';
+                        position: absolute;
+                        font-family: FontAwesome;
+                        font-size: 20px;
+                        line-height: 24px;
+                        left: -25px;
+                    }
                 }
             }
         }
         .arrow-up {
-          position: absolute;
-          right: 0;
-          top: 30px;
-          height: 30px;
-          width: 30px;
-          transition: .1s all linear;
-          i {
-            font-size: 30px;
-            height: 100%;
-            color: $mainColor;
-          }
-          &:hover {
-            top: 25px;
-            cursor: pointer;
-          }
+            position: absolute;
+            right: 0;
+            top: 30px;
+            height: 30px;
+            width: 30px;
+            transition: .1s all linear;
+            i {
+                font-size: 30px;
+                height: 100%;
+                color: $mainColor;
+            }
+            &:hover {
+                top: 25px;
+                cursor: pointer;
+            }
         }
+    }
+    section.message {
+      p {
+        margin: 20px 0;
+        text-align: justify;
+      }
     }
