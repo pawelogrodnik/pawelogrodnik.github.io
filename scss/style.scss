@@ -280,6 +280,7 @@
         font-size: 16px;
         font-family: 'Oswald', sans-serif;
         color: #333;
+        overflow-x: hidden;
         .page-main-content {
           min-height: calc(100vh - 120px);
         }    
@@ -755,12 +756,7 @@
             }
         }
     }
-    section.message {
-      p {
-        margin: 20px 0;
-        text-align: justify;
-      }
-    }
+
     section.kontakt {
       padding: 125px 0 40px;
       .container {
@@ -834,3 +830,54 @@
         height: 500px;
       }
     }
+    section.message {
+      padding-top: 125px;
+      p {
+        margin: 20px 0;
+        text-align: justify;
+        font-weight: 300;
+      }
+    }
+    section.persona--wrapper {
+      span {
+        color: $mainColor;
+      }
+      p {
+        font-size: 18px;
+      }
+      .persona {
+        &--intro {
+          position: relative;
+          margin-bottom: 30px;
+          &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            width: 90px;
+            height: 2px;
+            border-bottom: 2px solid $mainColor;
+            bottom: -15px;
+          }
+          p {
+            font-size: 24px;
+          }
+        }
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          padding: 10px;
+          font-size: 18px;
+          line-height: 24px;
+          position: relative;
+          &:before {
+            position: absolute;
+            font-family: FontAwesome;
+            content: "\f05d";
+            left: -20px;
+            color: $mainColor;
+          }
+        }
+      }      
+    }
+    
