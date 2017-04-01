@@ -245,10 +245,11 @@ img {
 body {
   font-size: 16px;
   font-family: 'Oswald', sans-serif;
-  color: #333;
-  min-height: -webkit-calc(100vh - 135px);
-  min-height: -moz-calc(100vh - 135px);
-  min-height: calc(100vh - 135px); }
+  color: #333; }
+  body .page-main-content {
+    min-height: -webkit-calc(100vh - 120px);
+    min-height: -moz-calc(100vh - 120px);
+    min-height: calc(100vh - 120px); }
 
 .container {
   max-width: 1200px;
@@ -285,7 +286,12 @@ h3 {
 
 p {
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 30px;
+  margin: 10px 0; }
+  @media (max-width: 500px) {
+    p {
+      font-size: 18px;
+      line-height: 24px; } }
 
 header {
   position: fixed;
@@ -781,3 +787,60 @@ footer {
 section.message p {
   margin: 20px 0;
   text-align: justify; }
+
+section.kontakt {
+  padding: 125px 0 40px; }
+  section.kontakt .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+    section.kontakt .container .side--left {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 50%;
+         -moz-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%; }
+      section.kontakt .container .side--left h2 {
+        position: relative; }
+        section.kontakt .container .side--left h2:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: -15px;
+          width: 90px;
+          height: 2px;
+          border-bottom: 2px solid #bc9412; }
+      section.kontakt .container .side--left h3 i {
+        margin-right: 10px; }
+      section.kontakt .container .side--left p a {
+        text-decoration: none;
+        color: #333;
+        -webkit-transition: .3s all linear;
+        -o-transition: .3s all linear;
+        -moz-transition: .3s all linear;
+        transition: .3s all linear; }
+        section.kontakt .container .side--left p a:hover {
+          color: #bc9412; }
+    section.kontakt .container .side--right {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 50%;
+         -moz-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%; }
+      section.kontakt .container .side--right h2 {
+        position: relative; }
+        section.kontakt .container .side--right h2:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: -15px;
+          width: 90px;
+          height: 2px;
+          border-bottom: 2px solid #bc9412; }
+
+section.map-wrapper {
+  max-width: 100%; }
+  section.map-wrapper #map {
+    height: 500px; }
