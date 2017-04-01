@@ -218,7 +218,6 @@ table {
     background-color: #f6f6f6;
     ul {
         display: block;
-        
     }
     li {
         display: block;
@@ -226,14 +225,14 @@ table {
         padding: 10px;
         border-bottom: 2px solid $mainColor;
         &:first-child {
-           border-top: 2px solid $mainColor;
+            border-top: 2px solid $mainColor;
         }
         &.has-child.slicknav_open {
-          padding-bottom: 0;
-          border: none;
-          >ul {
-            padding-top: 10px;
-          }
+            padding-bottom: 0;
+            border: none;
+            >ul {
+                padding-top: 10px;
+            }
         }
     }
     .slicknav_arrow {
@@ -244,7 +243,6 @@ table {
         cursor: pointer;
         a {
             display: inline;
-
         }
     }
     .slicknav_row {
@@ -291,10 +289,20 @@ body {
         padding: 15px;
     }
 }
+h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 30px 0;
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
+}
 
 header {
-  position: fixed;
-  width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
     .container {
         position: relative;
         display: flex;
@@ -355,4 +363,124 @@ header {
             }
         }
     }
+}
+
+.slider {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    .slide {
+        &__single {
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &--content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &--text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        background-color: rgba($mainColor, 0.4);
+        padding: 15px;
+        width: 100%;
+        // h1 {
+        //     font-size: 60px;
+        //     letter-spacing: 1px;
+        //     color: #fff;
+        //     margin: 30px 0;
+        // }
+        p {
+            color: #fff;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 300;
+            padding: 0 15px;
+            margin-bottom: 50px;
+            @media (max-width: 500px) {
+              font-size: 20px;
+              line-height: 24px;
+              margin-bottom: 25px;
+            }
+        }
+    }
+    &--mask {
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+a.btn--main {
+    display: inline-block;
+    margin: 10px;
+    padding: 30px 60px;
+    background-color: red;
+    position: relative;
+    transition: all .3s linear;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid #333;
+        border-left: 2px solid black;
+        left: -10px;
+        bottom: -10px;
+        transition: .3s;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        right: -10px;
+        top: -10px;
+        transition: .3s;
+    }
+    &:hover:after,
+    &:hover:before {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+    }
+    @media (max-width: 500px) {
+      font-size: 20px;
+      padding: 20px 40px;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    height: 15px;
+    width: 15px;
+    display: none;
+    &.slick-prev {
+        left: 0;
+    }
+    &.slick-next {
+        right: 0;
+    }
+}
+.slick-dots {
+  display: none;
 }

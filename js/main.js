@@ -21,3 +21,14 @@ function menuBackgroundColor() {
         }
     }
 }
+
+$('.slides--wrapper').slick({
+  dots: true,
+  infinite: true,
+  speed: 2000,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  nextArrow: '<button type="button" class="slick-next"></button>',
+  prevArrow: '<button type="button" class="slick-prev"></button>'
+});
