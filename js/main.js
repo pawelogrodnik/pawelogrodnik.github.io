@@ -1,4 +1,5 @@
-$(window).scroll(menuBackgroundColor);
+$(document).ready(function(){
+	$(window).scroll(menuBackgroundColor);
 
 $(function() {
     $('nav>ul').slicknav({
@@ -39,6 +40,9 @@ $('.arrow-up').on('click', function() {
     }, 700);
 });
 
+
+
+})
 function initMap() {
 
     // Create a new StyledMapType object, passing it an array of styles,

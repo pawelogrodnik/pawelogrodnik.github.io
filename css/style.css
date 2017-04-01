@@ -801,7 +801,8 @@ section.kontakt {
       -webkit-flex: 0 1 50%;
          -moz-box-flex: 0;
           -ms-flex: 0 1 50%;
-              flex: 0 1 50%; }
+              flex: 0 1 50%;
+      padding: 15px; }
       section.kontakt .container .side--left h2 {
         position: relative; }
         section.kontakt .container .side--left h2:before {
@@ -828,7 +829,8 @@ section.kontakt {
       -webkit-flex: 0 1 50%;
          -moz-box-flex: 0;
           -ms-flex: 0 1 50%;
-              flex: 0 1 50%; }
+              flex: 0 1 50%;
+      padding: 15px; }
       section.kontakt .container .side--right h2 {
         position: relative; }
         section.kontakt .container .side--right h2:before {
@@ -839,6 +841,23 @@ section.kontakt {
           width: 90px;
           height: 2px;
           border-bottom: 2px solid #bc9412; }
+    @media (max-width: 600px) {
+      section.kontakt .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        section.kontakt .container .side--left {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto; }
+        section.kontakt .container .side--right {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto; } }
 
 section.map-wrapper {
   max-width: 100%; }
