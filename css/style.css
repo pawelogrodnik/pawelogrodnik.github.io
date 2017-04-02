@@ -544,11 +544,14 @@ section.our-staff {
                 flex-basis: auto; }
         section.our-staff .staff--single:last-child {
           border-bottom: none; } }
-    section.our-staff .staff--single p.name {
+    section.our-staff .staff--single p.name a {
       color: #bc9412;
       font-weight: bold;
       font-size: 30px;
-      margin: 10px 0; }
+      margin: 10px 0;
+      text-decoration: none; }
+      section.our-staff .staff--single p.name a:hover {
+        text-decoration: underline; }
     section.our-staff .staff--single ul li {
       padding-top: 10px;
       font-size: 18px; }
@@ -686,6 +689,34 @@ section.features .features--single {
       -webkit-flex-basis: auto;
           -ms-flex-preferred-size: auto;
               flex-basis: auto; } }
+
+section.features.zabiegi {
+  padding-top: 125px; }
+  section.features.zabiegi .features--wrapper {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  section.features.zabiegi .features--single {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+       -moz-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-bottom: 0; }
+    section.features.zabiegi .features--single h2 {
+      text-align: left;
+      text-transform: none; }
+    section.features.zabiegi .features--single p {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 300;
+      margin: 20px 0; }
+      @media (max-width: 500px) {
+        section.features.zabiegi .features--single p {
+          font-size: 18px;
+          line-height: 24px; } }
 
 footer {
   background-color: #70706f;
@@ -868,36 +899,115 @@ section.message {
     text-align: justify;
     font-weight: 300; }
 
-section.persona--wrapper span {
-  color: #bc9412; }
+section.persona--wrapper {
+  padding-top: 125px; }
+  section.persona--wrapper span {
+    color: #bc9412; }
+  section.persona--wrapper p {
+    font-size: 18px; }
+    section.persona--wrapper p a {
+      color: #333; }
+  section.persona--wrapper .persona--intro {
+    position: relative;
+    margin-bottom: 30px; }
+    section.persona--wrapper .persona--intro:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      width: 90px;
+      height: 2px;
+      border-bottom: 2px solid #bc9412;
+      bottom: -15px; }
+    section.persona--wrapper .persona--intro p {
+      font-size: 24px; }
+  section.persona--wrapper ul {
+    padding-left: 20px; }
+    section.persona--wrapper ul li {
+      padding: 10px;
+      font-size: 18px;
+      line-height: 24px;
+      position: relative; }
+      section.persona--wrapper ul li:before {
+        position: absolute;
+        font-family: FontAwesome;
+        content: "\f05d";
+        left: -20px;
+        color: #bc9412; }
 
-section.persona--wrapper p {
-  font-size: 18px; }
+section.choroby {
+  padding-top: 125px; }
+  section.choroby h2 {
+    padding-top: 125px;
+    position: relative; }
+    section.choroby h2:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      top: 65px;
+      left: 0;
+      border-top: 2px solid #bc9412; }
+  section.choroby p {
+    font-weight: 300; }
+  section.choroby ul {
+    padding-left: 20px; }
+    section.choroby ul li {
+      padding: 10px;
+      font-size: 18px;
+      line-height: 24px;
+      position: relative; }
+      section.choroby ul li a {
+        text-decoration: none;
+        color: #333; }
+        section.choroby ul li a:hover {
+          text-decoration: underline; }
+      section.choroby ul li:before {
+        position: absolute;
+        font-family: FontAwesome;
+        content: "\f05d";
+        left: -20px;
+        color: #bc9412; }
 
-section.persona--wrapper .persona--intro {
-  position: relative;
-  margin-bottom: 30px; }
-  section.persona--wrapper .persona--intro:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 90px;
-    height: 2px;
-    border-bottom: 2px solid #bc9412;
-    bottom: -15px; }
-  section.persona--wrapper .persona--intro p {
-    font-size: 24px; }
+section.chirurgia-geriatryczna, section.faq {
+  padding-top: 125px; }
+  section.chirurgia-geriatryczna p, section.faq p {
+    font-weight: 300; }
 
-section.persona--wrapper ul {
-  padding-left: 20px; }
-  section.persona--wrapper ul li {
-    padding: 10px;
+section.cennik {
+  padding-top: 125px; }
+  section.cennik p {
     font-size: 18px;
     line-height: 24px;
-    position: relative; }
-    section.persona--wrapper ul li:before {
-      position: absolute;
-      font-family: FontAwesome;
-      content: "\f05d";
-      left: -20px;
-      color: #bc9412; }
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    margin-right: 20px; }
+    @media (max-width: 400px) {
+      section.cennik p {
+        font-size: 16px; } }
+  section.cennik .cennik--wiersz {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 2px solid #bc9412; }
+    section.cennik .cennik--wiersz:last-child {
+      border-bottom: none; }
+    section.cennik .cennik--wiersz:nth-child(2n) {
+      background-color: #f6f6f6; }
+  section.cennik .cennik--cena {
+    -webkit-flex-basis: 200px;
+        -ms-flex-preferred-size: 200px;
+            flex-basis: 200px; }
+    @media (max-width: 400px) {
+      section.cennik .cennik--cena {
+        -webkit-flex-basis: 150px;
+            -ms-flex-preferred-size: 150px;
+                flex-basis: 150px; } }
+  section.cennik .cennik--opis {
+    border-right: 2px solid #bc9412; }
