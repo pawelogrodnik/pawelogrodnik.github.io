@@ -288,7 +288,8 @@ h3 {
 p {
   font-size: 24px;
   line-height: 30px;
-  margin: 10px 0; }
+  margin: 10px 0;
+  text-align: justify; }
   @media (max-width: 500px) {
     p {
       font-size: 18px;
@@ -401,7 +402,8 @@ header {
       line-height: 30px;
       font-weight: 300;
       padding: 0 15px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      text-align: center; }
       @media (max-width: 500px) {
         .slider--text p {
           font-size: 20px;
@@ -544,14 +546,16 @@ section.our-staff {
                 flex-basis: auto; }
         section.our-staff .staff--single:last-child {
           border-bottom: none; } }
-    section.our-staff .staff--single p.name a {
-      color: #bc9412;
-      font-weight: bold;
-      font-size: 30px;
-      margin: 10px 0;
-      text-decoration: none; }
-      section.our-staff .staff--single p.name a:hover {
-        text-decoration: underline; }
+    section.our-staff .staff--single p {
+      text-align: center; }
+      section.our-staff .staff--single p.name a {
+        color: #bc9412;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 10px 0;
+        text-decoration: none; }
+        section.our-staff .staff--single p.name a:hover {
+          text-decoration: underline; }
     section.our-staff .staff--single ul li {
       padding-top: 10px;
       font-size: 18px; }
