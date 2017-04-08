@@ -1,0 +1,162 @@
+  body {
+        font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+        color: $mainColor;
+        overflow-x: hidden;
+        background-color: #F7F7F7;
+        .page-main-content {
+            min-height: calc(100vh - 120px);
+        }
+    }
+    
+    .container {
+        max-width: 1200px;
+        padding: 0 30px;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+            padding: 0 15px;
+        }
+    }
+    h1, h2, h3, h4, h5, h6 {
+        // font-family: 'Montserrat', sans-serif;
+        // font-weight: bold;
+        // text-transform: uppercase;
+        // letter-spacing: 10px;
+        color: $headersColor;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 30px 0;
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
+        span {
+            color: $headersColor;
+        }
+    }
+    
+    h2 {
+        font-size: 45px;
+        letter-spacing: 1px;
+        margin: 30px 0;
+        @media (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+    
+    h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin: 15px 0;
+        @media (max-width: 500px) {
+            font-size: 25px;
+        }
+    }
+    
+    p {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 10px 0;
+        @media (max-width: 500px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .spacer {
+        height: 102px;
+        width: 100%;
+    }
+    
+.cookie__wrapper {
+  width: 100%;
+  background-color: #292935;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  .cookie__container {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px;
+      p {
+          font-size: 16px;
+          color: #fff;
+          a {
+              color: inherit;
+            }
+        }
+        .cookie__button {
+          margin-left: 15px;
+          font-size: 14px;
+          padding: 8px 20px;
+          color: #fff;
+          background-color: $mainColor;
+          border: 1px solid $mainColor;
+          border-radius: 3px;
+          transition: .3s all ease-in-out;
+          text-transform: uppercase;
+          text-align: center;
+          &:hover {
+              background-color: transparent;
+              cursor: pointer;
+            }
+        }
+    }
+}
+
+
+  input[type="submit"] {
+        padding: 10px 20px;
+        border: 1px solid $mainColor;
+        text-decoration: none;
+        color: #fff;
+        background-color: $mainColor;
+        transition: .3s linear;
+        border-radius: 3px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: #fff;
+            color: $mainColor;
+            cursor: pointer;
+        }
+    }
+    .wpcf7-not-valid-tip {
+        font-size: 16px;
+    }
+    .screen-reader-response {
+        display: none;
+    }
+    input, textarea {
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+    
+    a.btn--main {
+        display: inline-block;
+        margin: 10px;
+        padding: 30px 60px;
+        background-color: red;
+        position: relative;
+        transition: all .3s linear;
+        border: 2px solid red;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+        &:hover {
+            background-color: rgba(255,255,255, 0.4);
+            color: red;
+        }
+    }
+

@@ -1,48 +1,81 @@
 $(document).ready(function(){
-	$(window).scroll(menuBackgroundColor);
+ //    menuBackgroundColor();
+	// $(window).scroll(menuBackgroundColor);
 
-$(function() {
-    $('nav>ul').slicknav({
-        label: '',
-        appendTo: 'header .container'
+    $(function() {
+        $('nav .menu-main-menu-container>ul').slicknav({
+            label: '',
+            appendTo: 'header .container'
+        });
     });
-});
 
-function menuBackgroundColor() {
-    var a = $(window).scrollTop();
-    if (a >= 0) {
-        if (a < 100) {
-            $("header").css({
-                "background": "rgba(255, 255, 255," + a / 100 + ")"
-            });
-        } else {
-            $("header").css({
-                "background": "rgba(255, 255, 255, 1.0)"
-            });
-        }
+    // function menuBackgroundColor() {
+    //     var a = $(window).scrollTop();
+    //     if (a >= 0) {
+    //         if (a < 100) {
+    //             $("header").css({
+    //                 "background": "rgba(255, 255, 255," + a / 100 + ")"
+    //             });
+    //         } else {
+    //             $("header").css({
+    //                 "background": "rgba(255, 255, 255, 1.0)"
+    //             });
+    //         }
+    //     }
+    // }
+
+    $('.slides--wrapper').slick({
+        dots: true,
+        infinite: true,
+        speed: 2000,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        prevArrow: '<button type="button" class="slick-prev"></button>'
+    });
+
+    $('.arrow-up').on('click', function() {
+        $('body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+
+    if (getCookie("cookieInfo") == "agreed") {
+      document.getElementById("cookieInfo").style.display = "none";
     }
-}
-
-$('.slides--wrapper').slick({
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    fade: true,
-    cssEase: 'linear',
-    autoplay: true,
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    prevArrow: '<button type="button" class="slick-prev"></button>'
-});
-
-$('.arrow-up').on('click', function() {
-    $('body').animate({
-        scrollTop: 0
-    }, 700);
-});
-
-
+    var el = document.getElementById("cookieBtn");
+    el.addEventListener("click", function() {
+      setCookie("cookieInfo", "agreed", 30);
+      document.getElementById("cookieInfo").style.display = "none";
+    })
 
 })
+
+
+function setCookie(cookieName, cookieValue, expireDays) {
+  var date = new Date();
+  date.setTime(date.getTime() + (expireDays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + date.toUTCString();
+  document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 function initMap() {
 
     // Create a new StyledMapType object, passing it an array of styles,
@@ -215,4 +248,40 @@ function initMap() {
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 
+}
+if ($('body').hasClass('o-mnie')) {
+     $('.certyfikaty').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.certyfikaty--nav'
+    });
+    $('.certyfikaty--nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.certyfikaty',
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 }
