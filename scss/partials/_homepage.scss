@@ -1,14 +1,21 @@
      .slider {
-         height: 500px;
+         height: 700px;
          width: 100%;
          position: relative;
+         @media (max-width: 500px) {
+             height: 500px
+         }
          .slide {
              &__single {
-                 height: 500px;
+                 height: 700px;
                  width: 100%;
                  background-repeat: no-repeat;
                  background-size: cover;
-                 background-position: center;
+                 background-position: cover;
+                 border-bottom: 7px solid $mainColor;
+                 @media (max-width: 500px) {
+                     height: 500px;
+                 }
              }
          }
          &--content {
@@ -23,7 +30,7 @@
              position: absolute;
              height: 100%;
              z-index: 99;
-             background-color: rgba($mainColor, 0.3);
+             background-color: rgba($mainColor, 0);
              padding: 15px;
              width: 100%;
          }
@@ -31,20 +38,28 @@
              position: absolute;
              top: 50%;
              transform: translateY(-50%);
-             text-align: center;
+             text-align: left;
              width: 100%;
              p {
-                 color: $headersColor;
+                 color: $mainColor;
                  font-size: 24px;
                  line-height: 30px;
                  font-weight: 500;
-                 padding: 0 0 15px;
-                 text-align: center;
+                 // padding: 0 0 15px;
+                 text-align: left;
+                 margin: 20px 0;
                  @media (max-width: 500px) {
                      font-size: 20px;
                      line-height: 24px;
                      margin-bottom: 25px;
                  }
+             }
+             h1 {
+                 text-align: left;
+                 color: $mainColor;
+             }
+             a {
+                 margin-top: 30px;
              }
          }
      }
@@ -53,10 +68,25 @@
          margin-bottom: 75px;
          text-align: center;
          padding: 50px 0;
+         h2 {
+             position: relative;
+             &:before {
+                 position: absolute;
+                 content: '';
+                 left: 0;
+                 bottom: -15px;
+                 width: 90px;
+                 height: 2px;
+                 border-bottom: 2px solid $headersColor;
+                 left: 50%;
+                 transform: translateX(-50%);
+             }
+         }
          p {
              font-size: 24px;
              line-height: 30px;
              margin-bottom: 40px;
+             // text-align: justify;
          }
          a {
              font-size: 24px;
@@ -71,10 +101,53 @@
                  color: #fff;
              }
          }
+         .sides-wrapper {
+             display: flex;
+             margin-bottom: 50px;
+             .side--left,
+             .side--right {
+                 flex: 0 1 50%;
+                 padding: 25px;
+                 h3 {
+                     position: relative;
+                     margin-bottom: 40px;
+                     &:before {
+                         position: absolute;
+                         content: '';
+                         left: 0;
+                         bottom: -15px;
+                         width: 90px;
+                         height: 2px;
+                         border-bottom: 2px solid $headersColor;
+                         left: 50%;
+                         transform: translateX(-50%);
+                     }
+                 }
+                 p {
+                    text-align: justify;
+                 }
+             }
+             .side--left {
+                 border-right: 2px solid $mainColor;
+                 @media (max-width: 500px) {
+                     border-right: 0px;
+                     border-bottom: 2px solid $mainColor;
+                 }
+             }
+             @media (max-width: 500px) {
+                 flex-direction: column;
+                 .side--left,
+                 .side--right {
+                     flex-basis: auto;
+                     padding: 25px 0;
+                 }
+
+             }
+         }
      }
      
      section.knowledge {
-         min-height: 350px;
+         // min-height: 350px;
          background-image: url('../img/knowledge.jpg');
          background-repeat: no-repeat;
          background-position: center;
@@ -90,17 +163,24 @@
              background-color: rgba(0, 0, 0, 0.6);
          }
          .container {
-             padding-top: 145px;
-             display: flex;
+             padding-top: 50px;
+             padding-bottom: 70px;
+             // display: flex;
              color: red;
              text-align: center;
              position: relative;
              z-index: 99;
              p {
-                 margin-bottom: 40px;
+                 margin-bottom: 50px;
                  text-align: left;
-                 margin-right: 50px;
                  color: #fff;
+                 font-size: 30px;
+                 line-height: 45px;
+                 text-align: center;
+                 @media (max-width: 500px) {
+                    font-size: 24px;
+                    line-height: 30px;
+                 }
              }
              a {
                  flex: 1 0 250px;
@@ -137,26 +217,25 @@
      }
      
      section.orto {
-        padding: 75px 0;
+         padding: 75px 0;
          .orto {
              &__wrapper {
                  display: flex;
                  flex-wrap: wrap;
-                 // align-content: center;
-                 // justify-content: center;
              }
              &__single {
                  width: 50%;
                  padding-left: 40px;
                  position: relative;
                  &:before {
-                    content: '\f178';
-                    font-family: FontAwesome;
-                    position: absolute;
-                    left: 0;
-                    top: 10px;
-                    font-size: 30px;
+                     content: '\f178';
+                     font-family: FontAwesome;
+                     position: absolute;
+                     left: 0;
+                     top: 10px;
+                     font-size: 30px;
                  }
              }
          }
      }
+     

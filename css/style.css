@@ -279,7 +279,6 @@ input, textarea {
 
 a.btn--main {
   display: inline-block;
-  margin: 10px;
   padding: 30px 60px;
   background-color: red;
   position: relative;
@@ -296,6 +295,10 @@ a.btn--main {
   a.btn--main:hover {
     background-color: rgba(255, 255, 255, 0.4);
     color: red; }
+  @media (max-width: 500px) {
+    a.btn--main {
+      padding: 15px 30px;
+      font-size: 18px; } }
 
 .slick-arrow {
   position: absolute;
@@ -639,17 +642,24 @@ footer {
       cursor: pointer; }
 
 .slider {
-  height: 500px;
+  height: 700px;
   width: 100%;
   position: relative; }
+  @media (max-width: 500px) {
+    .slider {
+      height: 500px; } }
   .slider .slide__single {
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     -moz-background-size: cover;
       -o-background-size: cover;
          background-size: cover;
-    background-position: center; }
+    background-position: cover;
+    border-bottom: 7px solid #555555; }
+    @media (max-width: 500px) {
+      .slider .slide__single {
+        height: 500px; } }
   .slider--content {
     position: absolute;
     left: 0;
@@ -661,7 +671,7 @@ footer {
     position: absolute;
     height: 100%;
     z-index: 99;
-    background-color: rgba(85, 85, 85, 0.3);
+    background-color: rgba(85, 85, 85, 0);
     padding: 15px;
     width: 100%; }
   .slider--text {
@@ -672,25 +682,46 @@ footer {
         -ms-transform: translateY(-50%);
          -o-transform: translateY(-50%);
             transform: translateY(-50%);
-    text-align: center;
+    text-align: left;
     width: 100%; }
     .slider--text p {
-      color: #e6ce81;
+      color: #555555;
       font-size: 24px;
       line-height: 30px;
       font-weight: 500;
-      padding: 0 0 15px;
-      text-align: center; }
+      text-align: left;
+      margin: 20px 0; }
       @media (max-width: 500px) {
         .slider--text p {
           font-size: 20px;
           line-height: 24px;
           margin-bottom: 25px; } }
+    .slider--text h1 {
+      text-align: left;
+      color: #555555; }
+    .slider--text a {
+      margin-top: 30px; }
 
 section.features {
   margin-bottom: 75px;
   text-align: center;
   padding: 50px 0; }
+  section.features h2 {
+    position: relative; }
+    section.features h2:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -15px;
+      width: 90px;
+      height: 2px;
+      border-bottom: 2px solid #e6ce81;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+           -o-transform: translateX(-50%);
+              transform: translateX(-50%); }
   section.features p {
     font-size: 24px;
     line-height: 30px;
@@ -709,9 +740,66 @@ section.features {
     section.features a:hover {
       background-color: #555555;
       color: #fff; }
+  section.features .sides-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px; }
+    section.features .sides-wrapper .side--left,
+    section.features .sides-wrapper .side--right {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 50%;
+         -moz-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      padding: 25px; }
+      section.features .sides-wrapper .side--left h3,
+      section.features .sides-wrapper .side--right h3 {
+        position: relative;
+        margin-bottom: 40px; }
+        section.features .sides-wrapper .side--left h3:before,
+        section.features .sides-wrapper .side--right h3:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: -15px;
+          width: 90px;
+          height: 2px;
+          border-bottom: 2px solid #e6ce81;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+             -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+               -o-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+      section.features .sides-wrapper .side--left p,
+      section.features .sides-wrapper .side--right p {
+        text-align: justify; }
+    section.features .sides-wrapper .side--left {
+      border-right: 2px solid #555555; }
+      @media (max-width: 500px) {
+        section.features .sides-wrapper .side--left {
+          border-right: 0px;
+          border-bottom: 2px solid #555555; } }
+    @media (max-width: 500px) {
+      section.features .sides-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        section.features .sides-wrapper .side--left,
+        section.features .sides-wrapper .side--right {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto;
+          padding: 25px 0; } }
 
 section.knowledge {
-  min-height: 350px;
   background-image: url("../img/knowledge.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -728,21 +816,23 @@ section.knowledge {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); }
   section.knowledge .container {
-    padding-top: 145px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding-top: 50px;
+    padding-bottom: 70px;
     color: red;
     text-align: center;
     position: relative;
     z-index: 99; }
     section.knowledge .container p {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       text-align: left;
-      margin-right: 50px;
-      color: #fff; }
+      color: #fff;
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center; }
+      @media (max-width: 500px) {
+        section.knowledge .container p {
+          font-size: 24px;
+          line-height: 30px; } }
     section.knowledge .container a {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 250px;
