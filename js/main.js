@@ -1,6 +1,8 @@
 $(document).ready(function(){
  //    menuBackgroundColor();
 	// $(window).scroll(menuBackgroundColor);
+    toTheTop();
+    $(window).scroll(toTheTop);
 
     $(function() {
         $('nav .menu-main-menu-container>ul').slicknav({
@@ -23,6 +25,16 @@ $(document).ready(function(){
     //         }
     //     }
     // }
+    function toTheTop() {
+        var offset = $(window).scrollTop();
+        var windowheight = $(window).height();
+        if (offset >= windowheight + 300) {
+            $(".arrow-up").css("display","block");
+        }
+        else {
+             $(".arrow-up").css("display","none");
+        }
+    }
 
     // $('.slides--wrapper').slick({
     //     dots: true,
@@ -46,7 +58,7 @@ $(document).ready(function(){
     }
     var el = document.getElementById("cookieBtn");
     el.addEventListener("click", function() {
-      setCookie("cookieInfo", "agreed", 30);
+      setCookie("cookieInfo", "agreed", 360);
       document.getElementById("cookieInfo").style.display = "none";
     })
 

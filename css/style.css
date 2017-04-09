@@ -201,8 +201,7 @@ p {
   background-color: #292935;
   position: fixed;
   bottom: 0;
-  left: 0;
-  display: none; }
+  left: 0; }
   .cookie__wrapper .cookie__container {
     max-width: 1170px;
     padding: 0 15px;
@@ -601,7 +600,7 @@ footer {
         -moz-transition: .3s all linear;
         transition: .3s all linear; }
         footer .container p a:hover {
-          color: #555555; }
+          color: #e6ce81; }
       footer .container p.tel:before {
         content: '\f095';
         position: absolute;
@@ -624,9 +623,9 @@ footer {
         line-height: 24px;
         left: -25px; }
   footer .arrow-up {
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 30px;
+    bottom: 150px;
     height: 30px;
     width: 30px;
     -webkit-transition: .1s all linear;
@@ -638,7 +637,7 @@ footer {
       height: 100%;
       color: #555555; }
     footer .arrow-up:hover {
-      top: 25px;
+      bottom: 155px;
       cursor: pointer; }
 
 .slider {
@@ -696,6 +695,20 @@ footer {
           font-size: 20px;
           line-height: 24px;
           margin-bottom: 25px; } }
+      .slider--text p.tel {
+        padding-left: 40px;
+        position: relative; }
+        .slider--text p.tel a {
+          text-decoration: none;
+          color: #555555; }
+          .slider--text p.tel a:hover {
+            text-decoration: underline; }
+        .slider--text p.tel:before {
+          content: '\f095';
+          font-family: FontAwesome;
+          position: absolute;
+          font-size: 30px;
+          left: 5px; }
     .slider--text h1 {
       text-align: left;
       color: #555555; }
@@ -849,7 +862,6 @@ section.knowledge {
       -o-transition: .3s all;
       -moz-transition: .3s all;
       transition: .3s all;
-      background-color: rgba(85, 85, 85, 0.4);
       color: #fff; }
       section.knowledge .container a:hover {
         background-color: #555555;
@@ -902,6 +914,9 @@ section.orto {
       left: 0;
       top: 10px;
       font-size: 30px; }
+    @media (max-width: 600px) {
+      section.orto .orto__single {
+        width: 100%; } }
 
 section.contact-banner {
   background-color: #555555;
@@ -1008,7 +1023,7 @@ section.patient {
           max-width: 350px; } }
 
 section.kontakt {
-  padding: 125px 0 40px; }
+  padding: 40px 0; }
   section.kontakt .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1023,7 +1038,8 @@ section.kontakt {
               flex: 0 1 50%;
       padding: 15px; }
       section.kontakt .container .side--left h2 {
-        position: relative; }
+        position: relative;
+        text-align: left; }
         section.kontakt .container .side--left h2:before {
           position: absolute;
           content: '';
@@ -1032,17 +1048,21 @@ section.kontakt {
           width: 90px;
           height: 2px;
           border-bottom: 2px solid #555555; }
-      section.kontakt .container .side--left h3 i {
-        margin-right: 10px; }
-      section.kontakt .container .side--left p a {
-        text-decoration: none;
-        color: #333;
-        -webkit-transition: .3s all linear;
-        -o-transition: .3s all linear;
-        -moz-transition: .3s all linear;
-        transition: .3s all linear; }
-        section.kontakt .container .side--left p a:hover {
-          color: #555555; }
+      section.kontakt .container .side--left h3 {
+        text-align: left; }
+        section.kontakt .container .side--left h3 i {
+          margin-right: 10px; }
+      section.kontakt .container .side--left p {
+        font-size: 20px; }
+        section.kontakt .container .side--left p a {
+          text-decoration: none;
+          color: #555555;
+          -webkit-transition: .3s all linear;
+          -o-transition: .3s all linear;
+          -moz-transition: .3s all linear;
+          transition: .3s all linear; }
+          section.kontakt .container .side--left p a:hover {
+            color: #e6ce81; }
     section.kontakt .container .side--right {
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 50%;
@@ -1051,6 +1071,7 @@ section.kontakt {
               flex: 0 1 50%;
       padding: 15px; }
       section.kontakt .container .side--right h2 {
+        text-align: left;
         position: relative; }
         section.kontakt .container .side--right h2:before {
           position: absolute;
@@ -1084,7 +1105,7 @@ section.map-wrapper {
     height: 500px; }
 
 section.cennik {
-  padding-top: 125px; }
+  padding: 40px 0; }
   section.cennik p {
     font-size: 18px;
     line-height: 24px;
@@ -1095,6 +1116,9 @@ section.cennik {
     @media (max-width: 400px) {
       section.cennik p {
         font-size: 16px; } }
+  section.cennik h3 {
+    color: #555555;
+    margin-top: 40px; }
   section.cennik .cennik--wiersz {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1110,7 +1134,7 @@ section.cennik {
     section.cennik .cennik--wiersz:last-child {
       border-bottom: none; }
     section.cennik .cennik--wiersz:nth-child(2n) {
-      background-color: #f6f6f6; }
+      background-color: #e6ce81; }
   section.cennik .cennik--cena {
     -webkit-flex-basis: 200px;
         -ms-flex-preferred-size: 200px;
