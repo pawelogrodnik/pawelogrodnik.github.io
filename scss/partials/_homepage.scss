@@ -238,4 +238,44 @@
              }
          }
      }
+     section.patient {
+        .patient {
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: 700px) {
+                    flex-direction: column;
+                }
+            }
+            &__single {
+                background-color: #fff;
+                flex: 0 1 350px;
+                border-radius: 5px;
+                text-align: center;
+                // img {
+                //     max-width: 350px;
+
+                // }
+                .text {
+                    padding: 15px;
+                }
+                h3 {
+                    font-size: 26px;
+                    line-height: 1.5em;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 1.5em;
+                    text-align: justify;
+                }
+                @media (max-width: 700px) {
+                    flex-basis: auto;
+                    background-color: #F7F7F7;
+                    img {
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+     }
      

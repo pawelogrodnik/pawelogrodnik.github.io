@@ -903,6 +903,56 @@ section.orto {
       top: 10px;
       font-size: 30px; }
 
+section.patient .patient__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 700px) {
+    section.patient .patient__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+section.patient .patient__single {
+  background-color: #fff;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 350px;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 350px;
+          flex: 0 1 350px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  text-align: center; }
+  section.patient .patient__single .text {
+    padding: 15px; }
+  section.patient .patient__single h3 {
+    font-size: 26px;
+    line-height: 1.5em; }
+  section.patient .patient__single p {
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: justify; }
+  @media (max-width: 700px) {
+    section.patient .patient__single {
+      -webkit-flex-basis: auto;
+          -ms-flex-preferred-size: auto;
+              flex-basis: auto;
+      background-color: #F7F7F7; }
+      section.patient .patient__single img {
+        max-width: 350px; } }
+
 section.kontakt {
   padding: 125px 0 40px; }
   section.kontakt .container {
