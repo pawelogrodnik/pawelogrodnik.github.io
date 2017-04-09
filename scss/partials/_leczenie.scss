@@ -1,0 +1,24 @@
+section.przebieg-leczenia {
+	h2,h3 {
+		text-align: left;
+	}
+	h3 {
+		margin-top: 40px;
+		margin-bottom: 30px;
+		position: relative;
+         &:before {
+             position: absolute;
+             content: '';
+             left: 0;
+             bottom: -15px;
+             width: 45px;
+             height: 2px;
+             border-bottom: 2px solid $mainColor;
+         }
+	}
+	p {
+		font-size: 20px;
+		line-height: 30px;
+		text-align: justify;
+	}
+}
