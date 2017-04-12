@@ -1,9 +1,11 @@
   body {
         font-size: 16px;
             font-family: 'Oswald', sans-serif;
+            // font-family: 'Open Sans', sans-serif;
         color: $mainColor;
         overflow-x: hidden;
         background-color: #F7F7F7;
+        letter-spacing: -0.25px;
         .page-main-content {
             min-height: calc(100vh - 120px);
         }

@@ -138,7 +138,8 @@ body {
   font-family: 'Oswald', sans-serif;
   color: #555555;
   overflow-x: hidden;
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  letter-spacing: -0.25px; }
   body .page-main-content {
     min-height: -webkit-calc(100vh - 120px);
     min-height: -moz-calc(100vh - 120px);
@@ -689,7 +690,7 @@ footer {
       line-height: 30px;
       font-weight: 500;
       text-align: left;
-      margin: 20px 0; }
+      margin: 15px 0; }
       @media (max-width: 500px) {
         .slider--text p {
           font-size: 20px;
@@ -697,10 +698,11 @@ footer {
           margin-bottom: 25px; } }
       .slider--text p.tel {
         padding-left: 40px;
-        position: relative; }
+        position: relative;
+        font-size: 27px; }
         .slider--text p.tel a {
           text-decoration: none;
-          color: #555555; }
+          color: #e6ce81; }
           .slider--text p.tel a:hover {
             text-decoration: underline; }
         .slider--text p.tel:before {
@@ -716,9 +718,9 @@ footer {
       margin-top: 30px; }
 
 section.features {
-  margin-bottom: 75px;
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0 100px;
+  background-color: #fff; }
   section.features h2 {
     position: relative; }
     section.features h2:before {
@@ -735,10 +737,12 @@ section.features {
           -ms-transform: translateX(-50%);
            -o-transform: translateX(-50%);
               transform: translateX(-50%); }
+  section.features img {
+    max-width: 600px; }
   section.features p {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
   section.features a {
     font-size: 24px;
     padding: 20px 30px;
@@ -829,14 +833,15 @@ section.knowledge {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); }
   section.knowledge .container {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding: 50px 50px 70px;
     color: red;
     text-align: center;
     position: relative;
     z-index: 99; }
+    @media (max-width: 767px) {
+      section.knowledge .container {
+        padding: 50px 25px 70px; } }
     section.knowledge .container p {
-      margin-bottom: 50px;
       text-align: left;
       color: #fff;
       font-size: 30px;
@@ -972,18 +977,22 @@ section.contact-banner {
                 justify-content: center; } }
 
 section.patient {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 0 50px 50px; }
   section.patient .patient__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
     @media (max-width: 700px) {
       section.patient .patient__wrapper {
         -webkit-box-orient: vertical;
@@ -992,7 +1001,10 @@ section.patient {
            -moz-box-orient: vertical;
            -moz-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; } }
   section.patient .patient__single {
     background-color: #fff;
     -webkit-box-flex: 0;
@@ -1003,7 +1015,11 @@ section.patient {
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
-    text-align: center; }
+    text-align: center;
+    margin: 25px 15px; }
+    section.patient .patient__single img {
+      max-width: 350px;
+      height: auto; }
     section.patient .patient__single .text {
       padding: 15px; }
     section.patient .patient__single h3 {
@@ -1017,10 +1033,86 @@ section.patient {
       section.patient .patient__single {
         -webkit-flex-basis: auto;
             -ms-flex-preferred-size: auto;
-                flex-basis: auto;
-        background-color: #F7F7F7; }
+                flex-basis: auto; }
         section.patient .patient__single img {
-          max-width: 350px; } }
+          max-width: 100%; } }
+  @media (max-width: 700px) {
+    section.patient {
+      padding: 0 15px 15px; } }
+
+section.generations {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 350px;
+  background-color: #f7f7f7; }
+  section.generations.first {
+    border-top: 1px solid rgba(85, 85, 85, 0.4); }
+  section.generations.last {
+    border-bottom: 1px solid rgba(85, 85, 85, 0.4); }
+  section.generations p {
+    font-size: 30px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: 300; }
+    section.generations p span {
+      color: #e6ce81; }
+    @media (max-width: 700px) {
+      section.generations p {
+        font-size: 18px;
+        line-height: 24px; } }
+  section.generations .image-left, section.generations .image-right {
+    background-position: center;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: auto; }
+  section.generations .text-right {
+    max-width: 600px;
+    padding: 30px;
+    float: left; }
+    section.generations .text-right--wrapper {
+      width: 50%;
+      height: 100%; }
+  section.generations .text-left {
+    max-width: 600px;
+    padding: 30px;
+    float: right; }
+    section.generations .text-left--wrapper {
+      width: 50%;
+      height: 100%; }
+  @media (max-width: 700px) {
+    section.generations {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      section.generations .image-left, section.generations .image-right {
+        width: 100%;
+        height: 300px; }
+      section.generations .text-right, section.generations .text-left {
+        padding: 15px; }
+        section.generations .text-right--wrapper, section.generations .text-left--wrapper {
+          width: 100%; }
+      section.generations .image-left {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+           -moz-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
 
 section.kontakt {
   padding: 40px 0; }
