@@ -175,7 +175,10 @@
                                 }
                             }
                             @media (max-width: 1050px) {
-                                margin-left: 5px;
+                                margin-left: 20px;
+                                &:before {
+                                    right: -10px;
+                                }
                             }
                             @media (max-width: 900px) {
                                 padding: 10px 5px;
