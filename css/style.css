@@ -1286,3 +1286,67 @@ section.przebieg-leczenia p {
   font-size: 20px;
   line-height: 30px;
   text-align: justify; }
+
+.hero-banner {
+  min-height: 350px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: contain;
+    -o-background-size: contain;
+       background-size: contain;
+  background-color: #fff;
+  border-bottom: 7px solid #555555; }
+  .hero-banner .content-wrapper {
+    padding: 30px 15px;
+    background-color: rgba(85, 85, 85, 0.6);
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%; }
+    .hero-banner .content-wrapper h2 {
+      margin: 10px 0; }
+  @media (max-width: 700px) {
+    .hero-banner .content-wrapper {
+      padding: 15px; } }
+
+.main {
+  padding: 20px 0; }
+  .main p, .main li, .main a, .main span {
+    font-weight: 300; }
+    .main p span, .main li span, .main a span, .main span span {
+      color: #e6ce81; }
+  .main h3 {
+    text-align: left;
+    margin-top: 40px; }
+  .main ul li {
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding: 10px 0 10px 30px;
+    position: relative; }
+    .main ul li:before {
+      content: '\f00c';
+      position: absolute;
+      font-family: FontAwesome;
+      left: 5px;
+      top: 12px;
+      font-size: 16px; }
+    @media (max-width: 500px) {
+      .main ul li {
+        font-size: 18px;
+        line-height: 24px; } }
+  .main .image-section {
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 30px; }
+    .main .image-section img {
+      max-width: 100%;
+      height: auto;
+      max-height: 400px; }
