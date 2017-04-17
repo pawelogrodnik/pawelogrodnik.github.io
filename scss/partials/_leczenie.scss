@@ -21,4 +21,12 @@ section.przebieg-leczenia {
 		line-height: 30px;
 		text-align: justify;
 	}
+	img {
+		margin: 0 auto;
+		max-width: 600px;
+		display: block;
+		@media (max-width: 650px) {
+			max-width: 100%;
+		}
+	}
 }

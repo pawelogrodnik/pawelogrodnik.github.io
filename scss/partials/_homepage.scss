@@ -275,6 +275,7 @@
                  width: 50%;
                  padding-left: 40px;
                  position: relative;
+                 font-weight: 300;
                  &:before {
                      content: '\f178';
                      font-family: FontAwesome;
@@ -282,6 +283,7 @@
                      left: 0;
                      top: 10px;
                      font-size: 30px;
+                     
                  }
                  @media (max-width: 600px) {
                     width: 100%;

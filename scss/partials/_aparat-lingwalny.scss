@@ -22,6 +22,12 @@
 			padding: 15px;
 		}
 	}
+	&.cover {
+		background-size: cover;
+	}
+	&.top {
+		background-position: top;
+	}
 }
 .main {
 	padding: 20px 0;
@@ -29,6 +35,12 @@
 		font-weight: 300;
 		span {
 			color: $headersColor;
+		}
+	}
+	p {
+		&.title {
+			font-weight: 500;
+			margin-top: 30px;
 		}
 	}
 	h3 {

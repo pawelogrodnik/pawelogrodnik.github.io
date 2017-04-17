@@ -935,7 +935,8 @@ section.orto {
   section.orto .orto__single {
     width: 50%;
     padding-left: 40px;
-    position: relative; }
+    position: relative;
+    font-weight: 300; }
     section.orto .orto__single:before {
       content: '\f178';
       font-family: FontAwesome;
@@ -1287,6 +1288,14 @@ section.przebieg-leczenia p {
   line-height: 30px;
   text-align: justify; }
 
+section.przebieg-leczenia img {
+  margin: 0 auto;
+  max-width: 600px;
+  display: block; }
+  @media (max-width: 650px) {
+    section.przebieg-leczenia img {
+      max-width: 100%; } }
+
 .hero-banner {
   min-height: 350px;
   position: relative;
@@ -1313,6 +1322,12 @@ section.przebieg-leczenia p {
   @media (max-width: 700px) {
     .hero-banner .content-wrapper {
       padding: 15px; } }
+  .hero-banner.cover {
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover; }
+  .hero-banner.top {
+    background-position: top; }
 
 .main {
   padding: 20px 0; }
@@ -1320,6 +1335,9 @@ section.przebieg-leczenia p {
     font-weight: 300; }
     .main p span, .main li span, .main a span, .main span span {
       color: #e6ce81; }
+  .main p.title {
+    font-weight: 500;
+    margin-top: 30px; }
   .main h3 {
     text-align: left;
     margin-top: 40px; }
