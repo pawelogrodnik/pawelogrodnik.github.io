@@ -1368,3 +1368,51 @@ section.przebieg-leczenia img {
       max-width: 100%;
       height: auto;
       max-height: 400px; }
+
+.about p, .about li, .about a {
+  font-weight: 300; }
+  .about p span, .about li span, .about a span {
+    color: #e6ce81; }
+
+.about h3 {
+  color: #555555;
+  position: relative;
+  margin-bottom: 40px; }
+  .about h3 span {
+    color: #e6ce81; }
+  .about h3:before {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    width: 45px;
+    border-bottom: 2px solid #555555; }
+
+.about .intro h3:before {
+  width: 90px; }
+
+.about p.title {
+  font-weight: 500;
+  margin-top: 30px; }
+
+.about h3 {
+  text-align: left;
+  margin-top: 40px; }
+
+.about ul li {
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 30px;
+  padding: 10px 0 10px 30px;
+  position: relative; }
+  .about ul li:before {
+    content: '\f05d';
+    position: absolute;
+    font-family: FontAwesome;
+    left: 5px;
+    top: 12px;
+    font-size: 16px; }
+  @media (max-width: 500px) {
+    .about ul li {
+      font-size: 18px;
+      line-height: 24px; } }
