@@ -295,6 +295,7 @@
      section.contact-banner {
         background-color: $mainColor;
         padding: 30px 0;
+        position: relative;
         .container {
             display: flex;
             justify-content: space-between;
@@ -303,6 +304,10 @@
                 color: #fff;
                 font-size: 48px;
                 text-transform: uppercase;
+            }
+            p {
+                color: #fff;
+                font-weight: 300;
             }
             a {
                 padding: 10px 20px;
@@ -327,6 +332,7 @@
                 }
             }
         }
+        
      }
      section.patient {
         margin-top: 50px;
