@@ -14,6 +14,10 @@ section.cennik {
       h3 {
         color: $mainColor;
         margin-top: 40px;
+        span {
+          font-size: 20px;
+          line-height:30px;
+        }
       }
       .cennik {
         &--wiersz {
@@ -23,7 +27,10 @@ section.cennik {
           &:last-child {
             border-bottom: none;
           }
-          &:nth-child(2n) {
+          // &:nth-child(2n) {
+          //   background-color: $headersColor
+          // }
+          &.highlight {
             background-color: $headersColor
           }
         }

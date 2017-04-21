@@ -28,6 +28,10 @@
 	&.top {
 		background-position: top;
 	}
+	&.wybielanie {
+		min-height: 500px;
+		background-size: cover;
+	}
 }
 .main {
 	padding: 20px 0;
@@ -78,6 +82,12 @@
 			max-width: 100%;
 			height: auto;
 			max-height: 400px
+		}
+		&.bordered {
+			img {
+				border-right: 1px solid $mainColor;
+				border-left: 1px solid $mainColor;
+			}
 		}
 	}
 

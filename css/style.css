@@ -453,9 +453,9 @@ header {
             align-items: center; }
     header .container .logo__wrapper {
       max-width: 350px;
-      padding: 10px 0; }
+      padding: 20px 0; }
       header .container .logo__wrapper img {
-        height: 80px; }
+        max-height: 60px; }
     @media (max-width: 850px) {
       header .container nav {
         display: none; } }
@@ -692,16 +692,17 @@ footer {
       line-height: 30px;
       font-weight: 500;
       text-align: left;
-      margin: 15px 0; }
+      margin: 10px 0; }
       @media (max-width: 700px) {
         .slider--text p {
           font-size: 20px;
           line-height: 24px;
-          margin: 15px 0; } }
+          margin: 10px 0; } }
       .slider--text p.tel {
         padding-left: 40px;
         position: relative;
-        font-size: 27px; }
+        font-size: 32px;
+        font-weight: 600; }
         .slider--text p.tel a {
           text-decoration: none;
           color: #e6ce81; }
@@ -715,18 +716,23 @@ footer {
           left: 5px; }
         @media (max-width: 700px) {
           .slider--text p.tel {
-            font-size: 24px;
+            font-size: 26px;
             padding-left: 10px;
             margin-bottom: 15px; }
             .slider--text p.tel:before {
               font-size: 24px;
               padding: 0; } }
+        @media (max-width: 700px) {
+          .slider--text p.tel a {
+            font-size: 24px; } }
     .slider--text h1 {
       text-align: left;
-      color: #555555; }
+      color: #555555;
+      margin: 15px 0; }
       @media (max-width: 700px) {
         .slider--text h1 {
-          font-size: 40px; } }
+          font-size: 40px;
+          margin: 15px 0; } }
     .slider--text a {
       margin-top: 30px; }
       @media (max-width: 700px) {
@@ -852,7 +858,7 @@ section.knowledge {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.5); }
   section.knowledge .container {
     padding: 50px 50px 70px;
     color: red;
@@ -865,16 +871,10 @@ section.knowledge {
     section.knowledge .container p {
       text-align: left;
       color: #fff;
-      font-size: 30px;
-      line-height: 45px;
       text-align: justify;
       font-weight: 300; }
       section.knowledge .container p span {
         color: #e6ce81; }
-      @media (max-width: 700px) {
-        section.knowledge .container p {
-          font-size: 24px;
-          line-height: 36px; } }
     section.knowledge .container a {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 250px;
@@ -1044,9 +1044,9 @@ section.patient {
        -moz-box-flex: 0;
         -ms-flex: 0 1 350px;
             flex: 0 1 350px;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
     text-align: center;
     margin: 25px 15px; }
     section.patient .patient__single img {
@@ -1243,6 +1243,9 @@ section.cennik {
   section.cennik h3 {
     color: #555555;
     margin-top: 40px; }
+    section.cennik h3 span {
+      font-size: 20px;
+      line-height: 30px; }
   section.cennik .cennik--wiersz {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1257,7 +1260,7 @@ section.cennik {
     border-bottom: 2px solid #555555; }
     section.cennik .cennik--wiersz:last-child {
       border-bottom: none; }
-    section.cennik .cennik--wiersz:nth-child(2n) {
+    section.cennik .cennik--wiersz.highlight {
       background-color: #e6ce81; }
   section.cennik .cennik--cena {
     -webkit-flex-basis: 200px;
@@ -1294,11 +1297,30 @@ section.przebieg-leczenia p {
 
 section.przebieg-leczenia img {
   margin: 0 auto;
+  max-height: 200px;
   max-width: 600px;
-  display: block; }
+  display: block;
+  border: 2px solid #555555; }
   @media (max-width: 650px) {
     section.przebieg-leczenia img {
       max-width: 100%; } }
+
+section.przebieg-leczenia .images-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  section.przebieg-leczenia .images-wrapper .img-left img, section.przebieg-leczenia .images-wrapper .img-right img {
+    max-height: 150px;
+    border: none; }
+  section.przebieg-leczenia .images-wrapper .img-left {
+    margin-right: 10px; }
 
 .hero-banner {
   min-height: 350px;
@@ -1332,6 +1354,11 @@ section.przebieg-leczenia img {
          background-size: cover; }
   .hero-banner.top {
     background-position: top; }
+  .hero-banner.wybielanie {
+    min-height: 500px;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover; }
 
 .main {
   padding: 20px 0; }
@@ -1372,6 +1399,9 @@ section.przebieg-leczenia img {
       max-width: 100%;
       height: auto;
       max-height: 400px; }
+    .main .image-section.bordered img {
+      border-right: 1px solid #555555;
+      border-left: 1px solid #555555; }
 
 .about p, .about li, .about a {
   font-weight: 300; }
