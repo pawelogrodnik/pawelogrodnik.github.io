@@ -1,5 +1,5 @@
 .faculty {
-	padding-top: 20px;
+	padding: 20px 0 30px;
     h2 {
         color: #333;
         position: relative;
@@ -47,5 +47,24 @@
                 }
             }
         }
+    }
+    h3 {
+    	text-align: left;
+    	color: #333;
+    }
+    ul {
+    	li {
+    		padding: 5px 5px 5px 15px;
+    		position: relative;
+    		&:before {
+    			content: "• ";
+    			color: $mainColor;
+    			position: absolute;
+    			left: 0;
+    		}
+    		span {
+    			font-weight: 600;
+    		}
+    	}
     }
 }

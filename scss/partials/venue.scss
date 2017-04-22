@@ -1,0 +1,47 @@
+.venue {
+    padding-bottom: 50px;
+    h2,
+    h3 {
+        color: #333;
+        text-align: left;
+    }
+    p {
+        text-align: justify;
+        strong {
+            font-weight: 600;
+        }
+        a {
+            text-decoration: none;
+            color: $mainColor;
+        }
+    }
+    .address {
+        display: flex;
+        margin-bottom: 25px;
+        .text,
+        .image {
+            max-width: 50%;
+        }
+        .text {
+            margin-right: 35px;
+        }
+        .image {
+            img {
+                border: 1px solid $mainColor;
+            }
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+            .text,
+            .image {
+                max-width: 100%;
+            }
+            .text {
+                margin: 0;
+            }
+        }
+    }
+    #map {
+        height: 500px;
+    }
+}

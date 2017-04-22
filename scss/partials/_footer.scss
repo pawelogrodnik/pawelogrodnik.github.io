@@ -22,4 +22,13 @@ footer {
 		color: #fff;
 		padding: 0 30px;
 	}
+	.img-wrapper {
+		max-width: 250px;
+		margin: 10px;
+	}
+	.images-module {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
 }

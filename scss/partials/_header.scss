@@ -9,6 +9,10 @@ header {
         position: relative;
         h1 {
             margin: 0;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
         }
         nav {
             .menu-main-menu-container {
@@ -38,9 +42,16 @@ header {
                         &:hover {
                         	border-bottom: 1px solid #fff;
                         }
+                        @media (max-width: 500px) {
+                            font-size: em(12);
+                            margin: 0 5px;
+                        }
                     }
                 }
             }
         }
+    }
+    @media (max-width: 500px) {
+        padding: 10px 0;
     }
 }

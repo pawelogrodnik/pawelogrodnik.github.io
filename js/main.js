@@ -13,20 +13,16 @@ $(document).ready(function() {
         });
     });
 
-    // function menuBackgroundColor() {
-    //     var a = $(window).scrollTop();
-    //     if (a >= 0) {
-    //         if (a < 100) {
-    //             $("header").css({
-    //                 "background": "rgba(255, 255, 255," + a / 100 + ")"
-    //             });
-    //         } else {
-    //             $("header").css({
-    //                 "background": "rgba(255, 255, 255, 1.0)"
-    //             });
-    //         }
-    //     }
-    // }
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+    
     function toTheTop() {
         var offset = $(window).scrollTop();
         var windowheight = $(window).height();
@@ -249,7 +245,7 @@ function initMap() {
 
     // Create a map object, and include the MapTypeId to add
     // to the map type control.
-    var myLatLng = { lat: 50.0576778, lng: 19.9564149 };
+    var myLatLng = { lat: 50.0656571, lng: 19.9454651 };
     var map = new google.maps.Map(document.getElementById('map'), {
         center: myLatLng,
         zoom: 14,
