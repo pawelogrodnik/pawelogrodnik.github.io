@@ -1,5 +1,12 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
 $headersColor: #e6ce81;
-$mainColor: #555555;
+$mainColor: #00937c;
+$violet: #ac78a7;
 
 $grayFirst: #70706f;
 $secondColor: #4e4e4d;
