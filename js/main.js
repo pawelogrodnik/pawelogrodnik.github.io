@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    //    menuBackgroundColor();
-    // $(window).scroll(menuBackgroundColor);
     toTheTop();
     matchHeight();
     $(window).scroll(toTheTop);
     $(window).on('resize', matchHeight);
+
+    $('header nav ul li').last().addClass('highlight');
 
     $(function() {
         $('nav .menu-main-menu-container>ul').slicknav({
@@ -260,44 +260,11 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        title: 'Specjalistyczne Centrum Chirurgii Ogólnej i Onkologicznej'
+        title: 'ESSO Course on Surgical Geriatric Oncology'
     });
 
     //Associate the styled map with the MapTypeId and set it to display.
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 
-}
-if ($('body').hasClass('o-mnie')) {
-    $('.certyfikaty').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.certyfikaty--nav'
-    });
-    $('.certyfikaty--nav').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.certyfikaty',
-        dots: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                slidesToShow: 1
-            }
-        }]
-    });
 }
