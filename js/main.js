@@ -6,12 +6,12 @@ $(document).ready(function() {
 
     $('header nav ul li').last().addClass('highlight');
 
-    $(function() {
-        $('nav .menu-main-menu-container>ul').slicknav({
-            label: '',
-            appendTo: 'header .container'
-        });
-    });
+    // $(function() {
+    //     $('nav .menu-main-menu-container>ul').slicknav({
+    //         label: '',
+    //         appendTo: 'header .container'
+    //     });
+    // });
 
     $('ul.tabs li').click(function(){
         var tab_id = $(this).attr('data-tab');
