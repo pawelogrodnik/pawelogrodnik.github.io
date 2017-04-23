@@ -38,6 +38,7 @@
         padding: 15px;
         max-width: 900px;
         margin: 0 auto;
+        text-align: center;
         &.current {
             display: inherit;
         }
@@ -54,11 +55,11 @@
         		.hours {
         			border-right: 1px solid #333;
         			padding: 5px;
-        			min-width: 100px;
+        			min-width: 100px
         		}
         		.topic {
         			padding: 5px;
-        			text-align: right;
+        			width: calc(100% - 100px);
         		}
         		&.highlight {
         			background-color: rgba($mainColor, 0.2);

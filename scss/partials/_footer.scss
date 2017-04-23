@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	min-height: 50px;
-	padding: 10px 0;
+	// padding: 10px 0;
 	background-color: #333;
 	position: relative;
 	.arrow-up {
@@ -23,8 +23,15 @@ footer {
 		padding: 0 30px;
 	}
 	.img-wrapper {
-		max-width: 250px;
+		max-width: 170px;
+		// max-height: 50px;
 		margin: 10px;
+		background-color: #fff;
+		padding: 5px;
+		border: 1px solid $mainColor;
+		img {
+			max-height: 50px;
+		}
 	}
 	.images-module {
 		display: flex;
