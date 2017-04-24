@@ -1,13 +1,23 @@
 @import "partials/__variables.scss";
+
 @import "partials/_reset.scss";
+
 @import "partials/_global.scss";
+
 @import "partials/_slick.scss";
 
 @import "partials/_header.scss";
+
 @import "partials/_footer.scss";
 
-@import "partials/homepage.scss";
-@import "partials/faculty.scss";
-@import "partials/venue.scss";
-@import "partials/programme.scss";
-@import "partials/sponsors.scss";
+@import "partials/_homepage.scss";
+
+@import "partials/_kontakt.scss";
+
+@import "partials/_cennik.scss";
+
+@import "partials/_leczenie.scss";
+
+@import "partials/_aparat-lingwalny.scss";
+
+@import "partials/_o-nas.scss";

@@ -1,57 +1,246 @@
-header {
-    background-color: $mainColor;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
-    .container {
+     .slicknav_btn {
         position: relative;
-        h1 {
-            margin: 0;
-            a {
-                text-decoration: none;
-                color: #fff;
+        display: block;
+        vertical-align: middle;
+        float: right;
+        padding: 0.438em 0.625em 0.438em 0.625em;
+        line-height: 1.125em;
+        cursor: pointer;
+        border: 2px solid $secondColor;
+        border-radius: 3px;
+        margin-top: 25px;
+        .slicknav_icon-bar + .slicknav_icon-bar {
+            margin-top: 5px;
+        }
+    }
+    
+    .slicknav_menu {
+        *zoom: 1;
+        display: none;
+        @media (max-width: 850px) {
+            display: block;
+        }
+        .slicknav_menutxt {
+            display: block;
+            line-height: 1.188em;
+            float: left;
+        }
+        .slicknav_icon {
+            float: left;
+            width: 25px;
+            height: 20px;
+            margin: 0.188em 0 0 0.438em;
+            &:before {
+                background: transparent;
+                width: 25px;
+                height: 20px;
+                display: block;
+                content: "";
+                position: absolute;
             }
         }
-        nav {
-            .menu-main-menu-container {
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+        .slicknav_no-text {
+            margin: 0;
+        }
+        .slicknav_icon-bar {
+            display: block;
+            width: 25px;
+            height: 2px;
+            color: $mainColor;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            border-radius: 1px;
+            -webkit-box-shadow: 0 1px 0 rgba($mainColor, 0.25);
+            -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 0 rgba($mainColor, 0.25);
+        }
+        &:before {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    }
+    
+    .slicknav_nav {
+        clear: both;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        display: block;
+        z-index: 99;
+        width: 100%;
+        background-color: #f6f6f6;
+        ul {
+            display: block;
+        }
+        li {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid $mainColor;
+            &:first-child {
+                border-top: 2px solid $mainColor;
+            }
+            &.menu-item-has-children.slicknav_open {
+                padding-bottom: 0;
+                padding: 10px 0 0;
+                border: none;
+                >ul {
+                    padding-top: 10px;
                     li {
-                    	margin: 0 10px;
-                    	padding: 5px 10px;
-                    	border-bottom: 1px solid $mainColor;
-                    	transition: .3s linear all;
-                        a {
-                            text-decoration: none;
-                            color: #fff;
-                            white-space: nowrap;
-                        }
-                        &.highlight {
-                        	a {
-                        		color: #bc9412;
-                        		font-weight: bold;
-                        	}
-                        	&:hover {
-                        		border-bottom: 1px solid #bc9412;
-                        	}
-                        }
-                        &:hover {
-                        	border-bottom: 1px solid #fff;
-                        }
-                        @media (max-width: 500px) {
-                            font-size: em(12);
-                            margin: 0 5px;
-                        }
+                        background-color: #e0e0e0;
                     }
                 }
             }
         }
+        .slicknav_arrow {
+            font-size: 0.8em;
+            margin: 0 0 0 0.4em;
+        }
+        .slicknav_item {
+            cursor: pointer;
+            a {
+                display: inline;
+            }
+        }
+        .slicknav_row {
+            display: block;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: $secondColor;
+            text-transform: uppercase;
+        }
+        .slicknav_parent-link a {
+            display: inline;
+        }
     }
-    @media (max-width: 500px) {
-        padding: 10px 0;
+    
+    .slicknav_brand {
+        float: left;
+    }
+
+
+ header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        background-color: #fff;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
+        .container {
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo__wrapper {
+                max-width: 350px;
+                padding: 20px 0;
+                img {
+                    max-height: 60px;
+                    max-height: 60px;
+                } 
+            } 
+            nav {
+                @media (max-width: 850px) {
+                    display: none;
+                }
+                .menu-main-menu-container {
+                     >ul{
+                        display: flex;
+                        text-transform: uppercase;
+                        justify-content: space-between;
+                        li {
+                            padding: 10px 10px;
+                            margin-left: 40px;
+                            position: relative;
+                            border-bottom: 2px solid rgba($mainColor, 0);
+                            transition: .3s linear;
+                            white-space: nowrap;
+                            position: relative;
+                            border-radius: 4px;
+                           
+                            &:before {
+                                content: '/';
+                                position: absolute;
+                                right: -20px;
+                            }
+                            &:last-of-type {
+                                &:before {
+                                    content: none;
+                                }
+                            }
+                            @media (max-width: 1050px) {
+                                margin-left: 20px;
+                                &:before {
+                                    right: -10px;
+                                }
+                            }
+                            @media (max-width: 900px) {
+                                padding: 10px 5px;
+                            }
+                            >a {
+                                text-decoration: none;
+                                color: $mainColor;
+                                transition: .3s linear;
+                            }
+                            &.menu-item-has-children {
+                                ul {
+                                    position: absolute;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: visibility 0s, opacity 0.5s linear;
+                                    display: block;
+                                    padding-top: 12px;
+                                    min-width: 165px;
+                                    left: -20px;
+                                    li {
+                                        margin-left: 0;
+                                        background-color: #fff;
+                                        border-radius: 0px;
+                                        &:before {
+                                            content: none;
+                                        }
+                                        &:first-child {
+                                            margin-top: 25px;
+                                        }
+                                        &:last-child {
+                                            border-bottom-left-radius: 4px;
+                                            border-bottom-right-radius: 4px;
+                                        }
+                                        a {
+                                            color: $mainColor;
+                                        }
+                                        &:hover {
+                                            a{
+                                                color: $headersColor;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    ul {
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                a{
+                                    color: $headersColor;
+                                }
+                                
+                                // background-color: rgba($mainColor, .4);
+                            }
+                        }
+                    }
+                }
+            }
+        
     }
 }

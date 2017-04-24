@@ -1,48 +1,51 @@
-$(document).ready(function() {
+$(document).ready(function(){
+ //    menuBackgroundColor();
+	// $(window).scroll(menuBackgroundColor);
     toTheTop();
-    matchHeight();
     $(window).scroll(toTheTop);
-    $(window).on('resize', matchHeight);
 
-    $('header nav ul li').last().addClass('highlight');
+    $(function() {
+        $('nav .menu-main-menu-container>ul').slicknav({
+            label: '',
+            appendTo: 'header .container'
+        });
+    });
 
-    // $(function() {
-    //     $('nav .menu-main-menu-container>ul').slicknav({
-    //         label: '',
-    //         appendTo: 'header .container'
-    //     });
-    // });
-
-    $('ul.tabs li').click(function(){
-        var tab_id = $(this).attr('data-tab');
-
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
-
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
-    })
-    
+    // function menuBackgroundColor() {
+    //     var a = $(window).scrollTop();
+    //     if (a >= 0) {
+    //         if (a < 100) {
+    //             $("header").css({
+    //                 "background": "rgba(255, 255, 255," + a / 100 + ")"
+    //             });
+    //         } else {
+    //             $("header").css({
+    //                 "background": "rgba(255, 255, 255, 1.0)"
+    //             });
+    //         }
+    //     }
+    // }
     function toTheTop() {
         var offset = $(window).scrollTop();
         var windowheight = $(window).height();
         if (offset >= windowheight + 300) {
-            $(".arrow-up").css("display", "block");
-        } else {
-            $(".arrow-up").css("display", "none");
+            $(".arrow-up").css("display","block");
+        }
+        else {
+             $(".arrow-up").css("display","none");
         }
     }
 
-    $('.images--wrapper').slick({
-        dots: true,
-        infinite: true,
-        speed: 2000,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        prevArrow: '<button type="button" class="slick-prev"></button>'
-    });
+    // $('.slides--wrapper').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 2000,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     autoplay: true,
+    //     nextArrow: '<button type="button" class="slick-next"></button>',
+    //     prevArrow: '<button type="button" class="slick-prev"></button>'
+    // });
 
     $('.arrow-up').on('click', function() {
         $('body').animate({
@@ -51,29 +54,29 @@ $(document).ready(function() {
     });
 
     if (getCookie("cookieInfo") == "agreed") {
-        document.getElementById("cookieInfo").style.display = "none";
+      document.getElementById("cookieInfo").style.display = "none";
     }
     var el = document.getElementById("cookieBtn");
     el.addEventListener("click", function() {
-        setCookie("cookieInfo", "agreed", 360);
-        document.getElementById("cookieInfo").style.display = "none";
+      setCookie("cookieInfo", "agreed", 360);
+      document.getElementById("cookieInfo").style.display = "none";
     })
 
 })
 
 
 function setCookie(cookieName, cookieValue, expireDays) {
-    var date = new Date();
-    date.setTime(date.getTime() + (expireDays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + date.toUTCString();
-    document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+  var date = new Date();
+  date.setTime(date.getTime() + (expireDays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + date.toUTCString();
+  document.cookie = cookieName + "=" + cookieValue + "; " + expires;
 }
 
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
+    for(var i = 0; i <ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
@@ -84,16 +87,6 @@ function getCookie(cname) {
     }
     return "";
 }
-
-function matchHeight() {
-    let header_height = $('header').outerHeight();
-    let spacer_height = $('.spacer').height();
-    if (header_height > spacer_height) {
-        $('.spacer').css('height', header_height);
-    } else if (spacer_height > header_height) {
-        $('.spacer').css('height', header_height);
-    }
-};
 
 function initMap() {
 
@@ -245,7 +238,7 @@ function initMap() {
 
     // Create a map object, and include the MapTypeId to add
     // to the map type control.
-    var myLatLng = { lat: 50.0656571, lng: 19.9454651 };
+    var myLatLng = { lat: 50.0576778, lng: 19.9564149 };
     var map = new google.maps.Map(document.getElementById('map'), {
         center: myLatLng,
         zoom: 14,
@@ -260,11 +253,47 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        title: 'ESSO Course on Surgical Geriatric Oncology'
+        title: 'Specjalistyczne Centrum Chirurgii Ogólnej i Onkologicznej'
     });
 
     //Associate the styled map with the MapTypeId and set it to display.
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 
+}
+if ($('body').hasClass('o-mnie')) {
+     $('.certyfikaty').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.certyfikaty--nav'
+    });
+    $('.certyfikaty--nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.certyfikaty',
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 }

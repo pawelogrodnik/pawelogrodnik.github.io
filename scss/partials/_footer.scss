@@ -1,41 +1,87 @@
-footer {
-	width: 100%;
-	min-height: 50px;
-	// padding: 10px 0;
-	background-color: #333;
-	position: relative;
-	.arrow-up {
-		position: absolute;
-		right: 15px;
-		bottom: 20px;
-		color: #fff;
-		transition: .3s linear;
-		i {
-			font-size: 30px;
-		}
-		&:hover {
-			bottom: 25px;
-			cursor: pointer;
-		}
-	}
-	p {
-		color: #fff;
-		padding: 0 30px;
-	}
-	.img-wrapper {
-		max-width: 170px;
-		// max-height: 50px;
-		margin: 10px;
-		background-color: #fff;
-		padding: 5px;
-		border: 1px solid $mainColor;
-		img {
-			max-height: 50px;
-		}
-	}
-	.images-module {
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-	}
-}
+ footer {
+        background-color: $mainColor;
+        width: 100%;
+        min-height: 50px;
+        margin-top: 50px;
+        position: relative;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            @media (max-width: 650px) {
+                flex-direction: column;
+                p {
+                    padding: 10px;
+                    flex-basis: auto;
+                }
+            }
+            p {
+                flex: 0 1 25%;
+                font-size: 16px;
+                line-height: 24px;
+                margin-left: 30px;
+                color: #fff;
+                position: relative;
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: .3s all linear;
+                    &:hover {
+                        color: $headersColor;
+                    }
+                }
+                &.tel {
+                    &:before {
+                        content: '\f095';
+                        position: absolute;
+                        font-family: FontAwesome;
+                        font-size: 20px;
+                        line-height: 24px;
+                        left: -25px;
+                    }
+                }
+                &.email {
+                    &:before {
+                        content: '\f003';
+                        position: absolute;
+                        font-family: FontAwesome;
+                        font-size: 20px;
+                        line-height: 24px;
+                        left: -30px;
+                    }
+                }
+                &.adres {
+                    &:before {
+                        content: '\f041';
+                        position: absolute;
+                        font-family: FontAwesome;
+                        font-size: 20px;
+                        line-height: 24px;
+                        left: -25px;
+                    }
+                }
+            }
+        }
+        .arrow-up {
+            position: fixed;
+            right: 0;
+            bottom: 150px;
+            height: 30px;
+            width: 30px;
+            transition: .1s all linear;
+            i {
+                font-size: 30px;
+                height: 100%;
+                color: $mainColor;
+            }
+            &:hover {
+                bottom: 155px;
+                cursor: pointer;
+            }
+        }
+    }
+    
