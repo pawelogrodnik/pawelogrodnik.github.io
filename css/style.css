@@ -1188,6 +1188,24 @@ section.kontakt {
           transition: .3s all linear; }
           section.kontakt .container .side--left p a:hover {
             color: #e6ce81; }
+        section.kontakt .container .side--left p.tel {
+          font-size: 32px;
+          font-weight: 600; }
+          section.kontakt .container .side--left p.tel a {
+            color: #e6ce81; }
+            section.kontakt .container .side--left p.tel a:hover {
+              text-decoration: underline; }
+          @media (max-width: 700px) {
+            section.kontakt .container .side--left p.tel {
+              font-size: 26px;
+              padding-left: 10px;
+              margin-bottom: 15px; }
+              section.kontakt .container .side--left p.tel:before {
+                font-size: 24px;
+                padding: 0; } }
+          @media (max-width: 700px) {
+            section.kontakt .container .side--left p.tel a {
+              font-size: 24px; } }
     section.kontakt .container .side--right {
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 50%;
@@ -1301,7 +1319,7 @@ section.przebieg-leczenia img {
   max-height: 200px;
   max-width: 600px;
   display: block;
-  border: 2px solid #555555; }
+  border: 1px solid #555555; }
   @media (max-width: 650px) {
     section.przebieg-leczenia img {
       max-width: 100%; } }
@@ -1363,9 +1381,22 @@ section.przebieg-leczenia .images-wrapper {
 
 .main {
   padding: 20px 0; }
-  .main p, .main li, .main a, .main span {
+  .main .headings h3 {
+    text-align: center; }
+  .main a {
+    color: #e6ce81;
+    text-decoration: none; }
+    .main a:hover {
+      text-decoration: underline; }
+  .main p,
+  .main li,
+  .main a,
+  .main span {
     font-weight: 300; }
-    .main p span, .main li span, .main a span, .main span span {
+    .main p span,
+    .main li span,
+    .main a span,
+    .main span span {
       color: #e6ce81; }
   .main p.title {
     font-weight: 500;
@@ -1400,6 +1431,12 @@ section.przebieg-leczenia .images-wrapper {
       max-width: 100%;
       height: auto;
       max-height: 400px; }
+    .main .image-section.flip img {
+      -webkit-transform: scaleX(-1);
+         -moz-transform: scaleX(-1);
+          -ms-transform: scaleX(-1);
+           -o-transform: scaleX(-1);
+              transform: scaleX(-1); }
     .main .image-section.bordered img {
       border-right: 1px solid #555555;
       border-left: 1px solid #555555; }
