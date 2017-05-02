@@ -395,9 +395,9 @@ a.btn--main {
     display: block;
     text-align: center;
     padding: 10px;
-    border-bottom: 2px solid #555555; }
+    border-bottom: 1px solid rgba(85, 85, 85, 0.5); }
     .slicknav_nav li:first-child {
-      border-top: 2px solid #555555; }
+      border-top: 1px solid rgba(85, 85, 85, 0.5); }
     .slicknav_nav li.menu-item-has-children.slicknav_open {
       padding-bottom: 0;
       padding: 10px 0 0;

@@ -81,9 +81,9 @@
             display: block;
             text-align: center;
             padding: 10px;
-            border-bottom: 2px solid $mainColor;
+            border-bottom: 1px solid rgba($mainColor, 0.5);
             &:first-child {
-                border-top: 2px solid $mainColor;
+                border-top: 1px solid rgba($mainColor, 0.5);
             }
             &.menu-item-has-children.slicknav_open {
                 padding-bottom: 0;
