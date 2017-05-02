@@ -99,7 +99,7 @@
                  }
              }
              a {
-                 margin-top: 30px;
+                 margin-top: 20px;
                  @media (max-width: 700px) {
                     padding: 15px 30px;
                     font-size: 18px;
@@ -142,12 +142,13 @@
          }
          a {
              font-size: 24px;
-             padding: 20px 30px;
+             // padding: 20px 30px;
              border: 2px solid $mainColor;
              text-decoration: none;
              text-transform: uppercase;
              transition: .3s all;
              color: $mainColor;
+             padding: 10px 20px;
              &:hover {
                  background-color: $mainColor;
                  color: #fff;
@@ -200,10 +201,11 @@
      
      section.knowledge {
          // min-height: 350px;
-         background-image: url('../img/knowledge.jpg');
+         background-image: url('../img/glowna/smile-cube.jpg');
          background-repeat: no-repeat;
          background-position: center;
-         background-size: cover;
+         background-size: contain;
+         background-color: #fff;
          position: relative;
          width: 100%;
          .mask {
@@ -249,6 +251,7 @@
                  text-decoration: none;
                  text-transform: uppercase;
                  transition: .3s all;
+
                  // background-color: rgba($mainColor, 0.4);
                  color: #fff;
                  &:hover {

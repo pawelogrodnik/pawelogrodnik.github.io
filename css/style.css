@@ -202,7 +202,8 @@ p {
   background-color: #292935;
   position: fixed;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
   .cookie__wrapper .cookie__container {
     max-width: 1170px;
     padding: 0 15px;
@@ -735,7 +736,7 @@ footer {
           font-size: 40px;
           margin: 15px 0; } }
     .slider--text a {
-      margin-top: 30px; }
+      margin-top: 20px; }
       @media (max-width: 700px) {
         .slider--text a {
           padding: 15px 30px;
@@ -773,7 +774,6 @@ section.features {
     margin-bottom: 60px; }
   section.features a {
     font-size: 24px;
-    padding: 20px 30px;
     border: 2px solid #555555;
     text-decoration: none;
     text-transform: uppercase;
@@ -781,7 +781,8 @@ section.features {
     -o-transition: .3s all;
     -moz-transition: .3s all;
     transition: .3s all;
-    color: #555555; }
+    color: #555555;
+    padding: 10px 20px; }
     section.features a:hover {
       background-color: #555555;
       color: #fff; }
@@ -845,12 +846,13 @@ section.features {
           padding: 25px 0; } }
 
 section.knowledge {
-  background-image: url("../img/knowledge.jpg");
+  background-image: url("../img/glowna/smile-cube.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  -moz-background-size: cover;
-    -o-background-size: cover;
-       background-size: cover;
+  -moz-background-size: contain;
+    -o-background-size: contain;
+       background-size: contain;
+  background-color: #fff;
   position: relative;
   width: 100%; }
   section.knowledge .mask {
@@ -1263,8 +1265,12 @@ section.cennik {
     color: #555555;
     margin-top: 40px; }
     section.cennik h3 span {
-      font-size: 20px;
-      line-height: 30px; }
+      font-size: 16px;
+      line-height: 24px; }
+      @media (max-width: 500px) {
+        section.cennik h3 span {
+          font-size: 14px;
+          line-height: 20px; } }
   section.cennik .cennik--wiersz {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1340,6 +1346,8 @@ section.przebieg-leczenia .images-wrapper {
     border: none; }
   section.przebieg-leczenia .images-wrapper .img-left {
     margin-right: 10px; }
+  section.przebieg-leczenia .images-wrapper .first {
+    margin-right: 10px; }
 
 .hero-banner {
   min-height: 350px;
@@ -1363,7 +1371,8 @@ section.przebieg-leczenia .images-wrapper {
             transform: translateY(-50%);
     width: 100%; }
     .hero-banner .content-wrapper h2 {
-      margin: 10px 0; }
+      margin: 10px 0;
+      line-height: 1.1em; }
   @media (max-width: 700px) {
     .hero-banner .content-wrapper {
       padding: 15px; } }
@@ -1383,6 +1392,8 @@ section.przebieg-leczenia .images-wrapper {
   padding: 20px 0; }
   .main .headings h3 {
     text-align: center; }
+  .main h3.subtitle {
+    color: #555555; }
   .main a {
     color: #e6ce81;
     text-decoration: none; }
@@ -1401,6 +1412,9 @@ section.przebieg-leczenia .images-wrapper {
   .main p.title {
     font-weight: 500;
     margin-top: 30px; }
+  .main p.underline {
+    text-decoration: underline;
+    margin-top: 15px; }
   .main h3 {
     text-align: left;
     margin-top: 40px; }
@@ -1422,15 +1436,20 @@ section.przebieg-leczenia .images-wrapper {
         font-size: 18px;
         line-height: 24px; } }
   .main .image-section {
-    border-top: 1px solid #555555;
-    border-bottom: 1px solid #555555;
-    background-color: #fff;
     text-align: center;
-    margin-top: 30px; }
+    margin-top: 30px;
+    position: relative; }
     .main .image-section img {
       max-width: 100%;
       height: auto;
-      max-height: 400px; }
+      max-height: 400px;
+      border: 1px solid rgba(85, 85, 85, 0.5);
+      z-index: 99;
+      position: relative;
+      max-width: 450px; }
+      @media (max-width: 460px) {
+        .main .image-section img {
+          max-width: 100%; } }
     .main .image-section.flip img {
       -webkit-transform: scaleX(-1);
          -moz-transform: scaleX(-1);
@@ -1440,6 +1459,13 @@ section.przebieg-leczenia .images-wrapper {
     .main .image-section.bordered img {
       border-right: 1px solid #555555;
       border-left: 1px solid #555555; }
+    .main .image-section:before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      width: 100%;
+      border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+      left: 0; }
 
 .about p, .about li, .about a {
   font-weight: 300; }
@@ -1488,3 +1514,24 @@ section.przebieg-leczenia .images-wrapper {
     .about ul li {
       font-size: 18px;
       line-height: 24px; } }
+
+.about .certyfikaty {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  padding: 25px 0; }
+  .about .certyfikaty img {
+    max-width: 200px;
+    height: 150px;
+    margin: 5px; }
