@@ -846,12 +846,12 @@ section.features {
           padding: 25px 0; } }
 
 section.knowledge {
-  background-image: url("../img/glowna/smile-cube.jpg");
+  background-image: url("../img/glowna/knowledge.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  -moz-background-size: contain;
-    -o-background-size: contain;
-       background-size: contain;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   background-color: #fff;
   position: relative;
   width: 100%; }
