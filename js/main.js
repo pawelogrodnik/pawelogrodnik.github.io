@@ -36,16 +36,16 @@ $(document).ready(function(){
         }
     }
 
-    // $('.slides--wrapper').slick({
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 2000,
-    //     fade: true,
-    //     cssEase: 'linear',
-    //     autoplay: true,
-    //     nextArrow: '<button type="button" class="slick-next"></button>',
-    //     prevArrow: '<button type="button" class="slick-prev"></button>'
-    // });
+    $('.quotes-wrapper').slick({
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        // fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        prevArrow: '<button type="button" class="slick-prev"></button>'
+    });
 
     $('.arrow-up').on('click', function() {
         $('body').animate({
