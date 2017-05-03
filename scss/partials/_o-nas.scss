@@ -27,6 +27,12 @@
 				width: 90px;
 			}
 		}
+		p {
+			span {
+				color: $mainColor;
+				font-weight: 500;
+			}
+		}
 	}
 	p {
 		&.title {

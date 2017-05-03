@@ -1191,18 +1191,20 @@ section.kontakt {
       section.kontakt .container .side--left h2 {
         position: relative;
         text-align: left; }
-        section.kontakt .container .side--left h2:before {
+      section.kontakt .container .side--left h3 {
+        text-align: left;
+        position: relative; }
+        section.kontakt .container .side--left h3 i {
+          margin-right: 10px;
+          color: #555555; }
+        section.kontakt .container .side--left h3:before {
           position: absolute;
           content: '';
           left: 0;
-          bottom: -15px;
-          width: 90px;
+          bottom: -10px;
+          width: 60px;
           height: 2px;
           border-bottom: 2px solid #555555; }
-      section.kontakt .container .side--left h3 {
-        text-align: left; }
-        section.kontakt .container .side--left h3 i {
-          margin-right: 10px; }
       section.kontakt .container .side--left p {
         font-size: 20px; }
         section.kontakt .container .side--left p a {
@@ -1242,14 +1244,6 @@ section.kontakt {
       section.kontakt .container .side--right h2 {
         text-align: left;
         position: relative; }
-        section.kontakt .container .side--right h2:before {
-          position: absolute;
-          content: '';
-          left: 0;
-          bottom: -15px;
-          width: 90px;
-          height: 2px;
-          border-bottom: 2px solid #555555; }
     @media (max-width: 600px) {
       section.kontakt .container {
         -webkit-box-orient: vertical;
@@ -1512,6 +1506,10 @@ section.przebieg-leczenia .images-wrapper {
 
 .about .intro h3:before {
   width: 90px; }
+
+.about .intro p span {
+  color: #555555;
+  font-weight: 500; }
 
 .about p.title {
   font-weight: 500;

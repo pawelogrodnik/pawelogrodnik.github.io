@@ -9,20 +9,22 @@
                   h2 {
                       position: relative;
                       text-align: left;
+                  }
+                  h3 {
+                      text-align: left;
+                      position: relative;
+                      i {
+                          margin-right: 10px;
+                          color: $mainColor;
+                      }
                       &:before {
                           position: absolute;
                           content: '';
                           left: 0;
-                          bottom: -15px;
-                          width: 90px;
+                          bottom: -10px;
+                          width: 60px;
                           height: 2px;
                           border-bottom: 2px solid $mainColor;
-                      }
-                  }
-                  h3 {
-                      text-align: left;
-                      i {
-                          margin-right: 10px;
                       }
                   }
                   p {
@@ -39,10 +41,10 @@
                           font-size: 32px;
                           font-weight: 600;
                           a {
-                            color: $headersColor;
-                            &:hover {
-                                text-decoration: underline;
-                            }
+                              color: $headersColor;
+                              &:hover {
+                                  text-decoration: underline;
+                              }
                           }
                           @media (max-width: 700px) {
                               font-size: 26px;
@@ -67,15 +69,15 @@
                   h2 {
                       text-align: left;
                       position: relative;
-                      &:before {
-                          position: absolute;
-                          content: '';
-                          left: 0;
-                          bottom: -15px;
-                          width: 90px;
-                          height: 2px;
-                          border-bottom: 2px solid $mainColor;
-                      }
+                      // &:before {
+                      //     position: absolute;
+                      //     content: '';
+                      //     left: 0;
+                      //     bottom: -15px;
+                      //     width: 90px;
+                      //     height: 2px;
+                      //     border-bottom: 2px solid $mainColor;
+                      // }
                   }
               }
           }
