@@ -1,0 +1,9 @@
+$grey: #a9a9a9;
+$greyLight: #f5f5f5;
+$gold: #f7ce3e;
+$black: #333;
+$fontColor: #a1a1a1;
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}

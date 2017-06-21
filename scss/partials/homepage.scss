@@ -1,0 +1,177 @@
+.banner-top {
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 1450px) {
+        background-size: cover;
+        br {
+            display: none;
+        }
+    }
+    &__figure {
+        position: absolute;
+        width: 65%;
+        margin-left: -5%;
+        height: 100%;
+        background-color: rgba($greyLight, 0.9);
+        transform: skewX(-15deg);
+        @media (max-width: 550px) {
+            width: 75%;
+            margin-left: -10%;
+        }
+    }
+    .container {
+        position: relative;
+        height: 600px;
+    }
+    &__inner-text {
+        position: absolute;
+        padding: 0 10px;
+        top: 50%;
+        max-width: 58%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    h1,
+    h3 {
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+    h1 {
+        @media (max-width: 600px) {
+            font-size: 40px;
+        }
+        @media (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 992px) {
+        height: 500px;
+        .container {
+            height: 500px;
+        }
+    }
+    @media (max-width: 850px) {
+        height: 400px;
+        .container {
+            height: 400px;
+        }
+    }
+}
+
+.features {
+    padding: 50px 0;
+    &--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+    &--single {
+        padding: 0 20px;
+        width: 33%;
+        margin-bottom: 50px;
+        text-align: center;
+        @media (max-width: 991px) {
+            width: 50%;
+        }
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+        &__num {
+            text-align: center;
+            font-size: 30px;
+            color: $black;
+            width: 35px;
+            // height: 35px;
+            // border-radius: 50%;
+            // border: 1px solid $gold;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $gold;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-weight: bold;
+            margin: 10px 0 20px;
+            // min-height: 40px;
+        }
+    }
+}
+
+.slides {
+    padding: 50px 0;
+    background-color: #fff;
+    .slides {
+        &--single {
+            position: relative;
+            margin: 0 auto;
+            width: 33%;
+            padding: 20px 0;
+            height: 350px;
+            &__img {
+                @media (max-width: 1400px) {
+                    padding-top: 40px;
+                }
+            }
+            @media (max-width: 1400px) {
+                height: 300px;
+            }
+            @media (max-width: 1100px) {
+                height: 250px;
+            }
+            @media (max-width: 650px) {
+                height: 350px;
+                &__img {
+                    padding-top: 0;
+                }
+            }
+            @media (max-width: 550px) {
+                height: 300px;
+                &__img {
+                    padding-top: 40px;
+                }
+            }
+            h4 {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px 0;
+                min-height: 40px;
+                background-color: rgba($black, 0.7);
+                opacity: 0;
+                transition: .4s linear opacity;
+                border-radius: 3px;
+                color: #fff;
+            }
+            &.slick-center {
+                h4 {
+                    opacity: 1;
+                }
+            }
+        }
+        &--wrapper {
+            padding: 50px 5px;
+        }
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+        a {
+            margin-top: 25px;
+        }
+    }
+}
+
+.homepage {}
