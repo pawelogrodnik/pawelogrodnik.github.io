@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
 $('.nav-btn').click(function() {
     $(this).toggleClass('active');
     $('header nav, header .tel').toggleClass('open');
