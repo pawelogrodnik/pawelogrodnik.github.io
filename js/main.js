@@ -3,7 +3,7 @@ $(window).on('load', function() {
     $(".se-pre-con").fadeOut("slow");;
 });
 $('.nav-btn').click(function() {
-    $(this).toggleClass('active');
+    $(this).stop().toggleClass('active');
     $('header nav, header .tel').toggleClass('open');
     $('header').toggleClass('shadow');
     $('header .logo__wrapper').toggleClass('logo-white');

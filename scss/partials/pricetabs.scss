@@ -1,0 +1,220 @@
+.cennik {
+    padding: 70px 0;
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+    h1 {
+        padding: 0 15px;
+        margin-bottom: 40px;
+    }
+    >.container {
+        display: flex;
+        justify-content: center;
+        .pricetab,
+        .pricetabmid {
+            // width: 25%;
+            max-width: 280px;
+            margin: 15px 5px;
+            transition: .3s linear transform;
+            padding: 20px 0 50px;
+            position: relative;
+        }
+        .pricetab {
+            min-width: 220px;
+            background: linear-gradient(to bottom, $grey, $black);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+        }
+        .pricetabmid {
+            min-width: 220px;
+            background: linear-gradient( #F9B84A, #ff9547);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+            position: relative;
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        .priceheader {
+            width: 100%;
+            height: 60px;
+            background-image: linear-gradient(to bottom, $grey, $black);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
+        }
+        .infos {
+            padding: 20px 15px;
+            h4 {
+                margin-bottom: 15px;
+                line-height: 1.3em;
+            }
+        }
+        .pricefooter,
+        .pricefootermid {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .pricefooter {
+            background: #333;
+        }
+        .pricefootermid {
+            background: #fe9040;
+        }
+        .title {
+            color: #fff;
+            font-size: 38px;
+            font-weight: normal;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 5px rgba(0, 0, 5, 0.2);
+            margin: auto;
+        }
+        h2 {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            line-height: 1.2;
+            span {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        h3 {
+            text-align: center;
+            font-size: 42px;
+            color: #fff;
+        }
+        sub {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            color: #fff;
+            line-height: 1;
+        }
+        .button a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 3;
+        }
+        .buttonmid a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 3;
+        }
+        /* Buttons */
+        .button {
+            width: 50%;
+            height: 50px;
+            margin: 0 auto 0 auto;
+            background: #ff9547;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+        }
+        .buttonmid {
+            width: 50%;
+            height: 50px;
+            margin: 0 auto 0 auto;
+            background: #333;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+        }
+        .button,
+        .buttonmid {
+            width: 100%;
+        }
+        .price,
+        .pricemid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid;
+            width: 80%;
+            // height: 120px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 30px 0;
+            h3 {
+                font-size: 30px;
+            }
+        }
+        .price {
+            border-color: #ff9547;
+        }
+        .pricemid {
+            border-color: #444;
+        }
+        .button,
+        .buttonmid {
+            a {
+                text-transform: uppercase;
+                line-height: 50px;
+            }
+        }
+        @media (max-width: 730px) {
+            flex-direction: column;
+            .pricetab,
+            .pricetabmid {
+                width: auto;
+                max-width: 320px;
+                margin: 15px auto 5px;
+            }
+            .pricetab {
+                order: 2;
+            }
+            .pricetabmid {
+                order: 1;
+                transform: scale(1);
+            }
+        }
+        &+.container {
+            display: block;
+            &.cennik--rest {
+                padding: 50px 15px;
+                max-width: 700px;
+                h3 {
+                    color: $gold;
+                    line-height: 1.05em;
+                    span {
+                        color: $fontColor;
+                        font-size: 20px;
+                    }
+                }
+                .cennik {
+                    &--wrapper {
+                        padding: 20px 0;
+                    }
+                    &--wiersz {
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: rgba($grey, .2);
+                    }
+                    &--cena,
+                    &--opis {
+                        border: 1px solid #fff;
+                        padding: 10px;
+                    }
+                    &--opis {
+                        width: 70%;
+                    }
+                    &--cena {
+                        width: 30%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
