@@ -182,6 +182,7 @@ header {
                             text-decoration: none;
                             overflow: hidden;
                             transition: 300ms ease-in-out;
+                            line-height: 60px;
                             &:hover {
                                 color: $gold;
                             }
