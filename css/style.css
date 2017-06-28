@@ -375,6 +375,18 @@ header > .container .logo__wrapper {
   width: 170px;
 }
 
+@media (max-width: 450px) {
+  header > .container .logo__wrapper {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 350px) {
+  header > .container .logo__wrapper {
+    max-width: 120px;
+  }
+}
+
 header > .container .logo__wrapper .logo {
   position: absolute;
   height: 100%;
@@ -384,7 +396,7 @@ header > .container .logo__wrapper .logo {
   transition: .3s linear opacity;
 }
 
-header > .container .logo__wrapper .logo.first {
+header > .container .logo__wrapper .logo.main {
   opacity: 1;
 }
 
@@ -392,7 +404,7 @@ header > .container .logo__wrapper .logo.second {
   opacity: 0;
 }
 
-header > .container .logo__wrapper.logo-white .logo.first {
+header > .container .logo__wrapper.logo-white .logo.main {
   opacity: 0;
 }
 
@@ -422,6 +434,15 @@ header > .container .tel a {
 header > .container .tel a i {
   font-size: 40px;
   line-height: 24px;
+}
+
+@media (max-width: 425px) {
+  header > .container .tel a {
+    font-size: 1.25em;
+  }
+  header > .container .tel a i {
+    font-size: 30px;
+  }
 }
 
 header > .container .tel a:hover i {
@@ -578,7 +599,7 @@ header > .container nav > div {
 
 header > .container nav > div > ul {
   list-style: none;
-  padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
   display: inline-block;
   position: absolute;
@@ -610,6 +631,12 @@ header > .container nav > div > ul li a {
 
 header > .container nav > div > ul li a:hover {
   color: #DAA520;
+}
+
+@media (max-width: 450px) {
+  header > .container nav > div > ul li a {
+    font-size: 25px;
+  }
 }
 
 header > .container nav > div > ul li.menu-item-has-children ul li a {
