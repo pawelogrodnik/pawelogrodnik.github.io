@@ -4,6 +4,7 @@
       font-family: 'Lato', sans-serif;
       overflow-x: hidden;
       background-color: #F7F7F7;
+      //   background-color: rgba(169, 169, 169, .4);
       letter-spacing: -0.25px;
       .page-container-wrapper {
           margin-top: 80px;
@@ -47,6 +48,9 @@
   h2 {
       font-size: em(40);
       color: rgba($black, .7);
+      @media (max-width: 450px) {
+          font-size: em(30);
+      }
   }
   
   h3 {
@@ -102,7 +106,7 @@
       width: 100%;
       height: 100%;
       z-index: 9999;
-      background: url('../../img/loader.gif') center no-repeat #fff;
+      background: url('../../img/ring-alt.svg') center no-repeat #fff;
   }
   
   //FORM RESET
