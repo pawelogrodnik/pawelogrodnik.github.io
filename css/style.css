@@ -1333,7 +1333,7 @@ footer .copy p a:hover {
 
 .txt h1 {
   margin-bottom: 40px;
-  background-color: #333;
+  background-color: rgba(218, 165, 32, 0.6);
   color: #fff;
   padding: 40px 10px;
 }
@@ -1524,6 +1524,78 @@ footer .copy p a:hover {
   font-size: 18px;
   left: 0;
   color: #a1a1a1;
+}
+
+.txt .guide--wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.txt .guide--wrapper.no-border .guide--single {
+  border-bottom: none;
+}
+
+@media (max-width: 550px) {
+  .txt .guide--wrapper.no-border .guide--single:not(:last-of-type) {
+    border-bottom: 1px solid #DAA520;
+  }
+}
+
+.txt .guide--single {
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.txt .guide--single:nth-child(odd) {
+  border-right: 1px solid #DAA520;
+}
+
+@media (max-width: 550px) {
+  .txt .guide--single:nth-child(odd) {
+    border-right: none;
+  }
+}
+
+.txt .guide--single:nth-child(1), .txt .guide--single:nth-child(2) {
+  border-bottom: 1px solid #DAA520;
+}
+
+.txt .guide--single__img {
+  margin: 10px 0;
+}
+
+.txt .guide--single__img img {
+  border: 1px solid rgba(85, 85, 85, 0.5);
+}
+
+@media (max-width: 550px) {
+  .txt .guide--single {
+    width: 100%;
+    border-bottom: 1px solid #DAA520;
+    border-right: 0px;
+  }
+  .txt .guide--single:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.szczotkowanie h3,
+.szczotkowanie p {
+  text-align: center;
 }
 
 .cennik {

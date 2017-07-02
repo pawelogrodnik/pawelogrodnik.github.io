@@ -267,7 +267,7 @@
     }
     h1 {
         margin-bottom: 40px;
-        background-color: $black;
+        background-color: rgba($gold, .6);
         color: #fff;
         padding: 40px 10px;
         @media (max-width: 450px) {
@@ -406,6 +406,63 @@
                 color: $fontColor;
             }
         }
+    }
+    .guide {
+        &--wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            // align-items: center;
+            max-width: 800px;
+            margin: 50px auto;
+            &.no-border {
+                .guide--single {
+                    border-bottom: none;
+                    @media (max-width: 550px) {
+                        &:not(:last-of-type) {
+                            border-bottom: 1px solid $gold;
+                        }
+                    }
+                }
+            }
+        }
+        &--single {
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+            &:nth-child(odd) {
+                border-right: 1px solid $gold;
+                @media (max-width: 550px) {
+                    border-right: none;
+                }
+            }
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-bottom: 1px solid $gold;
+            }
+            &__img {
+                margin: 10px 0;
+                img {
+                    border: 1px solid rgba(85, 85, 85, 0.5);
+                }
+            }
+            &__opis {}
+            @media (max-width: 550px) {
+                width: 100%;
+                border-bottom: 1px solid $gold;
+                border-right: 0px;
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+.szczotkowanie {
+    h3,
+    p {
+        text-align: center;
     }
 }
 
