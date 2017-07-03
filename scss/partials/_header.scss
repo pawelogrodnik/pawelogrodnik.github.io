@@ -132,10 +132,11 @@ header {
             opacity: 0;
             visibility: hidden;
             transition: opacity .35s, visibility .35s, height .35s;
-            overflow: hidden;
+            // overflow: hidden;
+            overflow: auto;
             max-width: 100%;
             &.open {
-                opacity: .95;
+                opacity: 1;
                 visibility: visible;
                 height: 100%;
                 li {
@@ -188,6 +189,7 @@ header {
                             }
                             @media (max-width: 450px) {
                                 font-size: 25px;
+                                line-height: 40px;
                             }
                         }
                         &.menu-item-has-children {
@@ -203,6 +205,13 @@ header {
                                             content: '\f141';
                                             font-size: 30px;
                                         }
+                                        @media (max-width: 450px) {
+                                            padding-left: 30px;
+                                            &:before {
+                                                left: 5px;
+                                                font-size: 15px;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -216,6 +225,7 @@ header {
                     >ul {
                         >li {
                             a {
+                                line-height: 50px;
                                 display: block;
                             }
                         }
