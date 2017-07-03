@@ -1078,6 +1078,15 @@ footer .copy p a:hover {
   }
 }
 
+@media (max-width: 650px) {
+  .banner-top {
+    height: 300px;
+  }
+  .banner-top .container {
+    height: 300px;
+  }
+}
+
 .features {
   padding: 50px 0;
 }
