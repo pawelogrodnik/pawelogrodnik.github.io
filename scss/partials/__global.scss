@@ -3,8 +3,9 @@
       //   font-family: 'Roboto', sans-serif;
       font-family: 'Lato', sans-serif;
       overflow-x: hidden;
-      background-color: #F7F7F7;
+      //   background-color: $bgColor;
       //   background-color: rgba(169, 169, 169, .4);
+      background-color: rgba($grey, 0.4);
       letter-spacing: -0.25px;
       .page-container-wrapper {
           margin-top: 80px;

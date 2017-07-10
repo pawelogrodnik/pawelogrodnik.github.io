@@ -6,6 +6,7 @@ $greyLight: #f5f5f5;
 $gold: #DAA520;
 $black: #333;
 $fontColor: #a1a1a1;
+$bgColor: #F7F7F7;
 $browser-context: 16; // Default
 @function em($pixels, $context: $browser-context) {
     @return #{$pixels/$context}em;

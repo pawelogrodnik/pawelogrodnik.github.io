@@ -172,7 +172,7 @@ body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
-  background-color: #F7F7F7;
+  background-color: rgba(169, 169, 169, 0.4);
   letter-spacing: -0.25px;
 }
 
@@ -1352,6 +1352,16 @@ footer .copy p a:hover {
   margin-bottom: 10px;
 }
 
+.txt p strong {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.txt a {
+  font-weight: 600;
+  color: #333;
+}
+
 .txt h1 {
   margin-bottom: 40px;
   background-color: rgba(218, 165, 32, 0.6);
@@ -2168,13 +2178,53 @@ footer .copy p a:hover {
   margin: 5px;
 }
 
+.wady--wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.wady--single {
+  text-align: center;
+  width: 30%;
+}
+
+.wady--single__img img {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.wady--single__opis {
+  margin-top: 12px;
+  border: 1px solid black;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.wady--single__opis h4 {
+  margin: 0;
+}
+
 .cennik {
   padding: 70px 0;
+  max-width: 1200px;
+  padding: 70px 15px;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
   .cennik {
-    padding: 40px 0;
+    padding: 40px 15px;
   }
 }
 
@@ -2183,7 +2233,12 @@ footer .copy p a:hover {
 }
 
 .cennik h3 {
-  margin-bottom: 40px;
+  margin: 20px 0 40px;
+}
+
+.cennik h3.spec {
+  margin: 40px 0;
+  color: #DAA520;
 }
 
 .cennik > .container {
@@ -2502,7 +2557,7 @@ footer .copy p a:hover {
 }
 
 .cennik > .container + .container.cennik--rest .cennik--cena, .cennik > .container + .container.cennik--rest .cennik--opis {
-  border: 1px solid #fff;
+  border: 1px solid #F7F7F7;
   padding: 10px;
 }
 
