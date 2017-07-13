@@ -57,11 +57,12 @@ header {
             a {
                 text-decoration: none;
                 font-size: em(24);
-                color: $grey;
+                color: #333;
                 transition: .5s color linear;
                 i {
                     font-size: 40px;
                     line-height: 24px;
+                    color: $grey;
                 }
                 @media (max-width: 425px) {
                     font-size: em(20);

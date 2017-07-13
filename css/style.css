@@ -430,7 +430,7 @@ header > .container .tel {
 header > .container .tel a {
   text-decoration: none;
   font-size: 1.5em;
-  color: #a9a9a9;
+  color: #333;
   -webkit-transition: .5s color linear;
   -o-transition: .5s color linear;
   -moz-transition: .5s color linear;
@@ -440,6 +440,7 @@ header > .container .tel a {
 header > .container .tel a i {
   font-size: 40px;
   line-height: 24px;
+  color: #a9a9a9;
 }
 
 @media (max-width: 425px) {
@@ -990,12 +991,6 @@ footer .copy p a:hover {
   overflow: hidden;
 }
 
-@media (max-width: 1450px) {
-  .banner-top br {
-    display: none;
-  }
-}
-
 @media (max-width: 550px) {
   .banner-top {
     -moz-background-size: cover;
@@ -1049,6 +1044,12 @@ footer .copy p a:hover {
           transform: translateY(-50%);
 }
 
+@media (min-width: 550px) and (max-width: 625px) {
+  .banner-top__inner-text {
+    width: 49%;
+  }
+}
+
 .banner-top h1,
 .banner-top h3 {
   text-align: left;
@@ -1060,6 +1061,7 @@ footer .copy p a:hover {
 .banner-top h2 {
   text-align: left;
   font-size: 24px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
@@ -1070,7 +1072,7 @@ footer .copy p a:hover {
 
 @media (max-width: 500px) {
   .banner-top h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1087,7 +1089,7 @@ footer .copy p a:hover {
 
 @media (max-width: 500px) {
   .banner-top h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -2385,6 +2387,10 @@ footer .copy p a:hover {
 .banner-top ul li {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
+}
+
+.features h4 {
+  color: #F1B82D;
 }
 
 .cennik {
