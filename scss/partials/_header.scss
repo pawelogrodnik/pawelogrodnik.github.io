@@ -4,7 +4,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 99999;
     background-color: #fff;
     &.shadow {
         box-shadow: 0px 3px 5px 0px rgba(145, 145, 145, 1);
@@ -41,12 +41,12 @@ header {
             }
             &.logo-white {
                 .logo {
-                    &.main {
-                        opacity: 0;
-                    }
-                    &.second {
-                        opacity: 1;
-                    }
+                    // &.main {
+                    //     opacity: 0;
+                    // }
+                    // &.second {
+                    //     opacity: 1;
+                    // }
                 }
             }
         }
@@ -63,7 +63,7 @@ header {
                 i {
                     font-size: 40px;
                     line-height: 24px;
-                    color: $grey;
+                    color: #333;
                     transition: .5s color linear;
                 }
                 @media (max-width: 425px) {
@@ -82,9 +82,9 @@ header {
             }
             &.open {
                 a {
-                    color: #fff;
+                    // color: #fff;
                     i {
-                        color: #fff;
+                        // color: #fff;
                     }
                 }
             }
@@ -99,15 +99,15 @@ header {
             &.active {
                 .top {
                     transform: translateY(11px) translateX(0) rotate(45deg);
-                    background: #fff;
+                    // background: #fff;
                 }
                 .middle {
                     opacity: 0;
-                    background: #fff;
+                    // background: #fff;
                 }
                 .bottom {
                     transform: translateY(-11px) translateX(0) rotate(-45deg);
-                    background: #fff;
+                    // background: #fff;
                 }
             }
             span {
@@ -144,7 +144,8 @@ header {
             &.open {
                 opacity: 1;
                 visibility: visible;
-                height: 100%;
+                height: calc(100% - 80px);
+                margin-top: 80px;
                 li {
                     animation: fadeInRight .5s ease forwards;
                     animation-delay: .35s;
@@ -164,9 +165,10 @@ header {
             }
             >div {
                 position: relative;
-                height: 70%;
-                top: 50%;
-                transform: translateY(-50%);
+                height: 100%;
+                padding: 30px 0;
+                // top: 50%;
+                // transform: translateY(-50%);
                 font-weight: 300;
                 font-size: 40px;
                 line-height: 45px;
@@ -191,15 +193,14 @@ header {
                             text-decoration: none;
                             overflow: hidden;
                             transition: 300ms ease-in-out;
-                            // line-height: 60px;
                             font-size: 40px;
-                            line-height: 50px;
+                            line-height: 45px;
                             &:hover {
                                 color: $gold;
                             }
                             @media (max-width: 450px) {
-                                font-size: 25px;
-                                line-height: 40px;
+                                font-size: 25px !important;
+                                line-height: 35px !important;
                             }
                         }
                         &.menu-item-has-children {

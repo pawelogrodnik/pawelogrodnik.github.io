@@ -342,7 +342,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 99999;
   background-color: #fff;
 }
 
@@ -410,14 +410,6 @@ header > .container .logo__wrapper .logo.second {
   opacity: 0;
 }
 
-header > .container .logo__wrapper.logo-white .logo.main {
-  opacity: 0;
-}
-
-header > .container .logo__wrapper.logo-white .logo.second {
-  opacity: 1;
-}
-
 header > .container .tel {
   position: relative;
   z-index: 99;
@@ -441,7 +433,7 @@ header > .container .tel a {
 header > .container .tel a i {
   font-size: 40px;
   line-height: 24px;
-  color: #a9a9a9;
+  color: #333;
   -webkit-transition: .5s color linear;
   -o-transition: .5s color linear;
   -moz-transition: .5s color linear;
@@ -473,14 +465,6 @@ header > .container .tel a:hover i {
           transform-origin: 50% 50%;
 }
 
-header > .container .tel.open a {
-  color: #fff;
-}
-
-header > .container .tel.open a i {
-  color: #fff;
-}
-
 header > .container .nav-btn {
   position: relative;
   height: 27px;
@@ -497,12 +481,10 @@ header > .container .nav-btn.active .top {
       -ms-transform: translateY(11px) translateX(0) rotate(45deg);
        -o-transform: translateY(11px) translateX(0) rotate(45deg);
           transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #fff;
 }
 
 header > .container .nav-btn.active .middle {
   opacity: 0;
-  background: #fff;
 }
 
 header > .container .nav-btn.active .bottom {
@@ -511,7 +493,6 @@ header > .container .nav-btn.active .bottom {
       -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
        -o-transform: translateY(-11px) translateX(0) rotate(-45deg);
           transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #fff;
 }
 
 header > .container .nav-btn span {
@@ -557,7 +538,10 @@ header > .container nav {
 header > .container nav.open {
   opacity: 1;
   visibility: visible;
-  height: 100%;
+  height: -webkit-calc(100% - 80px);
+  height: -moz-calc(100% - 80px);
+  height: calc(100% - 80px);
+  margin-top: 80px;
 }
 
 header > .container nav.open li {
@@ -601,13 +585,8 @@ header > .container nav.open li:nth-of-type(5) {
 
 header > .container nav > div {
   position: relative;
-  height: 70%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-     -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
+  height: 100%;
+  padding: 30px 0;
   font-weight: 300;
   font-size: 40px;
   line-height: 45px;
@@ -645,7 +624,7 @@ header > .container nav > div > ul li a {
   -moz-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 45px;
 }
 
 header > .container nav > div > ul li a:hover {
@@ -654,8 +633,8 @@ header > .container nav > div > ul li a:hover {
 
 @media (max-width: 450px) {
   header > .container nav > div > ul li a {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 25px !important;
+    line-height: 35px !important;
   }
 }
 
@@ -1705,6 +1684,23 @@ footer .copy p a:hover {
   padding: 0 0 50px 0;
 }
 
+@media (max-width: 600px) {
+  .about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .about h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 601px) {
+  .about br {
+    display: none;
+  }
+}
+
 #cd-timeline {
   position: relative;
   padding: 2em 0;
@@ -2476,11 +2472,69 @@ footer .copy p a:hover {
 }
 
 .cennik h3.spec {
-  margin: 40px 0;
+  margin: 40px 0 10px;
   color: #F1B82D;
 }
 
-.cennik > .container {
+.cennik .container:not(.pricetabs) {
+  display: block;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest {
+  padding: 30px 15px;
+  max-width: 700px;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest h3 {
+  color: #F1B82D;
+  line-height: 1.05em;
+  margin-bottom: 5px;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest h3 span {
+  color: #a1a1a1;
+  font-size: 20px;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest h4 {
+  color: #a1a1a1;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest .cennik--wrapper {
+  padding: 20px 0;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest .cennik--wiersz {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(169, 169, 169, 0.2);
+}
+
+.cennik .container:not(.pricetabs).cennik--rest .cennik--cena, .cennik .container:not(.pricetabs).cennik--rest .cennik--opis {
+  border: 1px solid rgba(69, 67, 67, 0.9);
+  padding: 10px;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest .cennik--opis {
+  width: 70%;
+}
+
+.cennik .container:not(.pricetabs).cennik--rest .cennik--cena {
+  width: 30%;
+  text-align: right;
+}
+
+.cennik > .container.pricetabs {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2494,8 +2548,8 @@ footer .copy p a:hover {
   /* Buttons */
 }
 
-.cennik > .container .pricetab,
-.cennik > .container .pricetabmid {
+.cennik > .container.pricetabs .pricetab,
+.cennik > .container.pricetabs .pricetabmid {
   max-width: 280px;
   margin: 15px 5px;
   -webkit-transition: .3s linear transform;
@@ -2506,7 +2560,7 @@ footer .copy p a:hover {
   position: relative;
 }
 
-.cennik > .container .pricetab {
+.cennik > .container.pricetabs .pricetab {
   min-width: 220px;
   background: -webkit-gradient(linear, left top, left bottom, from(#a9a9a9), to(#333));
   background: -webkit-linear-gradient(top, #a9a9a9, #333);
@@ -2518,7 +2572,7 @@ footer .copy p a:hover {
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.cennik > .container .pricetabmid {
+.cennik > .container.pricetabs .pricetabmid {
   min-width: 220px;
   background: -webkit-gradient(linear, left top, left bottom, from(#F9B84A), to(#ff9547));
   background: -webkit-linear-gradient(#F9B84A, #ff9547);
@@ -2537,7 +2591,7 @@ footer .copy p a:hover {
   z-index: 1;
 }
 
-.cennik > .container .priceheader {
+.cennik > .container.pricetabs .priceheader {
   width: 100%;
   height: 60px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a9a9a9), to(#333));
@@ -2550,17 +2604,17 @@ footer .copy p a:hover {
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-.cennik > .container .infos {
+.cennik > .container.pricetabs .infos {
   padding: 20px 15px;
 }
 
-.cennik > .container .infos h4 {
+.cennik > .container.pricetabs .infos h4 {
   margin-bottom: 15px;
   line-height: 1.3em;
 }
 
-.cennik > .container .pricefooter,
-.cennik > .container .pricefootermid {
+.cennik > .container.pricetabs .pricefooter,
+.cennik > .container.pricetabs .pricefootermid {
   width: 100%;
   height: 50px;
   position: absolute;
@@ -2569,15 +2623,15 @@ footer .copy p a:hover {
   width: 100%;
 }
 
-.cennik > .container .pricefooter {
+.cennik > .container.pricetabs .pricefooter {
   background: #333;
 }
 
-.cennik > .container .pricefootermid {
+.cennik > .container.pricetabs .pricefootermid {
   background: #fe9040;
 }
 
-.cennik > .container .title {
+.cennik > .container.pricetabs .title {
   color: #fff;
   font-size: 38px;
   font-weight: normal;
@@ -2587,31 +2641,31 @@ footer .copy p a:hover {
   margin: auto;
 }
 
-.cennik > .container h2 {
+.cennik > .container.pricetabs h2 {
   font-size: 24px;
   color: #fff;
   text-align: center;
   line-height: 1.2;
 }
 
-.cennik > .container h2 span {
+.cennik > .container.pricetabs h2 span {
   color: #fff;
   font-size: 14px;
 }
 
-.cennik > .container h3 {
+.cennik > .container.pricetabs h3 {
   text-align: center;
   font-size: 42px;
   color: #fff;
 }
 
-.cennik > .container sub {
+.cennik > .container.pricetabs sub {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
 }
 
-.cennik > .container h4 {
+.cennik > .container.pricetabs h4 {
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -2619,7 +2673,7 @@ footer .copy p a:hover {
   line-height: 1;
 }
 
-.cennik > .container .button a {
+.cennik > .container.pricetabs .button a {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -2627,7 +2681,7 @@ footer .copy p a:hover {
   line-height: 3;
 }
 
-.cennik > .container .buttonmid a {
+.cennik > .container.pricetabs .buttonmid a {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -2635,7 +2689,7 @@ footer .copy p a:hover {
   line-height: 3;
 }
 
-.cennik > .container .button {
+.cennik > .container.pricetabs .button {
   width: 50%;
   height: 50px;
   margin: 0 auto 0 auto;
@@ -2648,7 +2702,7 @@ footer .copy p a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-.cennik > .container .buttonmid {
+.cennik > .container.pricetabs .buttonmid {
   width: 50%;
   height: 50px;
   margin: 0 auto 0 auto;
@@ -2661,13 +2715,13 @@ footer .copy p a:hover {
   transition: all 0.4s ease-in-out;
 }
 
-.cennik > .container .button,
-.cennik > .container .buttonmid {
+.cennik > .container.pricetabs .button,
+.cennik > .container.pricetabs .buttonmid {
   width: 100%;
 }
 
-.cennik > .container .price,
-.cennik > .container .pricemid {
+.cennik > .container.pricetabs .price,
+.cennik > .container.pricetabs .pricemid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2694,28 +2748,28 @@ footer .copy p a:hover {
   padding: 30px 0;
 }
 
-.cennik > .container .price h3,
-.cennik > .container .pricemid h3 {
+.cennik > .container.pricetabs .price h3,
+.cennik > .container.pricetabs .pricemid h3 {
   font-size: 30px;
   margin-bottom: 0;
 }
 
-.cennik > .container .price {
+.cennik > .container.pricetabs .price {
   border-color: #ff9547;
 }
 
-.cennik > .container .pricemid {
+.cennik > .container.pricetabs .pricemid {
   border-color: #444;
 }
 
-.cennik > .container .button a,
-.cennik > .container .buttonmid a {
+.cennik > .container.pricetabs .button a,
+.cennik > .container.pricetabs .buttonmid a {
   text-transform: uppercase;
   line-height: 50px;
 }
 
 @media (max-width: 730px) {
-  .cennik > .container {
+  .cennik > .container.pricetabs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2724,20 +2778,20 @@ footer .copy p a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .cennik > .container .pricetab,
-  .cennik > .container .pricetabmid {
+  .cennik > .container.pricetabs .pricetab,
+  .cennik > .container.pricetabs .pricetabmid {
     width: auto;
     max-width: 320px;
     margin: 15px auto 5px;
   }
-  .cennik > .container .pricetab {
+  .cennik > .container.pricetabs .pricetab {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
        -moz-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .cennik > .container .pricetabmid {
+  .cennik > .container.pricetabs .pricetabmid {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
        -moz-box-ordinal-group: 2;
@@ -2751,37 +2805,37 @@ footer .copy p a:hover {
   }
 }
 
-.cennik > .container + .container {
+.cennik > .container.pricetabs + .container:not(.pricetabs) {
   display: block;
 }
 
-.cennik > .container + .container.cennik--rest {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest {
   padding: 50px 15px;
   max-width: 700px;
 }
 
-.cennik > .container + .container.cennik--rest h3 {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest h3 {
   color: #F1B82D;
   line-height: 1.05em;
   margin-bottom: 5px;
 }
 
-.cennik > .container + .container.cennik--rest h3 span {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest h3 span {
   color: #a1a1a1;
   font-size: 20px;
 }
 
-.cennik > .container + .container.cennik--rest h4 {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest h4 {
   color: #a1a1a1;
   margin-bottom: 20px;
   font-size: 1.25em;
 }
 
-.cennik > .container + .container.cennik--rest .cennik--wrapper {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest .cennik--wrapper {
   padding: 20px 0;
 }
 
-.cennik > .container + .container.cennik--rest .cennik--wiersz {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest .cennik--wiersz {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2795,16 +2849,16 @@ footer .copy p a:hover {
   background-color: rgba(169, 169, 169, 0.2);
 }
 
-.cennik > .container + .container.cennik--rest .cennik--cena, .cennik > .container + .container.cennik--rest .cennik--opis {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest .cennik--cena, .cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest .cennik--opis {
   border: 1px solid rgba(69, 67, 67, 0.9);
   padding: 10px;
 }
 
-.cennik > .container + .container.cennik--rest .cennik--opis {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest .cennik--opis {
   width: 70%;
 }
 
-.cennik > .container + .container.cennik--rest .cennik--cena {
+.cennik > .container.pricetabs + .container:not(.pricetabs).cennik--rest .cennik--cena {
   width: 30%;
   text-align: right;
 }
@@ -2941,7 +2995,7 @@ footer .copy p a:hover {
 
 .kontakt .contact-wrap .contact--info {
   width: 40%;
-  padding: 70px 0;
+  padding: 20px 0;
 }
 
 .kontakt .contact-wrap .contact--info .info-inner {

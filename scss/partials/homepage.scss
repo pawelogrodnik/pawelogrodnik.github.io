@@ -520,6 +520,21 @@
 
 .about {
     padding: 0 0 50px 0;
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    @media (min-width: 601px) {
+        br {
+            display: none;
+        }
+    }
 }
 
 #cd-timeline {

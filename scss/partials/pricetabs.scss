@@ -13,11 +13,56 @@
     h3 {
         margin: 20px 0 40px;
         &.spec {
-            margin: 40px 0;
+            margin: 40px 0 10px;
             color: $gold;
         }
     }
-    >.container {
+    .container:not(.pricetabs) {
+        display: block;
+        &.cennik--rest {
+            padding: 30px 15px;
+            max-width: 700px;
+            h3 {
+                color: $gold;
+                line-height: 1.05em;
+                margin-bottom: 5px;
+                span {
+                    color: $fontColor;
+                    font-size: 20px;
+                }
+            }
+            h4 {
+                color: $fontColor;
+                margin-bottom: 20px;
+                font-size: em(20);
+            }
+            .cennik {
+                &--wrapper {
+                    padding: 20px 0;
+                }
+                &--wiersz {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: rgba($grey, .2);
+                }
+                &--cena,
+                &--opis {
+                    // border: 1px solid $bgColor;
+                    border: 1px solid rgba($grafit, .9);
+                    //  background-color: 
+                    padding: 10px;
+                }
+                &--opis {
+                    width: 70%;
+                }
+                &--cena {
+                    width: 30%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    >.container.pricetabs {
         display: flex;
         justify-content: center;
         .pricetab,
@@ -189,7 +234,7 @@
                 transform: scale(1);
             }
         }
-        &+.container {
+        &+.container:not(.pricetabs) {
             display: block;
             &.cennik--rest {
                 padding: 50px 15px;
