@@ -1701,6 +1701,13 @@ footer .copy p a:hover {
   }
 }
 
+.about .txt-ul li:before {
+  content: '\f111' !important;
+  font-size: 8px !important;
+  top: 5px;
+  left: 5px !important;
+}
+
 #cd-timeline {
   position: relative;
   padding: 2em 0;
