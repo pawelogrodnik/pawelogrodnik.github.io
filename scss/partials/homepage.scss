@@ -20,7 +20,8 @@
         width: 65%;
         margin-left: -5%;
         height: 100%;
-        background-color: rgba($grey, 0.4);
+        // background-color: rgba($grey, 0.4);
+        background-color: rgba($grafit, .9);
         transform: skewX(-15deg);
         @media (max-width: 1400px) {
             width: 70%;
@@ -977,3 +978,27 @@
 }
 
 .homepage {}
+
+// black and white
+.features,
+.orto,
+.banner-top {
+    p,
+    .features--single__num,
+    {
+        color: rgba(#fff, .8);
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: rgba(#fff, .8);
+        font-weight: 400;
+    }
+    ul {
+        li {
+            color: rgba(#fff, .8);
+            font-weight: 400;
+        }
+    }
+}

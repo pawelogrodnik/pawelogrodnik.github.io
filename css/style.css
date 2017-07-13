@@ -172,7 +172,7 @@ body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
-  background-color: rgba(169, 169, 169, 0.7);
+  background-color: rgba(69, 67, 67, 0.9);
   letter-spacing: -0.25px;
 }
 
@@ -212,7 +212,7 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-  color: #DAA520;
+  color: #F1B82D;
   font-weight: 500;
 }
 
@@ -267,9 +267,9 @@ p {
 .btn, .kontakt form input[type=submit] {
   padding: 15px 30px;
   text-decoration: none;
-  border: 2px solid #DAA520;
+  border: 2px solid #F1B82D;
   font-size: 24px;
-  color: #DAA520;
+  color: #F1B82D;
   display: inline-block;
   -webkit-transition: .3s linear;
   -o-transition: .3s linear;
@@ -278,7 +278,7 @@ p {
 }
 
 .btn:hover, .kontakt form input[type=submit]:hover {
-  background-color: rgba(218, 165, 32, 0.7);
+  background-color: rgba(241, 184, 45, 0.7);
   color: #fff;
 }
 
@@ -505,7 +505,7 @@ header > .container .nav-btn.active .bottom {
 }
 
 header > .container .nav-btn span {
-  background: #DAA520;
+  background: #F1B82D;
   border: none;
   height: 5px;
   width: 100%;
@@ -639,7 +639,7 @@ header > .container nav > div > ul li a {
 }
 
 header > .container nav > div > ul li a:hover {
-  color: #DAA520;
+  color: #F1B82D;
 }
 
 @media (max-width: 450px) {
@@ -1009,7 +1009,7 @@ footer .copy p a:hover {
   width: 65%;
   margin-left: -5%;
   height: 100%;
-  background-color: rgba(169, 169, 169, 0.4);
+  background-color: rgba(69, 67, 67, 0.9);
   -webkit-transform: skewX(-15deg);
      -moz-transform: skewX(-15deg);
       -ms-transform: skewX(-15deg);
@@ -1154,7 +1154,7 @@ footer .copy p a:hover {
   width: 35px;
   margin: 0 auto;
   padding-bottom: 10px;
-  border-bottom: 1px solid #DAA520;
+  border-bottom: 1px solid #F1B82D;
   margin-bottom: 15px;
 }
 
@@ -1313,7 +1313,7 @@ footer .copy p a:hover {
   position: absolute;
   width: 70%;
   height: 1px;
-  background-color: #DAA520;
+  background-color: #F1B82D;
   left: 50%;
   -webkit-transform: translateX(-50%);
      -moz-transform: translateX(-50%);
@@ -1389,7 +1389,7 @@ footer .copy p a:hover {
 
 .txt h1 {
   margin-bottom: 40px;
-  background-color: rgba(218, 165, 32, 0.6);
+  background-color: rgba(241, 184, 45, 0.6);
   color: #fff;
   padding: 40px 10px;
 }
@@ -1419,7 +1419,7 @@ footer .copy p a:hover {
 .txt h4.highlight,
 .txt h5.highlight {
   text-align: center;
-  color: #DAA520;
+  color: #F1B82D;
 }
 
 .txt h5 {
@@ -1456,7 +1456,7 @@ footer .copy p a:hover {
   position: absolute;
   width: 50%;
   height: 1px;
-  background-color: #DAA520;
+  background-color: #F1B82D;
   left: 50%;
   -webkit-transform: translateX(-50%);
      -moz-transform: translateX(-50%);
@@ -1614,7 +1614,7 @@ footer .copy p a:hover {
 
 @media (max-width: 550px) {
   .txt .guide--wrapper.no-border .guide--single:not(:last-of-type) {
-    border-bottom: 1px solid #DAA520;
+    border-bottom: 1px solid #F1B82D;
   }
 }
 
@@ -1625,7 +1625,7 @@ footer .copy p a:hover {
 }
 
 .txt .guide--single:nth-child(odd) {
-  border-right: 1px solid #DAA520;
+  border-right: 1px solid #F1B82D;
 }
 
 @media (max-width: 550px) {
@@ -1635,7 +1635,7 @@ footer .copy p a:hover {
 }
 
 .txt .guide--single:nth-child(1), .txt .guide--single:nth-child(2) {
-  border-bottom: 1px solid #DAA520;
+  border-bottom: 1px solid #F1B82D;
 }
 
 .txt .guide--single__img {
@@ -1649,7 +1649,7 @@ footer .copy p a:hover {
 @media (max-width: 550px) {
   .txt .guide--single {
     width: 100%;
-    border-bottom: 1px solid #DAA520;
+    border-bottom: 1px solid #F1B82D;
     border-right: 0px;
   }
   .txt .guide--single:last-of-type {
@@ -1766,27 +1766,27 @@ footer .copy p a:hover {
 }
 
 .cd-timeline-block.highlight .cd-timeline-content {
-  background-color: rgba(218, 165, 32, 0.6);
+  background-color: rgba(241, 184, 45, 0.6);
   color: #333;
 }
 
 .cd-timeline-block.highlight .cd-timeline-content:before {
-  border-left-color: rgba(218, 165, 32, 0.6);
+  border-left-color: rgba(241, 184, 45, 0.6);
 }
 
 @media (max-width: 767px) {
   .cd-timeline-block.highlight .cd-timeline-content:before {
     border-left-color: transparent;
-    border-right-color: rgba(218, 165, 32, 0.6);
+    border-right-color: rgba(241, 184, 45, 0.6);
   }
 }
 
 .cd-timeline-block:nth-child(even).highlight .cd-timeline-content {
-  background-color: rgba(218, 165, 32, 0.6);
+  background-color: rgba(241, 184, 45, 0.6);
 }
 
 .cd-timeline-block:nth-child(even).highlight .cd-timeline-content:before {
-  border-right-color: rgba(218, 165, 32, 0.6);
+  border-right-color: rgba(241, 184, 45, 0.6);
 }
 
 @media only screen and (min-width: 1170px) {
@@ -2331,6 +2331,38 @@ footer .copy p a:hover {
   max-width: 125px;
 }
 
+.features p,
+.features .features--single__num,
+.orto p,
+.orto .features--single__num,
+.banner-top p,
+.banner-top .features--single__num {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.features h1,
+.features h2,
+.features h3,
+.features h4,
+.orto h1,
+.orto h2,
+.orto h3,
+.orto h4,
+.banner-top h1,
+.banner-top h2,
+.banner-top h3,
+.banner-top h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.features ul li,
+.orto ul li,
+.banner-top ul li {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
 .cennik {
   padding: 70px 0;
   max-width: 1200px;
@@ -2354,7 +2386,7 @@ footer .copy p a:hover {
 
 .cennik h3.spec {
   margin: 40px 0;
-  color: #DAA520;
+  color: #F1B82D;
 }
 
 .cennik > .container {
@@ -2638,7 +2670,7 @@ footer .copy p a:hover {
 }
 
 .cennik > .container + .container.cennik--rest h3 {
-  color: #DAA520;
+  color: #F1B82D;
   line-height: 1.05em;
   margin-bottom: 5px;
 }
@@ -2766,7 +2798,7 @@ footer .copy p a:hover {
 
 .kontakt form input:focus,
 .kontakt form textarea:focus {
-  border-color: #DAA520;
+  border-color: #F1B82D;
 }
 
 .kontakt form textarea {
