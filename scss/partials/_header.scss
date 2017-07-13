@@ -59,10 +59,12 @@ header {
                 font-size: em(24);
                 color: #333;
                 transition: .5s color linear;
+                font-weight: 600;
                 i {
                     font-size: 40px;
                     line-height: 24px;
                     color: $grey;
+                    transition: .5s color linear;
                 }
                 @media (max-width: 425px) {
                     font-size: em(20);
@@ -81,6 +83,9 @@ header {
             &.open {
                 a {
                     color: #fff;
+                    i {
+                        color: #fff;
+                    }
                 }
             }
         }

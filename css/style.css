@@ -435,12 +435,17 @@ header > .container .tel a {
   -o-transition: .5s color linear;
   -moz-transition: .5s color linear;
   transition: .5s color linear;
+  font-weight: 600;
 }
 
 header > .container .tel a i {
   font-size: 40px;
   line-height: 24px;
   color: #a9a9a9;
+  -webkit-transition: .5s color linear;
+  -o-transition: .5s color linear;
+  -moz-transition: .5s color linear;
+  transition: .5s color linear;
 }
 
 @media (max-width: 425px) {
@@ -469,6 +474,10 @@ header > .container .tel a:hover i {
 }
 
 header > .container .tel.open a {
+  color: #fff;
+}
+
+header > .container .tel.open a i {
   color: #fff;
 }
 
@@ -1022,7 +1031,7 @@ footer .copy p a:hover {
 @media (max-width: 550px) {
   .banner-top__figure {
     width: 75%;
-    margin-left: -10%;
+    margin-left: -12%;
   }
 }
 
@@ -1410,7 +1419,7 @@ footer .copy p a:hover {
 
 .txt a {
   font-weight: 600;
-  color: #333;
+  color: #F1B82D;
 }
 
 .txt h1 {
@@ -1607,6 +1616,10 @@ footer .copy p a:hover {
   margin-bottom: 10px;
 }
 
+.txt ul.txt-ul li span {
+  color: #F1B82D;
+}
+
 .txt ul.txt-ul li:before {
   position: absolute;
   content: '\f00c';
@@ -1697,6 +1710,11 @@ footer .copy p a:hover {
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+#cd-timeline p,
+#cd-timeline h4 {
+  color: #333 !important;
 }
 
 #cd-timeline:before {
@@ -2362,7 +2380,17 @@ footer .copy p a:hover {
 .orto p,
 .orto .features--single__num,
 .banner-top p,
-.banner-top .features--single__num {
+.banner-top .features--single__num,
+.about p,
+.about .features--single__num,
+.wizyty p,
+.wizyty .features--single__num,
+.txt p,
+.txt .features--single__num,
+.cennik p,
+.cennik .features--single__num,
+.kontakt p,
+.kontakt .features--single__num {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2370,21 +2398,54 @@ footer .copy p a:hover {
 .features h2,
 .features h3,
 .features h4,
+.features h5,
 .orto h1,
 .orto h2,
 .orto h3,
 .orto h4,
+.orto h5,
 .banner-top h1,
 .banner-top h2,
 .banner-top h3,
-.banner-top h4 {
+.banner-top h4,
+.banner-top h5,
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about h5,
+.wizyty h1,
+.wizyty h2,
+.wizyty h3,
+.wizyty h4,
+.wizyty h5,
+.txt h1,
+.txt h2,
+.txt h3,
+.txt h4,
+.txt h5,
+.cennik h1,
+.cennik h2,
+.cennik h3,
+.cennik h4,
+.cennik h5,
+.kontakt h1,
+.kontakt h2,
+.kontakt h3,
+.kontakt h4,
+.kontakt h5 {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
 }
 
 .features ul li,
 .orto ul li,
-.banner-top ul li {
+.banner-top ul li,
+.about ul li,
+.wizyty ul li,
+.txt ul li,
+.cennik ul li,
+.kontakt ul li {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
 }
@@ -2735,7 +2796,7 @@ footer .copy p a:hover {
 }
 
 .cennik > .container + .container.cennik--rest .cennik--cena, .cennik > .container + .container.cennik--rest .cennik--opis {
-  border: 1px solid rgba(169, 169, 169, 0.7);
+  border: 1px solid rgba(69, 67, 67, 0.9);
   padding: 10px;
 }
 
@@ -2788,7 +2849,7 @@ footer .copy p a:hover {
       -ms-transform: translateX(-50%);
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: rgba(51, 51, 51, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -2814,7 +2875,7 @@ footer .copy p a:hover {
   border: none;
   border-bottom: 1px solid #a9a9a9;
   background-color: transparent;
-  color: #333;
+  color: #fff;
   width: 100%;
   margin-bottom: 20px;
   padding: 10px 15px;
@@ -2847,7 +2908,7 @@ footer .copy p a:hover {
 
 .kontakt form ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: rgba(161, 161, 161, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .kontakt form ::-moz-placeholder {
@@ -2871,7 +2932,7 @@ footer .copy p a:hover {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #333;
+  background-color: #fff;
 }
 
 .kontakt .contact-wrap .map-wrapper {
@@ -2889,12 +2950,11 @@ footer .copy p a:hover {
   padding: 15px;
   max-width: 585px;
   text-align: center;
-  color: #fff;
 }
 
 .kontakt .contact-wrap .contact--info .info-inner h3 {
   margin: 20px 0 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(161, 161, 161, 0.9) !important;
 }
 
 .kontakt .contact-wrap .contact--info .info-inner h3:first-child {
@@ -2903,6 +2963,7 @@ footer .copy p a:hover {
 
 .kontakt .contact-wrap .contact--info .info-inner p {
   font-size: 18px;
+  color: #333 !important;
 }
 
 .kontakt .contact-wrap #map {

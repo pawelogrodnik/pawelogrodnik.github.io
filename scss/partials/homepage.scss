@@ -29,7 +29,7 @@
         }
         @media (max-width: 550px) {
             width: 75%;
-            margin-left: -10%;
+            margin-left: -12%;
         }
     }
     .container {
@@ -308,7 +308,7 @@
     }
     a {
         font-weight: 600;
-        color: #333;
+        color: $gold;
     }
     h1 {
         margin-bottom: 40px;
@@ -446,6 +446,9 @@
             padding-left: 25px;
             font-size: em(18);
             margin-bottom: 10px;
+            span {
+                color: $gold;
+            }
             &:before {
                 position: absolute;
                 content: '\f00c';
@@ -524,6 +527,10 @@
     padding: 2em 0;
     margin-top: 2em;
     margin-bottom: 2em;
+    p,
+    h4 {
+        color: #333 !important;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -1000,7 +1007,12 @@
 // black and white
 .features,
 .orto,
-.banner-top {
+.banner-top,
+.about,
+.wizyty,
+.txt,
+.cennik,
+.kontakt {
     p,
     .features--single__num,
     {
@@ -1009,7 +1021,8 @@
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
         color: rgba(#fff, .8);
         font-weight: 400;
     }

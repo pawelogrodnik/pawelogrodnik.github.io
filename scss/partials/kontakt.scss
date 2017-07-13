@@ -27,7 +27,7 @@
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                color: rgba($black, .7);
+                color: rgba(#fff, .5);
                 transition: all .2s linear;
                 top: 8px;
                 &:hover {
@@ -48,7 +48,7 @@
             border: none;
             border-bottom: 1px solid $grey;
             background-color: transparent;
-            color: $black;
+            color: #fff;
             width: 100%;
             margin-bottom: 20px;
             padding: 10px 15px;
@@ -76,7 +76,7 @@
         }
          ::-webkit-input-placeholder {
             /* Chrome/Opera/Safari */
-            color: rgba($fontColor, .5);
+            color: rgba(#fff, .5);
         }
          ::-moz-placeholder {
             /* Firefox 19+ */
@@ -93,7 +93,8 @@
     }
     .contact-wrap {
         display: flex;
-        background-color: $black;
+        // background-color: $black;
+        background-color: #fff;
         .map-wrapper {
             width: 60%;
         }
@@ -106,16 +107,17 @@
                 padding: 15px;
                 max-width: 585px;
                 text-align: center;
-                color: #fff;
+                // color: #fff;
                 h3 {
                     margin: 20px 0 10px;
-                    color: rgba(#fff, .7);
+                    color: rgba($fontColor, .9) !important;
                     &:first-child {
                         margin-top: 0;
                     }
                 }
                 p {
                     font-size: 18px;
+                    color: #333 !important;
                 }
             }
         }
