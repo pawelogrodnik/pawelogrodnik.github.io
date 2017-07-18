@@ -130,22 +130,23 @@ header {
         }
         nav {
             position: fixed;
-            background: $grey;
+            background: rgba(69, 67, 67, 1);
             top: 0;
             left: 0;
             width: 100%;
-            height: 0%;
+            height: 90px;
             opacity: 0;
             visibility: hidden;
             transition: opacity .35s, visibility .35s, height .35s;
             // overflow: hidden;
             overflow: auto;
             max-width: 100%;
+            margin-top: 80px;
             &.open {
                 opacity: 1;
                 visibility: visible;
                 height: calc(100% - 80px);
-                margin-top: 80px;
+                // margin-top: 80px;
                 li {
                     animation: fadeInRight .5s ease forwards;
                     animation-delay: .35s;
@@ -174,6 +175,9 @@ header {
                 line-height: 45px;
                 overflow: auto;
                 // line-height: 1.1em;
+                @media (max-width: 767px) {
+                    padding: 10px 0;
+                }
                 >ul {
                     list-style: none;
                     padding: 0 15px;
@@ -182,7 +186,7 @@ header {
                     position: absolute;
                     left: 50%;
                     transform: translateX(-50%);
-                    height: 100%;
+                    height: auto;
                     li {
                         display: block;
                         position: relative;

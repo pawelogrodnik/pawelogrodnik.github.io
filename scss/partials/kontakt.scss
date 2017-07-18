@@ -5,6 +5,10 @@
     }
     p {
         margin-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: #333;
+        }
     }
     @media (min-width: 768px) {
         padding: 70px 0;

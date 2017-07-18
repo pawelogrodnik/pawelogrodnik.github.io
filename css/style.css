@@ -520,11 +520,11 @@ header > .container .nav-btn span:nth-of-type(3) {
 
 header > .container nav {
   position: fixed;
-  background: #a9a9a9;
+  background: #454343;
   top: 0;
   left: 0;
   width: 100%;
-  height: 0%;
+  height: 90px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
@@ -533,6 +533,7 @@ header > .container nav {
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: auto;
   max-width: 100%;
+  margin-top: 80px;
 }
 
 header > .container nav.open {
@@ -541,7 +542,6 @@ header > .container nav.open {
   height: -webkit-calc(100% - 80px);
   height: -moz-calc(100% - 80px);
   height: calc(100% - 80px);
-  margin-top: 80px;
 }
 
 header > .container nav.open li {
@@ -593,6 +593,12 @@ header > .container nav > div {
   overflow: auto;
 }
 
+@media (max-width: 767px) {
+  header > .container nav > div {
+    padding: 10px 0;
+  }
+}
+
 header > .container nav > div > ul {
   list-style: none;
   padding: 0 15px;
@@ -605,7 +611,7 @@ header > .container nav > div > ul {
       -ms-transform: translateX(-50%);
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 100%;
+  height: auto;
 }
 
 header > .container nav > div > ul li {
@@ -2330,6 +2336,14 @@ footer .copy p a:hover {
   }
 }
 
+.wady-zgryzu .sides.no-right .right-side {
+  width: 0;
+}
+
+.wady-zgryzu .sides.no-right .left-side {
+  width: auto;
+}
+
 .wady-zgryzu .left-side {
   width: 80%;
 }
@@ -2455,6 +2469,10 @@ footer .copy p a:hover {
 
 .features h4 {
   color: #F1B82D;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .cennik {
@@ -2880,6 +2898,11 @@ footer .copy p a:hover {
 
 .kontakt p {
   margin-bottom: 10px;
+}
+
+.kontakt p a {
+  text-decoration: none;
+  color: #333;
 }
 
 @media (min-width: 768px) {

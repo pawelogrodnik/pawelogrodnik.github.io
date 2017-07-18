@@ -4,6 +4,7 @@ $(window).on('load', function() {
 });
 $('.nav-btn').click(function() {
     $(this).stop().toggleClass('active');
+    $('body').toggleClass('overflow');
     $('header nav, header .tel').toggleClass('open');
     $('header').toggleClass('shadow');
     $('header .logo__wrapper').toggleClass('logo-white');

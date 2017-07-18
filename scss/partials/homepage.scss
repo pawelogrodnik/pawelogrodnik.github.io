@@ -995,6 +995,14 @@
                 }
             }
         }
+        &.no-right {
+            .right-side {
+                width: 0;
+            }
+            .left-side {
+                width: auto;
+            }
+        }
     }
     .left-side {
         width: 80%;
@@ -1063,4 +1071,8 @@
     h4 {
         color: $gold;
     }
+}
+
+.overflow {
+    overflow: hidden;
 }
