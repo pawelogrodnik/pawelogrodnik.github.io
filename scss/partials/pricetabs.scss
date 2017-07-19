@@ -16,6 +16,9 @@
             margin: 40px 0 10px;
             color: $gold;
         }
+        &.pricetabs {
+            margin: 20px 0 40px;
+        }
     }
     .container:not(.pricetabs) {
         display: block;

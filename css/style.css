@@ -1414,9 +1414,18 @@ footer .copy p a:hover {
   padding: 40px 10px;
 }
 
+@media (max-width: 600px) {
+  .txt h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
 @media (max-width: 450px) {
   .txt h1 {
-    font-size: 45px;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 15px 10px;
   }
 }
 
@@ -1694,10 +1703,6 @@ footer .copy p a:hover {
   .about h2 {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  .about h1 {
-    font-size: 35px;
-    line-height: 45px;
   }
 }
 
@@ -2312,6 +2317,27 @@ footer .copy p a:hover {
   margin: 0;
 }
 
+.text-slider {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.text-slider .text-single p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #F1B82D;
+  letter-spacing: .25px;
+}
+
+@media (max-width: 500px) {
+  .text-slider .text-single p {
+    font-size: 15px;
+  }
+}
+
 .wady-zgryzu .sides {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2499,6 +2525,10 @@ footer .copy p a:hover {
 .cennik h3.spec {
   margin: 40px 0 10px;
   color: #F1B82D;
+}
+
+.cennik h3.pricetabs {
+  margin: 20px 0 40px;
 }
 
 .cennik .container:not(.pricetabs) {
@@ -2889,11 +2919,12 @@ footer .copy p a:hover {
 }
 
 .kontakt {
-  padding: 30px 0;
+  padding: 0 0 30px 0;
 }
 
 .kontakt h1 {
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .kontakt p {
@@ -2907,7 +2938,7 @@ footer .copy p a:hover {
 
 @media (min-width: 768px) {
   .kontakt {
-    padding: 70px 0;
+    padding: 0 0 40px 0;
   }
 }
 
@@ -3047,11 +3078,21 @@ footer .copy p a:hover {
 
 .kontakt .contact-wrap .contact--info .info-inner p {
   font-size: 18px;
-  color: #333 !important;
+  color: #333;
+}
+
+.kontakt .contact-wrap .contact--info .info-inner p a {
+  color: #333;
+}
+
+.kontakt .contact-wrap .contact--info .info-inner p.tel {
+  font-weight: bold;
+  font-size: 20px;
+  color: #F1B82D;
 }
 
 .kontakt .contact-wrap #map {
-  height: 500px;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -3059,6 +3100,9 @@ footer .copy p a:hover {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+  .kontakt .contact-wrap #map {
+    min-height: 300px;
   }
   .kontakt .contact-wrap .map-wrapper,
   .kontakt .contact-wrap .contact--info {

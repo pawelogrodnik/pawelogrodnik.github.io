@@ -315,8 +315,14 @@
         background-color: rgba($gold, .6);
         color: #fff;
         padding: 40px 10px;
+        @media (max-width: 600px) {
+            font-size: 35px;
+            line-height: 45px;
+        }
         @media (max-width: 450px) {
-            font-size: 45px;
+            font-size: 30px;
+            line-height: 35px;
+            padding: 15px 10px;
         }
     }
     h2,
@@ -525,10 +531,10 @@
             font-size: 20px;
             margin-bottom: 10px;
         }
-        h1 {
-            font-size: 35px;
-            line-height: 45px;
-        }
+        // h1 {
+        //     font-size: 35px;
+        //     line-height: 45px;
+        // }
     }
     @media (min-width: 601px) {
         br {
@@ -979,6 +985,26 @@
     }
 }
 
+.text-slider {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 15px 0;
+    text-align: center;
+    .text-single {
+        p {
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            // font-weight: 300;
+            color: $gold;
+            letter-spacing: .25px;
+            @media (max-width: 500px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
 .wady-zgryzu {
     .sides {
         display: flex;
@@ -1030,6 +1056,7 @@
             }
             img {
                 max-width: 125px;
+                // box-shadow: 0px 0px 21px 4px rgba(255, 255, 255, 1);
             }
         }
     }

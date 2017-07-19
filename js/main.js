@@ -44,6 +44,14 @@ $(document).ready(function() {
             }
         });
     });
+    $('.text-slider').slick({
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        cssEase: 'ease-in-out',
+        autoplay: true,
+        autoplaySpeed: 3000
+    })
     $('.slides--wrapper').slick({
         centerMode: true,
         infinite: true,
