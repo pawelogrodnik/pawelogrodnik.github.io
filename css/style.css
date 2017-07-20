@@ -2381,6 +2381,7 @@ footer .copy p a:hover {
 .wady-zgryzu .right-side img {
   margin-left: auto;
   display: block;
+  background-color: black;
 }
 
 .wady-zgryzu .before-after {
@@ -2416,6 +2417,10 @@ footer .copy p a:hover {
 
 .wady-zgryzu .before-after__block img {
   max-width: 125px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid black;
 }
 
 .features p,
