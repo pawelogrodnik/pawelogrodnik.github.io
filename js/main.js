@@ -200,6 +200,17 @@ function initMap() {
     // Create a map object, and include the MapTypeId to add
     // to the map type control.
     var myLatLng = { lat: 50.0576778, lng: 19.9564149 };
+    // var pointToCheckIfPassed = { lat: 50.0582898, lng: 19.9588669 };
+    // var pointToCheckIfPassedre = new google.maps.Polyline({
+    //     path: [
+    //         new google.maps.LatLng(50.0582898, 19.9588669),
+    //         new google.maps.LatLng(50.0582898, 19.9588669)
+    //     ],
+    //     geodesic: true,
+    //     strokeColor: 'red',
+    //     strokeOpacity: 1.0,
+    //     strokeWeight: 50
+    // });
     var map = new google.maps.Map(document.getElementById('map'), {
         center: myLatLng,
         zoom: 14,
@@ -211,6 +222,54 @@ function initMap() {
             ]
         }
     });
+    // var directionsService = new google.maps.DirectionsService;
+    // var directionsDisplay = new google.maps.DirectionsRenderer;
+    // pointToCheckIfPassedre.setMap(map);
+    // directionsDisplay.setMap(map);
+    // calculateAndDisplayRoute(directionsService, directionsDisplay);
+
+    // function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+    //     var isLocationOnEdge = google.maps.geometry.poly.isLocationOnEdge;
+
+    //     directionsService.route({
+    //         origin: { lat: 50.0840063, lng: 19.9099942 },
+    //         destination: { lat: 50.0575457, lng: 19.9583098 },
+    //         travelMode: 'DRIVING'
+    //     }, function(response, status) {
+    //         console.log(response);
+    //         console.log(response.routes[0].legs[0].distance.value + ' ' + response.routes[0].legs[0].distance.text);
+    //         console.log(response.routes[0].legs[0].duration.value + ' ' + response.routes[0].legs[0].duration.text);
+    //         console.log(response.routes[0].legs[0].start_address);
+    //         console.log(response.routes[0].legs[0].end_address);
+    //         if (status === 'OK') {
+    //             directionsDisplay.setDirections(response);
+    //             var pth = new google.maps.LatLng(response.routes[0].overview_path[124].lat(), response.routes[0].overview_path[124].lng());
+    //             // var pth = response.routes[0].overview_path[0];
+    //             // console.log(pth.lat());
+    //             var marker = new google.maps.Marker({
+    //                 position: response.routes[0].overview_path[100],
+    //                 map: map,
+    //                 title: 'WAYPOINT',
+    //             });
+    //             var currentpos = new google.maps.LatLng();
+    //             console.log(google.maps.geometry.poly.isLocationOnEdge(pth, pointToCheckIfPassedre, 0.0001));
+    //         } else {
+    //             window.alert('Directions request failed due to ' + status);
+    //         }
+    //     });
+    // };
+
+
+
+    // var marker = new google.maps.Marker({
+    //     position: pointToCheckIfPassed,
+    //     map: map,
+    //     title: 'Ortolingwa',
+    //     icon: {
+    //         url: '../img/marker.svg',
+    //         scaledSize: new google.maps.Size(64, 64)
+    //     }
+    // });
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
