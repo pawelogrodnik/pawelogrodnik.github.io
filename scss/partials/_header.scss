@@ -57,13 +57,13 @@ header {
             a {
                 text-decoration: none;
                 font-size: em(24);
-                color: #333;
+                color: #FFA500;
                 transition: .5s color linear;
                 font-weight: 600;
                 i {
                     font-size: 40px;
                     line-height: 24px;
-                    color: #333;
+                    color: #FFA500;
                     transition: .5s color linear;
                 }
                 @media (max-width: 425px) {
@@ -149,7 +149,11 @@ header {
                 // margin-top: 80px;
                 li {
                     animation: fadeInRight .5s ease forwards;
-                    animation-delay: .35s;
+                    animation-delay: .55s;
+                    margin-bottom: 5px;
+                    &:first-of-type {
+                        animation-delay: .35s;
+                    }
                     &:nth-of-type(2) {
                         animation-delay: .4s;
                     }
@@ -161,6 +165,30 @@ header {
                     }
                     &:nth-of-type(5) {
                         animation-delay: .55s;
+                    }
+                    &:nth-of-type(6) {
+                        animation-delay: .60s;
+                    }
+                    &:nth-of-type(6) {
+                        animation-delay: .65s;
+                    }
+                    &:nth-of-type(7) {
+                        animation-delay: .70s;
+                    }
+                    &:nth-of-type(8) {
+                        animation-delay: .75s;
+                    }
+                    &:nth-of-type(9) {
+                        animation-delay: .80s;
+                    }
+                    &:nth-of-type(10) {
+                        animation-delay: .85s;
+                    }
+                    &:nth-of-type(11) {
+                        animation-delay: .90s;
+                    }
+                    &:nth-of-type(12) {
+                        animation-delay: .95s;
                     }
                 }
             }
@@ -203,8 +231,8 @@ header {
                                 color: $gold;
                             }
                             @media (max-width: 450px) {
-                                font-size: 25px !important;
-                                line-height: 35px !important;
+                                font-size: 24px !important;
+                                line-height: 26px !important;
                             }
                         }
                         &.menu-item-has-children {
@@ -240,8 +268,9 @@ header {
                     line-height: 40px;
                     >ul {
                         >li {
+                            margin-bottom: 10px !important;
                             a {
-                                line-height: 50px;
+                                line-height: 45px;
                                 display: block;
                             }
                         }

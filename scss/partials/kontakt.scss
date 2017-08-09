@@ -115,9 +115,23 @@
                 // color: #fff;
                 h3 {
                     margin: 20px 0 10px;
+                    // border-bottom: 1px solid $fontColor;
+                    position: relative;
                     color: rgba($fontColor, .9) !important;
                     &:first-child {
                         margin-top: 0;
+                    }
+                    i {
+                        // font-size: 18px;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        border-bottom: 1px solid $fontColor;
+                        width: 70px;
+                        left: 50%;
+                        bottom: -8px;
+                        transform: translateX(-50%);
                     }
                 }
                 p {
