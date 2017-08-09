@@ -57,13 +57,13 @@ header {
             a {
                 text-decoration: none;
                 font-size: em(24);
-                color: #FFA500;
+                color: #ff0101;
                 transition: .5s color linear;
                 font-weight: 600;
                 i {
                     font-size: 40px;
                     line-height: 24px;
-                    color: #FFA500;
+                    color: #ff0101;
                     transition: .5s color linear;
                 }
                 @media (max-width: 425px) {
@@ -233,6 +233,27 @@ header {
                             @media (max-width: 450px) {
                                 font-size: 24px !important;
                                 line-height: 26px !important;
+                            }
+                        }
+                        &:before {
+                            position: absolute;
+                            left: -20px;
+                            font-family: FontAwesome;
+                            content: '\f068';
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                        &:hover {
+                            &:before {
+                                color: $gold;
+                            }
+                        }
+                        &.highlight {
+                            a {
+                                color: $gold;
+                            }
+                            &:before {
+                                color: $gold;
                             }
                         }
                         &.menu-item-has-children {
