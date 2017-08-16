@@ -2402,9 +2402,11 @@ footer .copy p a:hover {
 
 @media (max-width: 600px) {
   .wady--single {
-    -webkit-flex-basis: 1 0 30%;
-        -ms-flex-preferred-size: 1 0 30%;
-            flex-basis: 1 0 30%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 30%;
+       -moz-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
     min-width: 150px;
     max-width: 100%;
   }
