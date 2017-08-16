@@ -2405,6 +2405,7 @@ footer .copy p a:hover {
     -webkit-flex-basis: 1 0 30%;
         -ms-flex-preferred-size: 1 0 30%;
             flex-basis: 1 0 30%;
+    min-width: 150px;
     max-width: 100%;
   }
 }
