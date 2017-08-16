@@ -1468,6 +1468,11 @@ footer .copy p a:hover {
   margin-bottom: 10px;
 }
 
+.patient--single__content p strong {
+  font-weight: 600;
+  color: rgba(51, 51, 51, 0.7);
+}
+
 @media (max-width: 600px) {
   .patient--single {
     -webkit-flex-wrap: wrap;
