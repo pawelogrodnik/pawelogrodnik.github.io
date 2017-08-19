@@ -2391,22 +2391,14 @@ footer .copy p a:hover {
 
 .wady--single {
   text-align: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 30%;
-     -moz-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
+  width: 30%;
   max-width: 30%;
   margin-top: 20px;
 }
 
 @media (max-width: 600px) {
   .wady--single {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 30%;
-       -moz-box-flex: 1;
-        -ms-flex: 1 0 30%;
-            flex: 1 0 30%;
+    width: 50%;
     min-width: 150px;
     max-width: 100%;
   }
