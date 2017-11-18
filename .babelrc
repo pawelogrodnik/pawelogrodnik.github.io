@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+          "es2015",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions",
+                "IE >= 11"
+              ]
+            },
+            "useBuiltIns": true
+          }
+        ]
+      ],
+    // "plugins": [
+    //     "transform-es2015-destructuring"
+    // ]
+}

@@ -1,0 +1,1202 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'webfont-medical-icons';
+  src: url("../../fonts/webfont-medical-icons.eot");
+  src: url("../../fonts/webfont-medical-icons.eot?#iefix") format("embedded-opentype"), url("../../fonts/webfont-medical-icons.ttf") format("truetype"), url("../../fonts/webfont-medical-icons.woff") format("woff"), url("../../fonts/webfont-medical-icons.svg#webfont-medical-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="medical-icon-"], [class*=" medical-icon-"] {
+  font-family: 'webfont-medical-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.medical-icon-i-womens-health:before {
+  content: "\e600";
+}
+
+.medical-icon-i-waiting-area:before {
+  content: "\e601";
+}
+
+.medical-icon-i-volume-control:before {
+  content: "\e602";
+}
+
+.medical-icon-i-ultrasound:before {
+  content: "\e603";
+}
+
+.medical-icon-i-text-telephone:before {
+  content: "\e604";
+}
+
+.medical-icon-i-surgery:before {
+  content: "\e605";
+}
+
+.medical-icon-i-stairs:before {
+  content: "\e606";
+}
+
+.medical-icon-i-radiology:before {
+  content: "\e607";
+}
+
+.medical-icon-i-physical-therapy:before {
+  content: "\e608";
+}
+
+.medical-icon-i-pharmacy:before {
+  content: "\e609";
+}
+
+.medical-icon-i-pediatrics:before {
+  content: "\e60a";
+}
+
+.medical-icon-i-pathology:before {
+  content: "\e60b";
+}
+
+.medical-icon-i-outpatient:before {
+  content: "\e60c";
+}
+
+.medical-icon-i-mental-health:before {
+  content: "\e60d";
+}
+
+.medical-icon-i-medical-records:before {
+  content: "\e60e";
+}
+
+.medical-icon-i-medical-library:before {
+  content: "\e60f";
+}
+
+.medical-icon-i-mammography:before {
+  content: "\e610";
+}
+
+.medical-icon-i-laboratory:before {
+  content: "\e611";
+}
+
+.medical-icon-i-labor-delivery:before {
+  content: "\e612";
+}
+
+.medical-icon-i-immunizations:before {
+  content: "\e613";
+}
+
+.medical-icon-i-imaging-root-category:before {
+  content: "\e614";
+}
+
+.medical-icon-i-imaging-alternative-pet:before {
+  content: "\e615";
+}
+
+.medical-icon-i-imaging-alternative-mri:before {
+  content: "\e616";
+}
+
+.medical-icon-i-imaging-alternative-mri-two:before {
+  content: "\e617";
+}
+
+.medical-icon-i-imaging-alternative-ct:before {
+  content: "\e618";
+}
+
+.medical-icon-i-fire-extinguisher:before {
+  content: "\e619";
+}
+
+.medical-icon-i-family-practice:before {
+  content: "\e61a";
+}
+
+.medical-icon-i-emergency:before {
+  content: "\e61b";
+}
+
+.medical-icon-i-elevators:before {
+  content: "\e61c";
+}
+
+.medical-icon-i-ear-nose-throat:before {
+  content: "\e61d";
+}
+
+.medical-icon-i-drinking-fountain:before {
+  content: "\e61e";
+}
+
+.medical-icon-i-cardiology:before {
+  content: "\e61f";
+}
+
+.medical-icon-i-billing:before {
+  content: "\e620";
+}
+
+.medical-icon-i-anesthesia:before {
+  content: "\e621";
+}
+
+.medical-icon-i-ambulance:before {
+  content: "\e622";
+}
+
+.medical-icon-i-alternative-complementary:before {
+  content: "\e623";
+}
+
+.medical-icon-i-administration:before {
+  content: "\e624";
+}
+
+.medical-icon-i-social-services:before {
+  content: "\e625";
+}
+
+.medical-icon-i-smoking:before {
+  content: "\e626";
+}
+
+.medical-icon-i-restrooms:before {
+  content: "\e627";
+}
+
+.medical-icon-i-restaurant:before {
+  content: "\e628";
+}
+
+.medical-icon-i-respiratory:before {
+  content: "\e629";
+}
+
+.medical-icon-i-registration:before {
+  content: "\e62a";
+}
+
+.medical-icon-i-oncology:before {
+  content: "\e62b";
+}
+
+.medical-icon-i-nutrition:before {
+  content: "\e62c";
+}
+
+.medical-icon-i-nursery:before {
+  content: "\e62d";
+}
+
+.medical-icon-i-no-smoking:before {
+  content: "\e62e";
+}
+
+.medical-icon-i-neurology:before {
+  content: "\e62f";
+}
+
+.medical-icon-i-mri-pet:before {
+  content: "\e630";
+}
+
+.medical-icon-i-interpreter-services:before {
+  content: "\e631";
+}
+
+.medical-icon-i-internal-medicine:before {
+  content: "\e632";
+}
+
+.medical-icon-i-intensive-care:before {
+  content: "\e633";
+}
+
+.medical-icon-i-inpatient:before {
+  content: "\e634";
+}
+
+.medical-icon-i-information-us:before {
+  content: "\e635";
+}
+
+.medical-icon-i-infectious-diseases:before {
+  content: "\e636";
+}
+
+.medical-icon-i-hearing-assistance:before {
+  content: "\e637";
+}
+
+.medical-icon-i-health-services:before {
+  content: "\e638";
+}
+
+.medical-icon-i-health-education:before {
+  content: "\e639";
+}
+
+.medical-icon-i-gift-shop:before {
+  content: "\e63a";
+}
+
+.medical-icon-i-genetics:before {
+  content: "\e63b";
+}
+
+.medical-icon-i-first-aid:before {
+  content: "\e63c";
+}
+
+.medical-icon-i-dermatology:before {
+  content: "\e63d";
+}
+
+.medical-icon-i-dental:before {
+  content: "\e63e";
+}
+
+.medical-icon-i-coffee-shop:before {
+  content: "\e63f";
+}
+
+.medical-icon-i-chapel:before {
+  content: "\e640";
+}
+
+.medical-icon-i-cath-lab:before {
+  content: "\e641";
+}
+
+.medical-icon-i-care-staff-area:before {
+  content: "\e642";
+}
+
+.medical-icon-i-accessibility:before {
+  content: "\e643";
+}
+
+.medical-icon-i-diabetes-education:before {
+  content: "\e644";
+}
+
+.medical-icon-i-hospital:before {
+  content: "\e645";
+}
+
+.medical-icon-i-kidney:before {
+  content: "\e646";
+}
+
+.medical-icon-i-ophthalmology:before {
+  content: "\e647";
+}
+
+.medical-icon-womens-health:before {
+  content: "\e648";
+}
+
+.medical-icon-waiting-area:before {
+  content: "\e649";
+}
+
+.medical-icon-volume-control:before {
+  content: "\e64a";
+}
+
+.medical-icon-ultrasound:before {
+  content: "\e64b";
+}
+
+.medical-icon-text-telephone:before {
+  content: "\e64c";
+}
+
+.medical-icon-surgery:before {
+  content: "\e64d";
+}
+
+.medical-icon-stairs:before {
+  content: "\e64e";
+}
+
+.medical-icon-radiology:before {
+  content: "\e64f";
+}
+
+.medical-icon-physical-therapy:before {
+  content: "\e650";
+}
+
+.medical-icon-pharmacy:before {
+  content: "\e651";
+}
+
+.medical-icon-pediatrics:before {
+  content: "\e652";
+}
+
+.medical-icon-pathology:before {
+  content: "\e653";
+}
+
+.medical-icon-outpatient:before {
+  content: "\e654";
+}
+
+.medical-icon-ophthalmology:before {
+  content: "\e655";
+}
+
+.medical-icon-mental-health:before {
+  content: "\e656";
+}
+
+.medical-icon-medical-records:before {
+  content: "\e657";
+}
+
+.medical-icon-medical-library:before {
+  content: "\e658";
+}
+
+.medical-icon-mammography:before {
+  content: "\e659";
+}
+
+.medical-icon-laboratory:before {
+  content: "\e65a";
+}
+
+.medical-icon-labor-delivery:before {
+  content: "\e65b";
+}
+
+.medical-icon-kidney:before {
+  content: "\e65c";
+}
+
+.medical-icon-immunizations:before {
+  content: "\e65d";
+}
+
+.medical-icon-imaging-root-category:before {
+  content: "\e65e";
+}
+
+.medical-icon-imaging-alternative-pet:before {
+  content: "\e65f";
+}
+
+.medical-icon-imaging-alternative-mri:before {
+  content: "\e660";
+}
+
+.medical-icon-imaging-alternative-mri-two:before {
+  content: "\e661";
+}
+
+.medical-icon-imaging-alternative-ct:before {
+  content: "\e662";
+}
+
+.medical-icon-hospital:before {
+  content: "\e663";
+}
+
+.medical-icon-fire-extinguisher:before {
+  content: "\e664";
+}
+
+.medical-icon-family-practice:before {
+  content: "\e665";
+}
+
+.medical-icon-emergency:before {
+  content: "\e666";
+}
+
+.medical-icon-elevators:before {
+  content: "\e667";
+}
+
+.medical-icon-ear-nose-throat:before {
+  content: "\e668";
+}
+
+.medical-icon-drinking-fountain:before {
+  content: "\e669";
+}
+
+.medical-icon-diabetes-education:before {
+  content: "\e66a";
+}
+
+.medical-icon-cardiology:before {
+  content: "\e66b";
+}
+
+.medical-icon-billing:before {
+  content: "\e66c";
+}
+
+.medical-icon-anesthesia:before {
+  content: "\e66d";
+}
+
+.medical-icon-ambulance:before {
+  content: "\e66e";
+}
+
+.medical-icon-alternative-complementary:before {
+  content: "\e66f";
+}
+
+.medical-icon-administration:before {
+  content: "\e670";
+}
+
+.medical-icon-accessibility:before {
+  content: "\e671";
+}
+
+.medical-icon-social-services:before {
+  content: "\e672";
+}
+
+.medical-icon-smoking:before {
+  content: "\e673";
+}
+
+.medical-icon-restrooms:before {
+  content: "\e674";
+}
+
+.medical-icon-restaurant:before {
+  content: "\e675";
+}
+
+.medical-icon-respiratory:before {
+  content: "\e676";
+}
+
+.medical-icon-oncology:before {
+  content: "\e677";
+}
+
+.medical-icon-nutrition:before {
+  content: "\e678";
+}
+
+.medical-icon-nursery:before {
+  content: "\e679";
+}
+
+.medical-icon-no-smoking:before {
+  content: "\e67a";
+}
+
+.medical-icon-neurology:before {
+  content: "\e67b";
+}
+
+.medical-icon-mri-pet:before {
+  content: "\e67c";
+}
+
+.medical-icon-interpreter-services:before {
+  content: "\e67d";
+}
+
+.medical-icon-internal-medicine:before {
+  content: "\e67e";
+}
+
+.medical-icon-intensive-care:before {
+  content: "\e67f";
+}
+
+.medical-icon-inpatient:before {
+  content: "\e680";
+}
+
+.medical-icon-information-us:before {
+  content: "\e681";
+}
+
+.medical-icon-infectious-diseases:before {
+  content: "\e682";
+}
+
+.medical-icon-hearing-assistance:before {
+  content: "\e683";
+}
+
+.medical-icon-health-services:before {
+  content: "\e684";
+}
+
+.medical-icon-health-education:before {
+  content: "\e685";
+}
+
+.medical-icon-gift-shop:before {
+  content: "\e686";
+}
+
+.medical-icon-genetics:before {
+  content: "\e687";
+}
+
+.medical-icon-first-aid:before {
+  content: "\e688";
+}
+
+.medical-icon-dental:before {
+  content: "\e689";
+}
+
+.medical-icon-coffee-shop:before {
+  content: "\e68a";
+}
+
+.medical-icon-chapel:before {
+  content: "\e68b";
+}
+
+.medical-icon-cath-lab:before {
+  content: "\e68c";
+}
+
+.medical-icon-care-staff-area:before {
+  content: "\e68d";
+}
+
+.medical-icon-registration:before {
+  content: "\e68e";
+}
+
+.medical-icon-dermatology:before {
+  content: "\e68f";
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 100;
+  height: 15px;
+  width: 15px;
+  display: none !important;
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  letter-spacing: -0.25px;
+}
+
+body .page-container-wrapper {
+  margin-top: 80px;
+  min-height: -webkit-calc(100vh - 265px);
+  min-height: -moz-calc(100vh - 265px);
+  min-height: calc(100vh - 265px);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.1em;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  color: #ffc400;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: lighter;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+h2 {
+  font-size: 2.5em;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1.875em;
+  }
+}
+
+h3 {
+  font-size: 1.5em;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 1.125em;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+@media (max-width: 767px) {
+  h4 {
+    font-size: 1em;
+  }
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.btn {
+  padding: 15px 30px;
+  text-decoration: none;
+  border: 2px solid #ffc400;
+  font-size: 24px;
+  color: #ffc400;
+  display: inline-block;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  -moz-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.btn:hover {
+  background-color: rgba(255, 196, 0, 0.7);
+  color: #fff;
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-background-clip: padding-box;
+       background-clip: padding-box;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-appearance: none;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a:not(.button) {
+  color: #273344;
+}
+
+a:not(.button):hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 25px;
+  display: inline-block;
+  -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+          border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: .2s opacity linear;
+  -o-transition: .2s opacity linear;
+  -moz-transition: .2s opacity linear;
+  transition: .2s opacity linear;
+}
+
+.button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.button--main {
+  border: 1px solid #273344;
+  background-color: #273344;
+  color: #fff;
+}
+
+.exit-btn {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.hero-banner {
+  height: 100vh;
+  min-height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-banner .content {
+  -webkit-transform: skewX(45deg);
+     -moz-transform: skewX(45deg);
+      -ms-transform: skewX(45deg);
+       -o-transform: skewX(45deg);
+          transform: skewX(45deg);
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 60%;
+  width: 900px;
+  position: absolute;
+  padding-left: 10%;
+  left: -10%;
+  bottom: 20%;
+}
+
+.hero-banner h1 {
+  font-size: 80px;
+}
+
+.hero-banner h3 {
+  font-size: 30px;
+}
+
+.hero-banner h1,
+.hero-banner h3 {
+  padding-left: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  -webkit-transform: skewX(-45deg);
+     -moz-transform: skewX(-45deg);
+      -ms-transform: skewX(-45deg);
+       -o-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+
+.dental-braces {
+  background-color: #273344;
+  padding: 60px 0;
+}
+
+.dental-braces .container {
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dental-braces__single {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  position: relative;
+}
+
+.dental-braces__single .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  -webkit-perspective: 1300px;
+     -moz-perspective: 1300px;
+          perspective: 1300px;
+}
+
+.dental-braces__single .content--front, .dental-braces__single .content--back {
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
+  position: absolute;
+  -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+       -o-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  background-color: #273344;
+  color: #fff;
+  text-align: center;
+}
+
+.dental-braces__single .content--front .button, .dental-braces__single .content--back .button {
+  margin: 15px auto;
+}
+
+.dental-braces__single .content--front__inner, .dental-braces__single .content--back__inner {
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.dental-braces__single .content--front {
+  -webkit-transform: rotateY(0deg) rotate(0deg);
+     -moz-transform: rotateY(0deg) rotate(0deg);
+          transform: rotateY(0deg) rotate(0deg);
+  z-index: 2;
+}
+
+.dental-braces__single .content--front .image-wrapper {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  -moz-background-size: contain;
+       background-size: contain;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.dental-braces__single .content--front a {
+  display: block;
+  text-align: right;
+  color: #fff;
+}
+
+.dental-braces__single .content--back {
+  -webkit-transform: rotateY(-180deg) rotate(0deg);
+     -moz-transform: rotateY(-180deg) rotate(0deg);
+          transform: rotateY(-180deg) rotate(0deg);
+  position: relative;
+  padding: 60px 30px 30px;
+}
+
+.dental-braces__single .content--back p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.dental-braces__single .content--back p.subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.dental-braces__single .content--back h3 {
+  color: #e5ba06;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.dental-braces__single .content--back h3 span {
+  font-size: 14px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.dental-braces__single .content--back .exit-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.dental-braces__single .content--back .exit-btn i {
+  color: #fff;
+  line-height: 26px;
+}
+
+.dental-braces__single .content.flipped .content--front {
+  -webkit-transform: rotateY(-180deg) rotate(0deg);
+     -moz-transform: rotateY(-180deg) rotate(0deg);
+          transform: rotateY(-180deg) rotate(0deg);
+}
+
+.dental-braces__single .content.flipped .content--back {
+  -webkit-transform: rotateY(0deg);
+     -moz-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
