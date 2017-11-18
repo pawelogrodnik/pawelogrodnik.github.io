@@ -6,6 +6,7 @@ $(document).ready(() => {
 
     flipButtons.on('click', (e) => {
         console.log(e);
+        flipButtons.closest('.content').removeClass('flipped');
         $(e.target).closest('.content').addClass('flipped');
     })
     exitButtons.on('click', (e) => {

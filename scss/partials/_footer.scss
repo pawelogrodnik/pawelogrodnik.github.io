@@ -1,0 +1,175 @@
+footer {
+    padding: 50px 0 20px;
+    background-color: $mainDark;
+    color: #fff;
+    position: relative;
+}
+
+footer .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer .container .footer--block {
+    border-right: 1px solid #a1a1a1;
+    padding: 10px 25px;
+    width: 25%;
+    text-align: center;
+    color: #a1a1a1;
+}
+
+@media (max-width: 991px) {
+    footer .container .footer--block {
+        width: 33%;
+    }
+}
+
+footer .container .footer--block:last-of-type {
+    border-right: 0;
+}
+
+footer .container .footer--block h3 {
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #a1a1a1;
+    letter-spacing: 0.25px;
+}
+
+footer .container .footer--block i {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+footer .container .footer--block p {
+    margin-bottom: 5px;
+}
+
+footer .container .footer--block a {
+    text-decoration: none;
+    color: #a1a1a1;
+    -webkit-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+footer .container .footer--block a:hover {
+    opacity: .7;
+}
+
+@media (max-width: 600px) {
+    footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    footer .container .footer--block {
+        border-right: 0;
+        border-bottom: 1px solid #a1a1a1;
+        width: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 80%;
+        padding: 10px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    footer .container .footer--block:last-of-type {
+        border-bottom: 0;
+    }
+    footer .container .footer--block__header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    footer .container .footer--block__header i {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: 0 10px 0 0;
+        width: 25px;
+    }
+    footer .container .footer--block__header h3 {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    footer .container .footer--block__header i,
+    footer .container .footer--block__header h3 {
+        line-height: 24px;
+    }
+    footer .container .footer--block__text {
+        text-align: right;
+    }
+}
+
+@media (max-width: 400px) {
+    footer .container .footer--block {
+        width: 90%;
+        padding: 10px 5px;
+    }
+}
+
+footer .copy {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+footer .copy p {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+}
+
+footer .copy p a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+footer .copy p a:hover {
+    text-decoration: underline;
+}
