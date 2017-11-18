@@ -34,11 +34,11 @@
   }
 
   h1 {
-      font-size: em(60);
+      font-size: em(45);
       font-weight: lighter;
       color: rgba(#333, .7);
       @media (max-width: 767px) {
-          font-size: 50px;
+          font-size: 40px;
       }
   }
 
@@ -47,6 +47,16 @@
       color: rgba(#333, .7);
       @media (max-width: 450px) {
           font-size: em(30);
+      }
+      &.heading-top {
+          background-color: rgba($gold, .6);
+          color: #fff;
+          padding: 0 10px 20px;
+          margin-top: 0;
+          font-size: em(30);
+          @media (max-width: 450px) {
+              font-size: em(25);
+          }
       }
   }
 
