@@ -813,14 +813,14 @@ h6 span {
 }
 
 h1 {
-  font-size: 3.75em;
+  font-size: 2.8125em;
   font-weight: lighter;
   color: rgba(51, 51, 51, 0.7);
 }
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -832,6 +832,20 @@ h2 {
 @media (max-width: 450px) {
   h2 {
     font-size: 1.875em;
+  }
+}
+
+h2.heading-top {
+  background-color: rgba(229, 186, 6, 0.6);
+  color: #fff;
+  padding: 0 10px 20px;
+  margin-top: 0;
+  font-size: 1.875em;
+}
+
+@media (max-width: 450px) {
+  h2.heading-top {
+    font-size: 1.5625em;
   }
 }
 
