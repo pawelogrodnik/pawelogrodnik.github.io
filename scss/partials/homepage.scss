@@ -233,7 +233,7 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 50%;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
         &__content {
             width: calc(100% - 200px);
@@ -243,6 +243,113 @@
             h3 {
                 font-weight: bold;
                 margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.sm-header {
+    padding: 40px 0;
+    background-color: $lightGray;
+    color: #fff;
+    h1,
+    h2 {
+        color: inherit;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        span {
+            // font-weight: bold;
+        }
+    }
+}
+
+section {
+    &.dark,
+    &.grey,
+    &.white {
+        padding: 60px 0;
+        @media (max-width: 767px) {
+            padding: 40px 0;
+        }
+        ul {
+            li {
+                &:before {
+                    content: '-';
+                    margin-right: 4px;
+                }
+            }
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: left;
+            margin-bottom: 15px;
+            &.highlight {
+                position: relative;
+                margin-bottom: 30px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    width: 60px;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        p,
+        li,
+        a {
+            font-weight: 300;
+        }
+    }
+    &.dark {
+        background-color: $mainDark;
+        color: #fff;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        li,
+        a {
+            color: inherit;
+            &.highlight {
+                &:after {
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+    &.grey {
+        background-color: $lightGray;
+    }
+    &.white {
+        background-color: #fff;
+    }
+}
+
+ul {
+    &.txt-ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        li {
+            width: 50%;
+            margin-bottom: 15px;
+            &:nth-of-type(2n+1) {
+                padding-right: 15px;
+            }
+            &:nth-of-type(2n+2) {
+                padding-left: 15px;
             }
         }
     }

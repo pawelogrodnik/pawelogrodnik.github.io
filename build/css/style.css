@@ -773,6 +773,7 @@ body {
 }
 
 body .page-container-wrapper {
+  margin-top: 93px;
   min-height: -webkit-calc(100vh - 265px);
   min-height: -moz-calc(100vh - 265px);
   min-height: calc(100vh - 265px);
@@ -948,11 +949,11 @@ input[type="week"] {
   padding: 0;
 }
 
-a:not(.button) {
+a {
   color: #273344;
 }
 
-a:not(.button):hover {
+a:hover {
   cursor: pointer;
 }
 
@@ -1037,6 +1038,119 @@ a.button-primary:hover {
   -o-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.con {
+  display: block;
+  position: relative;
+  height: 55px;
+  padding: 10px 0;
+}
+
+.con:hover {
+  cursor: pointer;
+}
+
+.con.open .top {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+     -moz-transform: translateY(15px) rotateZ(45deg);
+      -ms-transform: translateY(15px) rotate(45deg);
+       -o-transform: translateY(15px) rotateZ(45deg);
+          transform: translateY(15px) rotateZ(45deg);
+}
+
+.con.open .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+     -moz-transform: translateY(-15px) rotateZ(-45deg);
+      -ms-transform: translateY(-15px) rotate(-45deg);
+       -o-transform: translateY(-15px) rotateZ(-45deg);
+          transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.con.open .middle {
+  width: 0;
+}
+
+.con .bar {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background: #fff;
+  margin: 10px auto;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.con .middle {
+  margin: 0 auto;
+}
+
+header {
+  padding: 10px 0;
+  background-color: #273344;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translateZ(0);
+  -webkit-box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
+}
+
+header .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+header nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #273344;
+  border-right: 2px solid #fff;
+}
+
+header nav ul {
+  padding: 80px 0;
+}
+
+header nav ul li a {
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.1);
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  font-size: 16px;
+}
+
+header nav ul li:last-of-type a {
+  border-bottom: 0;
 }
 
 footer {
@@ -1571,4 +1685,172 @@ footer .copy p a:hover {
 .featured--single__content h3 {
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.sm-header {
+  padding: 40px 0;
+  background-color: #bfbfbf;
+  color: #fff;
+}
+
+.sm-header h1,
+.sm-header h2 {
+  color: inherit;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+section.dark, section.grey, section.white {
+  padding: 60px 0;
+}
+
+@media (max-width: 767px) {
+  section.dark, section.grey, section.white {
+    padding: 40px 0;
+  }
+}
+
+section.dark ul li:before, section.grey ul li:before, section.white ul li:before {
+  content: '-';
+  margin-right: 4px;
+}
+
+section.dark h1,
+section.dark h2,
+section.dark h3,
+section.dark h4,
+section.dark h5,
+section.dark h6, section.grey h1,
+section.grey h2,
+section.grey h3,
+section.grey h4,
+section.grey h5,
+section.grey h6, section.white h1,
+section.white h2,
+section.white h3,
+section.white h4,
+section.white h5,
+section.white h6 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+section.dark h1.highlight,
+section.dark h2.highlight,
+section.dark h3.highlight,
+section.dark h4.highlight,
+section.dark h5.highlight,
+section.dark h6.highlight, section.grey h1.highlight,
+section.grey h2.highlight,
+section.grey h3.highlight,
+section.grey h4.highlight,
+section.grey h5.highlight,
+section.grey h6.highlight, section.white h1.highlight,
+section.white h2.highlight,
+section.white h3.highlight,
+section.white h4.highlight,
+section.white h5.highlight,
+section.white h6.highlight {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+section.dark h1.highlight:after,
+section.dark h2.highlight:after,
+section.dark h3.highlight:after,
+section.dark h4.highlight:after,
+section.dark h5.highlight:after,
+section.dark h6.highlight:after, section.grey h1.highlight:after,
+section.grey h2.highlight:after,
+section.grey h3.highlight:after,
+section.grey h4.highlight:after,
+section.grey h5.highlight:after,
+section.grey h6.highlight:after, section.white h1.highlight:after,
+section.white h2.highlight:after,
+section.white h3.highlight:after,
+section.white h4.highlight:after,
+section.white h5.highlight:after,
+section.white h6.highlight:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  border-bottom: 1px solid #fff;
+}
+
+section.dark p,
+section.dark li,
+section.dark a, section.grey p,
+section.grey li,
+section.grey a, section.white p,
+section.white li,
+section.white a {
+  font-weight: 300;
+}
+
+section.dark {
+  background-color: #273344;
+  color: #fff;
+}
+
+section.dark h1,
+section.dark h2,
+section.dark h3,
+section.dark h4,
+section.dark h5,
+section.dark h6,
+section.dark p,
+section.dark ul,
+section.dark li,
+section.dark a {
+  color: inherit;
+}
+
+section.dark h1.highlight:after,
+section.dark h2.highlight:after,
+section.dark h3.highlight:after,
+section.dark h4.highlight:after,
+section.dark h5.highlight:after,
+section.dark h6.highlight:after,
+section.dark p.highlight:after,
+section.dark ul.highlight:after,
+section.dark li.highlight:after,
+section.dark a.highlight:after {
+  border-color: #fff;
+}
+
+section.grey {
+  background-color: #bfbfbf;
+}
+
+section.white {
+  background-color: #fff;
+}
+
+ul.txt-ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+ul.txt-ul li {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+ul.txt-ul li:nth-of-type(2n+1) {
+  padding-right: 15px;
+}
+
+ul.txt-ul li:nth-of-type(2n+2) {
+  padding-left: 15px;
 }

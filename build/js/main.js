@@ -15,3 +15,9 @@ $(document).ready(function () {
         $(e.target).closest('.content').removeClass('flipped');
     });
 });
+$('.con').on('click', function () {
+    var hamburger = $(this);
+    hamburger.hasClass('open') ? hamburger.removeClass('open') : hamburger.addClass('open');
+    // hamburger.toggleClass('open');
+    $('nav').stop().toggle("slide");
+});
