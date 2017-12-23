@@ -46,6 +46,21 @@
 }
 
 .intro {
+    padding: 20px 0;
+    .container {
+        display: flex;
+        align-items: center;
+        .text-section {
+            width: 65%;
+        }
+        .icon-wrapper {
+            width: 35%;
+            text-align: right;
+            svg {
+                max-width: 300px;
+            }
+        }
+    }
     background-color: $darkLight;
     h2 {
         color: inherit;
@@ -54,6 +69,13 @@
     h2,
     p {
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+        text-align: left;
+    }
+    p {
+        font-size: 20px;
+        text-align: justify;
     }
     color: #fff;
 }
@@ -134,9 +156,9 @@
             &--back {
                 transform: rotateY(-180deg) rotate(0deg);
                 position: relative;
-                padding: 60px 30px 30px; // padding-top: 60px;
+                padding: 60px 30px 50px; // padding-top: 60px;
                 p {
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 300;
                     line-height: 1.5;
                     margin-bottom: 10px;
@@ -146,6 +168,9 @@
                         text-transform: uppercase;
                         margin-bottom: 0;
                         text-align: center;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 40px;
                     }
                 }
                 h3 {
@@ -159,6 +184,9 @@
                         font-weight: 400;
                         color: rgba(#333, .7);
                     }
+                }
+                a.button-primary {
+                    margin-bottom: -20px;
                 }
                 .exit-btn {
                     position: absolute;
@@ -183,7 +211,7 @@
         }
         &.sm {
             width: 550px;
-            height: 250px;
+            height: 300px;
             .content--back {
                 padding-top: 30px;
                 h3 {
@@ -352,5 +380,21 @@ ul {
                 padding-left: 15px;
             }
         }
+    }
+}
+
+.separator {
+    background-color: $gold;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    h2 {
+        font-weight: 400;
+        margin: 0;
+        color: inherit;
+        font-size: 50px;
+    }
+    a {
+margin-top: 30px;
     }
 }
