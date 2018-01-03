@@ -1,31 +1,31 @@
 'use strict'
 
 $(document).ready(() => {
-    const flipButtons = $('.flip-btn');
-    const exitButtons = $('.exit-btn');
+	const flipButtons = $('.flip-btn');
+	const exitButtons = $('.exit-btn');
 
-    flipButtons.on('click', (e) => {
-        console.log(e);
-        flipButtons.closest('.content').removeClass('flipped');
-        $(e.target).closest('.content').addClass('flipped');
-    })
-    exitButtons.on('click', (e) => {
-        console.log(e);
+	flipButtons.on('click', (e) => {
+		console.log(e);
+		flipButtons.closest('.content').removeClass('flipped');
+		$(e.target).closest('.content').addClass('flipped');
+	})
+	exitButtons.on('click', (e) => {
+		console.log(e);
 
-        $(e.target).closest('.content').removeClass('flipped');
-    })
+		$(e.target).closest('.content').removeClass('flipped');
+	})
 
 })
-$('.con').on('click', function() {
-    const hamburger = $(this);
-    hamburger.hasClass('open') ? hamburger.removeClass('open') : hamburger.addClass('open');
-    // hamburger.toggleClass('open');
-    $('nav').toggle("slide");
+$('.con').on('click', function () {
+	const hamburger = $(this);
+	hamburger.hasClass('open') ? hamburger.removeClass('open') : hamburger.addClass('open');
+	// hamburger.toggleClass('open');
+	$('nav').toggle("slide");
 });
 
 
 
-  var Snowflake = (function() {
+var Snowflake = (function () {
 
 	var flakes;
 	var flakesTotal = 250;
@@ -47,7 +47,7 @@ $('.con').on('click', function() {
 		this.div.style.height = this.size + 'px';
 	}
 
-	Snowflake.prototype.move = function() {
+	Snowflake.prototype.move = function () {
 		if (this.hit) {
 			if (Math.random() > 0.995) this.melt = true;
 		} else {
@@ -75,15 +75,15 @@ $('.con').on('click', function() {
 		this.hit = !this.melt && this.y < mouseY && dx * dx + dy * dy < 2400;
 	};
 
-	Snowflake.prototype.draw = function() {
+	Snowflake.prototype.draw = function () {
 		this.div.style.transform =
-		this.div.style.MozTransform =
-		this.div.style.webkitTransform =
+			this.div.style.MozTransform =
+			this.div.style.webkitTransform =
 			'translate3d(' + this.x + 'px' + ',' + this.y + 'px,0)';
 	};
 
 	function update() {
-		for (var i = flakes.length; i--; ) {
+		for (var i = flakes.length; i--;) {
 			var flake = flakes[i];
 			flake.move();
 			flake.draw();
@@ -91,10 +91,10 @@ $('.con').on('click', function() {
 		requestAnimationFrame(update);
 	}
 
-	Snowflake.init = function(container) {
+	Snowflake.init = function (container) {
 		flakes = [];
 
-		for (var i = flakesTotal; i--; ) {
+		for (var i = flakesTotal; i--;) {
 			var size = (Math.random() + 0.2) * 12 + 1;
 			var flake = new Snowflake(
 				size,
@@ -106,54 +106,58 @@ $('.con').on('click', function() {
 			container.appendChild(flake.div);
 			flakes.push(flake);
 		}
-    
-    container.onmousemove = function(event) {
-	  	mouseX = event.clientX;
-  		mouseY = event.clientY;
-  		wind = (mouseX - window.innerWidth / 2) / window.innerWidth * 6;
-  	};
 
-	  container.ontouchstart = function(event) {
-		  mouseX = event.targetTouches[0].clientX;
-		  mouseY = event.targetTouches[0].clientY;
-		  event.preventDefault();
-  	};
+		container.onmousemove = function (event) {
+			mouseX = event.clientX;
+			mouseY = event.clientY;
+			wind = (mouseX - window.innerWidth / 2) / window.innerWidth * 6;
+		};
 
-  	window.ondeviceorientation = function(event) {
-	  	if (event) {
-		  	wind = event.gamma / 10;
-  		}
-  	};
-    
-  	update();
+		container.ontouchstart = function (event) {
+			mouseX = event.targetTouches[0].clientX;
+			mouseY = event.targetTouches[0].clientY;
+			event.preventDefault();
+		};
+
+		window.ondeviceorientation = function (event) {
+			if (event) {
+				wind = event.gamma / 10;
+			}
+		};
+
+		update();
 	};
 
 	return Snowflake;
 
 }());
 
-window.onload = function() {
-//   setTimeout(function() {
-//   	Snowflake.init(document.getElementById('snow'));
-//   }, 500);
+window.onload = function () {
+	//   setTimeout(function() {
+	//   	Snowflake.init(document.getElementById('snow'));
+	//   }, 500);
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    var $clickMe = $('.click-icon'),
-        $card = $('.card');
-    
-    var audio = document.getElementById('jingle');
-    
-    $card.on('click', function() {
-        setTimeout(function() {
-            Snowflake.init(document.getElementById('snow'));
-        }, 500);
-          $(this).toggleClass('is-opened');
-          audio.play();
-      $clickMe.toggleClass('is-hidden');
-  
-      });
-  
-  });
+	var $clickMe = $('.click-icon'),
+		$card = $('.card');
+
+	var audio = document.getElementById('jingle');
+
+	$card.on('click', function () {
+		setTimeout(function () {
+			Snowflake.init(document.getElementById('snow'));
+		}, 500);
+		$(this).toggleClass('is-opened');
+		if (audio.paused == true) {
+			audio.play();
+		} else {
+			audio.pause();
+		}
+		$clickMe.toggleClass('is-hidden');
+
+	});
+
+});

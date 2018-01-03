@@ -137,7 +137,11 @@ $(document).ready(function () {
 			Snowflake.init(document.getElementById('snow'));
 		}, 500);
 		$(this).toggleClass('is-opened');
-		audio.play();
+		if (audio.paused == true) {
+			audio.play();
+		} else {
+			audio.pause();
+		}
 		$clickMe.toggleClass('is-hidden');
 	});
 });
