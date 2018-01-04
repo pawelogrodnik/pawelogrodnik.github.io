@@ -85,6 +85,13 @@
       margin-bottom: 10px;
   }
 
+  a.anchor {
+      display: block;
+      position: relative;
+      top: -93px;
+      visibility: hidden;
+  }
+
   .btn {
       padding: 15px 30px; //   border-radius: 35px;
       text-decoration: none;
@@ -93,6 +100,8 @@
       color: #ffc400;
       display: inline-block;
       transition: .3s linear;
+      border-radius: 30px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
       &:hover {
           background-color: rgba(#ffc400, .7);
           color: #fff;
@@ -102,6 +111,15 @@
           border-color: #fff;
           &:hover {
               background-color: rgba(#fff, .7);
+              color: $mainDark;
+          }
+      }
+      &--dark {
+          color: $mainDark;
+          border-color: $mainDark;
+          &:hover {
+              cursor: pointer;
+              background-color: rgba($mainDark, .1);
               color: $mainDark;
           }
       }
@@ -160,6 +178,7 @@
 
   .button {
       padding: 10px 25px;
+      border-radius: 30px;
       display: inline-block;
       border-radius: 25px; //   font-family: 'Raleway', sans-serif;
       appearance: none;
@@ -211,5 +230,51 @@
       &:hover {
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
           transition: all 0.3s ease;
+      }
+  }
+
+  @keyframes pulse {
+      0% {
+          opacity: 0.4;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          opacity: .4;
+      }
+  }
+
+  form {
+      margin: 30px auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      margin: 0 0 20px;
+      appearance: none;
+      box-shadow: none;
+      border: 1px solid $mainDark;
+      border-radius: 30px;
+      padding: 10px 15px;
+      width: 100%;
+      font-family: inherit;
+  }
+
+  textarea {
+      resize: vertical;
+      min-height: 100px;
+  }
+
+  input {
+      &[type="submit"] {
+          @extend .btn;
+          @extend .btn--dark;
+          min-width: 150px;
+          padding: 10px 15px;
+          background-color: #fff;
+          font-size: 16px;
+          font-weight: 500;
       }
   }

@@ -1,5 +1,5 @@
 .hero-banner {
-    height: 100vh;
+    height: calc(100vh - 93px);
     min-height: 400px;
     width: 100%;
     background-repeat: no-repeat;
@@ -36,6 +36,20 @@
         color: #fff;
         text-align: left;
         transform: skewX(-45deg);
+    }
+    .animate {
+        animation: pulse 3s infinite; /* IE 10+, Fx 29+ */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        i {
+            font-size: 60px;
+            color: $gold;
+            @media (max-width: 500px){
+                font-size: 40px;
+            }
+        }
     }
 }
 
