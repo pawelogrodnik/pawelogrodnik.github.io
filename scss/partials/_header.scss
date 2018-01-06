@@ -6,6 +6,7 @@
     &:hover {
         cursor: pointer;
     }
+
     &.open {
         .top {
             transform: translateY(15px) rotateZ(45deg);
@@ -45,6 +46,35 @@ header {
         justify-content: space-between;
         align-content: center;
     }
+    .phone {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 55px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+            // top: 50%;
+            // transform: translateY(-50%);
+        }
+        a {
+            font-size: 40px;
+            position: relative;
+            padding-left: 50px;
+            &:hover {
+                i {
+                    animation-name: shake;
+                    animation-duration: .5s;
+                    transform-origin: 50% 50%;
+                }
+
+            }
+        }
+        i, a {
+            color: $gold;
+            text-decoration: none;
+        }
+    }
     nav {
         display: none;
         position: absolute;
@@ -81,5 +111,28 @@ header {
                 }
             }
         }
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    30%,
+    70% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
     }
 }

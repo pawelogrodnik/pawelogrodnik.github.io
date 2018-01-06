@@ -3,6 +3,10 @@
 $(document).ready(function () {
 	var flipButtons = $('.flip-btn');
 	var exitButtons = $('.exit-btn');
+	var wow = new WOW({
+		mobile: false
+	});
+	wow.init();
 
 	flipButtons.on('click', function (e) {
 		console.log(e);
@@ -15,7 +19,7 @@ $(document).ready(function () {
 		$(e.target).closest('.content').removeClass('flipped');
 	});
 
-	scrollToAnchor();Z;
+	scrollToAnchor();
 });
 $('.con').on('click', function () {
 	var hamburger = $(this);
