@@ -22,10 +22,10 @@ $(document).ready(() => {
 	})
 
 	scrollToAnchor();
-	$('.call-us-popup .exit-btn, .call-us-popup').on('click', function(){
+	$('.call-us-popup .exit-btn, .call-us-popup').on('click', function () {
 		$('.call-us-popup').fadeOut(700);
 	})
-	$('.call-us-popup__inner').on('click',function(event){
+	$('.call-us-popup__inner').on('click', function (event) {
 		event.stopPropagation();
 	})
 })
@@ -38,7 +38,7 @@ $('.con').on('click', function () {
 });
 
 function scrollToAnchor() {
-	$('a.animate[href*="#"]').on('click', function (e) {
+	$('a.animate[href*="#"], a.scroll[href*="#"]').on('click', function (e) {
 		var target = $(this.hash);
 		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 		if (target.length) {
@@ -50,7 +50,28 @@ function scrollToAnchor() {
 
 	});
 }
+$(document).ready(function () {
+	const browserWindow = $(window);
 
+	const arrowUp = $(`<div class="arrow-up">
+                        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                    </div>`);
+	$('body').append(arrowUp);
+	browserWindow.scroll(() => checkIfArrowIsNeeded(arrowUp)).scroll();
+	arrowUp.on('click', directionMountain);
+})
+
+function checkIfArrowIsNeeded(arrowEl) {
+	if (window.innerWidth > 768) {
+		const windowHeight = window.innerHeight;
+		arrowEl.offset().top > windowHeight ? arrowEl.addClass('visible') : arrowEl.removeClass('visible');
+	}
+}
+function directionMountain() {
+	$('body, html').animate({
+		scrollTop: 0,
+	}, 500);
+}
 
 function initMap() {
 

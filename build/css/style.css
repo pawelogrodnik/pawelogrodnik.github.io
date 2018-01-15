@@ -779,7 +779,7 @@ body .page-container-wrapper {
   min-height: calc(100vh - 265px);
 }
 
-.heading-style, .call-us-popup__inner h2, .sm-header h1,
+.heading-style, .call-us-popup__inner h2, .txt.aparaty h2, .txt.aparaty h3, .txt.aparaty h4, .sm-header h1,
 .sm-header h2, .kontakt .hero-banner-simple .content h2 {
   font-family: 'Exo 2';
   font-weight: 500;
@@ -888,7 +888,7 @@ p {
   margin-bottom: 10px;
 }
 
-a.anchor {
+.anchor {
   display: block;
   position: relative;
   top: -93px;
@@ -1177,6 +1177,7 @@ input[type="submit"] {
 }
 
 .call-us-popup {
+  display: none;
   position: fixed;
   z-index: 100;
   left: 0;
@@ -1273,6 +1274,108 @@ input[type="submit"] {
   width: 50px;
 }
 
+.txt.aparaty p {
+  font-size: 1.125em;
+}
+
+.txt.aparaty ul li {
+  margin-bottom: 10px;
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+.txt.aparaty h4 {
+  font-size: 1.25em;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.txt.aparaty h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.txt.aparaty h3 {
+  margin-top: 30px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ol li a {
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
+ol ol {
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 130px;
+  right: 42px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+  background-color: hubl("$secondary_text");
+  opacity: 0;
+  z-index: 3;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, -webkit-box-shadow .3s ease;
+  transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, -webkit-box-shadow .3s ease;
+  -o-transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease;
+  -moz-transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease, -moz-box-shadow .3s ease;
+  transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease;
+  transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease, -webkit-box-shadow .3s ease, -moz-box-shadow .3s ease;
+  background-color: #e1c787;
+  -webkit-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
+}
+
+.arrow-up:hover {
+  background-color: hubl("$first_color");
+}
+
+.arrow-up:hover i {
+  text-shadow: 0px -50px #fff, 0px 0px #fff;
+}
+
+.arrow-up.visible {
+  opacity: .75;
+}
+
+.arrow-up i {
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  width: inherit;
+  height: inherit;
+  line-height: inherit;
+  display: block;
+  color: transparent;
+  text-shadow: 0px 0px #fff, 0px 50px #fff;
+  -webkit-transition: text-shadow .3s ease;
+  -o-transition: text-shadow .3s ease;
+  -moz-transition: text-shadow .3s ease;
+  transition: text-shadow .3s ease;
+  z-index: 1;
+}
+
+.arrow-up.popup-fallback {
+  z-index: 1;
+}
+
 .con {
   display: block;
   position: relative;
@@ -1307,6 +1410,9 @@ input[type="submit"] {
 .con .bar {
   display: block;
   height: 5px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
   width: 50px;
   background: #fff;
   margin: 10px auto;
@@ -2146,6 +2252,10 @@ footer .copy p a:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
+.sm-header h2 {
+  font-size: 2.125em;
+}
+
 section.dark, section.grey, section.white {
   padding: 60px 0;
 }
@@ -2268,6 +2378,10 @@ section.dark a.highlight:after {
 
 section.grey {
   background-color: #bfbfbf;
+}
+
+section.grey h2 {
+  color: rgba(51, 51, 51, 0.9);
 }
 
 section.white {

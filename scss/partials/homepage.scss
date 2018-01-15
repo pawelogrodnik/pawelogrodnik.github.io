@@ -306,6 +306,9 @@
             // font-weight: bold;
         }
     }
+    h2 {
+        font-size: em(34);
+    }
 }
 
 section {
@@ -374,6 +377,9 @@ section {
     }
     &.grey {
         background-color: $lightGray;
+        h2 {
+            color: rgba($mainDark, .9);
+        }
     }
     &.white {
         background-color: #fff;

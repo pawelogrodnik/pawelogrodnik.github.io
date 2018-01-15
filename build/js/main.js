@@ -36,7 +36,7 @@ $('.con').on('click', function () {
 });
 
 function scrollToAnchor() {
-	$('a.animate[href*="#"]').on('click', function (e) {
+	$('a.animate[href*="#"], a.scroll[href*="#"]').on('click', function (e) {
 		var target = $(this.hash);
 		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 		if (target.length) {
@@ -46,6 +46,28 @@ function scrollToAnchor() {
 			return false;
 		}
 	});
+}
+$(document).ready(function () {
+	var browserWindow = $(window);
+
+	var arrowUp = $('<div class="arrow-up">\n                        <i class="fa fa-angle-double-up" aria-hidden="true"></i>\n                    </div>');
+	$('body').append(arrowUp);
+	browserWindow.scroll(function () {
+		return checkIfArrowIsNeeded(arrowUp);
+	}).scroll();
+	arrowUp.on('click', directionMountain);
+});
+
+function checkIfArrowIsNeeded(arrowEl) {
+	if (window.innerWidth > 768) {
+		var windowHeight = window.innerHeight;
+		arrowEl.offset().top > windowHeight ? arrowEl.addClass('visible') : arrowEl.removeClass('visible');
+	}
+}
+function directionMountain() {
+	$('body, html').animate({
+		scrollTop: 0
+	}, 500);
 }
 
 function initMap() {

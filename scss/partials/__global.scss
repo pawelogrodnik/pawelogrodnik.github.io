@@ -91,7 +91,7 @@
       margin-bottom: 10px;
   }
 
-  a.anchor {
+  .anchor {
       display: block;
       position: relative;
       top: -93px;
@@ -294,6 +294,7 @@
   }
 
   .call-us-popup {
+      display: none;
       position: fixed;
       z-index: 100;
       left: 0;
@@ -339,7 +340,7 @@
                   color: $gold;
               }
           }
-          input[type='submit']{
+          input[type='submit'] {
               &:hover {
                   background-color: rgba(#fff, .7);
               }
@@ -362,3 +363,91 @@
           }
       }
   }
+.txt {
+    &.aparaty {
+        p {
+            font-size: em(18);
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                font-size: em(18);
+                line-height: 1.5;
+            }
+        }
+
+        h2, h3, h4 {
+            @extend .heading-style;
+        }
+        h4 {
+            font-size: em(20);
+            color: rgba($mainDark, .7);
+        }
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-top: 30px;
+        }
+    }
+}
+  ol {
+      list-style-type: decimal;
+      li {
+          margin-bottom: 10px;
+          a {
+              font-size: em(18);
+              font-weight: 600;
+          }
+      }
+      ol {
+          margin-top: 10px;
+          padding-left: 40px;
+      }
+  }
+
+  
+.arrow-up {
+    position: fixed;
+    bottom: 130px;
+    right: 42px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    background-color: hubl("$secondary_text");
+    opacity: 0;
+    z-index: 3;
+    border-radius: 50%;
+    transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease;
+    background-color: $gold;
+    box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
+    
+    &:hover {
+        background-color: hubl("$first_color");
+        i {
+            text-shadow: 0px -50px #fff, 0px 0px #fff;
+        }
+    }
+    &.visible {
+        opacity: .75;
+    }
+    i {
+        position: relative;
+        overflow: hidden;
+        font-size: 20px;
+        width: inherit;
+        height: inherit;
+        line-height: inherit;
+        display: block;
+        color: transparent;
+        text-shadow: 0px 0px #fff, 0px 50px #fff;
+        transition: text-shadow .3s ease;
+        z-index: 1;
+    }
+    &.popup-fallback {
+        z-index: 1;
+    }
+}
