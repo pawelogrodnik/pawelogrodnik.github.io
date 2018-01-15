@@ -3,9 +3,7 @@
 
 <head>
     <title>Ortolingwa</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
@@ -20,7 +18,14 @@
     <header>
         <div class="container">
             <div class="logo-wrapper">
-                <img src="http://via.placeholder.com/200x70" alt="Logo Strony">
+                <a href="/">
+                    <img src="http://via.placeholder.com/200x70" alt="Logo">
+                </a>
+            </div>
+            <div class="phone">
+                <a href="tel:123456789">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +12 345 678
+                </a>
             </div>
             <div class="con">
                 <div class="bar top"></div>
@@ -29,6 +34,9 @@
             </div>
             <nav>
                 <ul>
+                    <li>
+                        <a href="/">Strona główna</a>
+                    </li>
                     <li class="highlight">
                         <a href="/o-nas.html">O nas</a>
                     </li>
@@ -49,12 +57,19 @@
         </div>
     </header>
     <div class="page-container-wrapper kontakt">
+        <section class="hero-banner-simple" style="background-image: url(./img/masarska.jpg)">
+            <div class="mask"></div>
+            <div class="content ">
+                <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">Kontakt</h2>
+            </div>
+        </section>
         <section class="contact--wrapper container">
             <div class="contact--inner">
-                <div class="form-wrapper">
+                <div class="form-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                     <h1>Skontaktuj się z nami</h1>
                     <p>Odpowiemy na wszystkie nurtujące Cie pytania - zostaw wiadomość a odpowiemy najszybciej jak to tylko
-                        możliwe.</p>
+                        możliwe.
+                    </p>
                     <form action="/kontakt/#wpcf7-f424-o1" method="post" class="wpcf7-form" novalidate="novalidate">
                         <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="424">
@@ -94,37 +109,54 @@
                     </form>
                 </div>
                 <div class="contact--info">
-                    <div class="contact--info__single">
+                    <div class="contact--info__single wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
                         <h3>Email</h3>
                         <p>
                             <a href="mailto:example@com">przykladowymail@mail.com</a>
                         </p>
                     </div>
-                    <div class="contact--info__single">
+                    <div class="contact--info__single wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
                         <h3>Telefon</h3>
                         <p>
                             <a href="tel:123456789">+ 12 345 678</a>
                         </p>
                     </div>
-                    <div class="contact--info__single">
+                    <div class="contact--info__single  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
                         <h3>Adres</h3>
                         <p>
-                           ul. Masarska 8/46
-                           <br>
-                           31-532 Kraków
+                            ul. Masarska 8/46
+                            <br> 31-532 Kraków
                         </p>
                         <p>Centrum czynne w godzinach:
-                            <br>
-                           Pon. - Pt.: 8:00 - 20:00
-                            <br>
-                            Sobota: 8:00 - 15:00
+                            <br> Pon. - Pt.: 8:00 - 20:00
+                            <br> Sobota: 8:00 - 15:00
                         </p>
                     </div>
 
                 </div>
             </div>
         </section>
-        <section class="map-wrapper">
+        <section class="map-wrapper  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
             <div id="map"></div>
         </section>
     </div>
@@ -182,10 +214,13 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js" integrity="sha256-h/TwuBQqRBiExw0sK/HdwzJI7uYFBrJ2Ebo7gn9AGz4="
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="https://use.fontawesome.com/27ee110de8.js"></script>
     <script src="./build/js/main.js "></script>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQj9LPHlR6FA0WYPfvx70Rclv2oSyTEnc&amp;libraries=geometry&amp;callback=initMap"></script>
+
 </body>
 
 </html>

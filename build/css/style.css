@@ -779,6 +779,13 @@ body .page-container-wrapper {
   min-height: calc(100vh - 265px);
 }
 
+.heading-style, .call-us-popup__inner h2, .sm-header h1,
+.sm-header h2, .kontakt .hero-banner-simple .content h2 {
+  font-family: 'Exo 2';
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -814,7 +821,7 @@ h4 span,
 h5 span,
 h6 span,
 p.subtitle span {
-  color: #ffc400;
+  color: #e1c787;
   font-weight: 500;
 }
 
@@ -842,7 +849,7 @@ h2 {
 }
 
 h2.heading-top {
-  background-color: rgba(229, 186, 6, 0.6);
+  background-color: rgba(225, 199, 135, 0.6);
   color: #fff;
   padding: 0 10px 20px;
   margin-top: 0;
@@ -1169,6 +1176,103 @@ input[type="submit"] {
   color: inherit;
 }
 
+.call-us-popup {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  overflow-x: scroll;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.call-us-popup .exit-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.call-us-popup .exit-btn svg path {
+  fill: #333;
+  stroke: #333;
+}
+
+.call-us-popup__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #333;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.7);
+     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.7);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.7);
+}
+
+.call-us-popup__inner h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.call-us-popup__inner p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.call-us-popup__inner p span {
+  font-size: 30px;
+  font-weight: 500;
+  color: #e1c787;
+}
+
+.call-us-popup__inner input[type='submit']:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.call-us-popup__inner .icon-wrapper {
+  margin: 15px auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.call-us-popup__inner .icon-wrapper svg {
+  -webkit-animation-name: shake;
+     -moz-animation-name: shake;
+       -o-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: .7s;
+     -moz-animation-duration: .7s;
+       -o-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-transform-origin: 50% 50%;
+     -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+       -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: 4;
+     -moz-animation-iteration-count: 4;
+       -o-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+  height: 100px;
+  width: 50px;
+}
+
 .con {
   display: block;
   position: relative;
@@ -1289,7 +1393,7 @@ header .phone a:hover i {
 }
 
 header .phone i, header .phone a {
-  color: #e5ba06;
+  color: #e1c787;
   text-decoration: none;
 }
 
@@ -1298,7 +1402,7 @@ header nav {
   position: absolute;
   left: 0;
   top: 0;
-  width: 260px;
+  width: 280px;
   height: 100vh;
   overflow-y: auto;
   background-color: #333;
@@ -1321,7 +1425,6 @@ header nav ul li a {
   position: relative;
   z-index: 2;
   display: block;
-  margin: -1px;
   font-size: 16px;
 }
 
@@ -1672,7 +1775,7 @@ footer .copy p a:hover {
 
 .hero-banner .animate i {
   font-size: 60px;
-  color: #e5ba06;
+  color: #e1c787;
 }
 
 @media (max-width: 500px) {
@@ -1689,7 +1792,7 @@ footer .copy p a:hover {
 
 .intro {
   padding: 20px 0;
-  background-color: #ababab;
+  background-color: #C0C0C0;
   color: #fff;
 }
 
@@ -1887,7 +1990,7 @@ footer .copy p a:hover {
 }
 
 .dental-braces__single .content--back h3 {
-  color: #e5ba06;
+  color: #e1c787;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -2197,7 +2300,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 }
 
 .separator {
-  background-color: #e5ba06;
+  background-color: #e1c787;
   color: #fff;
   padding: 40px 0;
   text-align: center;
@@ -2283,7 +2386,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 
 .price-box h2 {
   font-size: 20px;
-  color: #e5ba06;
+  color: #e1c787;
   padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -2445,6 +2548,44 @@ ul.txt-ul li:nth-of-type(2n+2) {
   }
 }
 
+.kontakt .hero-banner-simple {
+  height: 600px;
+  max-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.kontakt .hero-banner-simple .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(225, 199, 135, 0.6);
+  padding: 20px;
+  width: 100%;
+}
+
+.kontakt .hero-banner-simple .content h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  color: #333333;
+}
+
+.kontakt .hero-banner-simple .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .kontakt .contact--wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -2484,6 +2625,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 
 .kontakt .contact--info__single {
   margin-bottom: 45px;
+  text-align: center;
 }
 
 .kontakt .contact--info__single p {
@@ -2527,7 +2669,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 .kontakt .contact--info h3,
 .kontakt .form-wrapper h1,
 .kontakt .form-wrapper h3 {
-  text-align: left;
+  text-align: center;
 }
 
 .kontakt .contact--info h1,
@@ -2541,10 +2683,31 @@ ul.txt-ul li:nth-of-type(2n+2) {
   font-size: 14px;
   letter-spacing: .75px;
   font-weight: bold;
-  color: #e5ba06;
+  color: #e1c787;
 }
 
 .kontakt #map {
   height: 400px;
   width: 100%;
+}
+
+.kontakt .icon-wrapper {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #333;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  margin: 0 auto 20px;
+}
+
+.kontakt .icon-wrapper svg {
+  stroke: #333;
+  height: 80px;
+  width: 35px;
+  text-align: center;
 }

@@ -22,8 +22,14 @@ $(document).ready(() => {
 	})
 
 	scrollToAnchor();
-
+	$('.call-us-popup .exit-btn, .call-us-popup').on('click', function(){
+		$('.call-us-popup').fadeOut(700);
+	})
+	$('.call-us-popup__inner').on('click',function(event){
+		event.stopPropagation();
+	})
 })
+
 $('.con').on('click', function () {
 	const hamburger = $(this);
 	hamburger.hasClass('open') ? hamburger.removeClass('open') : hamburger.addClass('open');
