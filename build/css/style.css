@@ -1311,17 +1311,23 @@ ol {
 }
 
 ol li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 ol li a {
   font-size: 1.125em;
   font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 ol ol {
   margin-top: 10px;
   padding-left: 40px;
+}
+
+ol ol li:first-of-type {
+  margin-top: 15px;
 }
 
 .arrow-up {
@@ -1506,9 +1512,25 @@ header .phone a:hover i {
           transform-origin: 50% 50%;
 }
 
+@media (max-width: 600px) and (min-width: 450px) {
+  header .phone a {
+    font-size: 25px;
+    padding-left: 30px;
+  }
+  header .phone a i {
+    font-size: 35px;
+  }
+}
+
 header .phone i, header .phone a {
   color: #e1c787;
   text-decoration: none;
+}
+
+@media (max-width: 449px) {
+  header .phone {
+    display: none;
+  }
 }
 
 header nav {
@@ -2272,6 +2294,7 @@ footer .copy p a:hover {
 
 section.dark, section.grey, section.white {
   padding: 60px 0;
+  font-weight: inherit;
 }
 
 @media (max-width: 767px) {
@@ -2350,12 +2373,9 @@ section.white h6.highlight:after {
 }
 
 section.dark p,
-section.dark li,
-section.dark a, section.grey p,
-section.grey li,
-section.grey a, section.white p,
-section.white li,
-section.white a {
+section.dark li, section.grey p,
+section.grey li, section.white p,
+section.white li {
   font-weight: 300;
 }
 

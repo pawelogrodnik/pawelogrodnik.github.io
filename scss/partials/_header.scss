@@ -72,10 +72,20 @@ header {
                 }
 
             }
+            @media (max-width: 600px) and (min-width: 450px){
+                font-size: 25px;
+                padding-left: 30px;
+                i {
+                    font-size: 35px;
+                }
+            }
         }
         i, a {
             color: $gold;
             text-decoration: none;
+        }
+        @media (max-width: 449px){
+         display: none;   
         }
     }
     nav {
