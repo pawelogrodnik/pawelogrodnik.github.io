@@ -2774,7 +2774,11 @@ ul.txt-ul li:nth-of-type(2n+2) {
   display: flex;
   margin: 0 auto;
   position: relative;
-  background-color: #fafafa;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #111;
+  color: #fff;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
      -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -2794,7 +2798,8 @@ ul.txt-ul li:nth-of-type(2n+2) {
           box-sizing: border-box;
   width: 30%;
   padding: 30px 25px;
-  background: #fafafa url(./../../img/wave-pattern-white.png?1350403306) repeat;
+  background-color: #111;
+  color: #fff;
 }
 
 .kontakt .contact--info__single {
@@ -2849,6 +2854,9 @@ ul.txt-ul li:nth-of-type(2n+2) {
 .kontakt .contact--info h1,
 .kontakt .form-wrapper h1 {
   margin-bottom: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .kontakt .contact--info h3,
@@ -2860,6 +2868,17 @@ ul.txt-ul li:nth-of-type(2n+2) {
   color: #e1c787;
 }
 
+.kontakt input[type='submit']:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.kontakt .align-equal {
+  margin: 0 auto;
+  text-align: right;
+  max-width: 200px;
+  display: block;
+}
+
 .kontakt #map {
   height: 400px;
   width: 100%;
@@ -2868,7 +2887,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 .kontakt .icon-wrapper {
   height: 80px;
   width: 80px;
-  border: 1px solid #111;
+  border: 2px solid #fff;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
@@ -2880,7 +2899,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 }
 
 .kontakt .icon-wrapper svg {
-  stroke: #111;
+  stroke: #fff;
   height: 80px;
   width: 35px;
   text-align: center;

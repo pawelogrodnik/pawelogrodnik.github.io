@@ -42,7 +42,10 @@
             display: flex;
             margin: 0 auto;
             position: relative;
-            background-color: #fafafa;
+            // background-color: #fafafa;
+            border-radius: 8px;
+            background-color: $mainDark;
+            color: #fff;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
             @media (max-width: 767px) {
                 flex-wrap: wrap;
@@ -52,7 +55,9 @@
             box-sizing: border-box;
             width: 30%;
             padding: 30px 25px;
-            background: #fafafa url(./../../img/wave-pattern-white.png?1350403306) repeat;
+            // background: #fafafa url(./../../img/wave-pattern-white.png?1350403306) repeat;
+            background-color: $mainDark;
+            color: #fff;
             &__single {
                 margin-bottom: 45px;
                 text-align: center;
@@ -86,6 +91,9 @@
         }
         h1 {
             margin-bottom: 25px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
         }
         h3 {
             text-transform: uppercase;
@@ -95,6 +103,17 @@
             color: $gold;
         }
     }
+    input[type='submit'] {
+        &:hover {
+            background-color: rgba(#fff, .8);
+        }
+    }
+    .align-equal {
+        margin: 0 auto;
+        text-align: right;
+        max-width: 200px;
+        display: block;
+    }
     #map {
         height: 400px;
         width: 100%;
@@ -102,13 +121,14 @@
     .icon-wrapper {
         height: 80px;
         width: 80px;
-        border: 1px solid $mainDark;
+        border: 2px solid #fff;
         border-radius: 50%;
         text-align: center;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
         margin: 0 auto 20px;
         svg {
-            stroke: $mainDark;
+            // stroke: $mainDark;
+            stroke: #fff;
             height: 80px;
             width: 35px;
             text-align: center;
