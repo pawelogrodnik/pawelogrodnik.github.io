@@ -2585,8 +2585,15 @@ ul.txt-ul li:nth-of-type(2n+2) {
   padding: 30px 0;
 }
 
+.cennik .intros h1, .cennik .intros h3 {
+  color: #111;
+}
+
 .cennik h1 {
   margin-bottom: 30px;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .cennik h3 {
@@ -2679,6 +2686,10 @@ ul.txt-ul li:nth-of-type(2n+2) {
 .price-box__price {
   font-size: 20px;
   margin: 20px 0;
+}
+
+.price-box__price h3 {
+  color: #111;
 }
 
 .price-box__info h4 {
