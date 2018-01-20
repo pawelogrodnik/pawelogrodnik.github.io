@@ -309,6 +309,11 @@
     h2 {
         font-size: em(34);
     }
+    &.gold {
+        background-color: $mainDark;
+        border-top: 4px solid $gold;
+        border-bottom: 4px solid $gold;
+    }
 }
 
 section {
@@ -383,6 +388,26 @@ section {
     }
     &.white {
         background-color: #fff;
+    }
+    &.white {
+        .brace {
+            text-align: center;
+        }
+        iframe {
+            margin: 20px auto;
+            display: block;
+            @media (max-width: 560px){
+                width: 320px !important;
+                height: 240px !important;
+            }
+        }
+        img {
+            max-width: 320px;
+            border: 2px solid $gold;
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+        }
     }
 }
 
