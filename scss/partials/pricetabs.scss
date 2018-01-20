@@ -162,6 +162,12 @@
                
            }
         }
+        &.highlight {
+            background-color: rgba($gold, .8);
+        }
+        &.highlight-grey {
+            background-color: rgba($lightGray, .8)
+        }
     }
     &--cena {
         width: 160px;

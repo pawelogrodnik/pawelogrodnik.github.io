@@ -2799,6 +2799,14 @@ ul.txt-ul li:nth-of-type(2n+2) {
   line-height: 1.5;
 }
 
+.cennik--wiersz.highlight {
+  background-color: rgba(225, 199, 135, 0.8);
+}
+
+.cennik--wiersz.highlight-grey {
+  background-color: rgba(191, 191, 191, 0.8);
+}
+
 .cennik--cena {
   width: 160px;
   text-align: right;
