@@ -926,18 +926,18 @@ p {
 
 .btn.btn-white:hover, input.btn-white[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.7);
-  color: #333;
+  color: #111;
 }
 
 .btn--dark, input[type="submit"] {
-  color: #333;
-  border-color: #333;
+  color: #111;
+  border-color: #111;
 }
 
 .btn--dark:hover, input[type="submit"]:hover {
   cursor: pointer;
-  background-color: rgba(51, 51, 51, 0.1);
-  color: #333;
+  background-color: rgba(17, 17, 17, 0.1);
+  color: #111;
 }
 
 .no-js #loader {
@@ -991,7 +991,7 @@ input[type="week"] {
 }
 
 a {
-  color: #333;
+  color: #111;
 }
 
 a:hover {
@@ -1024,8 +1024,8 @@ a:hover {
 }
 
 .button--main {
-  border: 1px solid #333;
-  background-color: #333;
+  border: 1px solid #111;
+  background-color: #111;
   color: #fff;
 }
 
@@ -1042,7 +1042,7 @@ a:hover {
 
 a.button-primary {
   background: #fff;
-  color: #333;
+  color: #111;
   font: bold 11px "Helvetica";
   padding: 12px;
   text-decoration: none;
@@ -1059,7 +1059,7 @@ a.button-primary {
 }
 
 a.button-primary:after {
-  background: #333;
+  background: #111;
   color: #FFF;
   content: ">";
   display: inline-block;
@@ -1146,7 +1146,7 @@ textarea {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
-  border: 1px solid #333;
+  border: 1px solid #111;
   -webkit-border-radius: 30px;
      -moz-border-radius: 30px;
           border-radius: 30px;
@@ -1197,8 +1197,8 @@ input[type="submit"] {
 }
 
 .call-us-popup .exit-btn svg path {
-  fill: #333;
-  stroke: #333;
+  fill: #111;
+  stroke: #111;
 }
 
 .call-us-popup__inner {
@@ -1215,7 +1215,7 @@ input[type="submit"] {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
-  background-color: #333;
+  background-color: #111;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.7);
      -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.7);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.7);
@@ -1286,7 +1286,7 @@ input[type="submit"] {
 
 .txt.aparaty h4 {
   font-size: 1.25em;
-  color: rgba(51, 51, 51, 0.7);
+  color: rgba(17, 17, 17, 0.7);
 }
 
 .txt.aparaty h4 {
@@ -1296,6 +1296,10 @@ input[type="submit"] {
 
 .txt.aparaty h3 {
   margin-top: 30px;
+}
+
+.txt.aparaty h3.highlight-text {
+  font-weight: 700;
 }
 
 ol {
@@ -1338,9 +1342,9 @@ ol ol {
   transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease;
   transition: bottom .5s ease, opacity .5s ease, background-color .5s ease, box-shadow .3s ease, -webkit-box-shadow .3s ease, -moz-box-shadow .3s ease;
   background-color: #e1c787;
-  -webkit-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
-     -moz-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.5);
 }
 
 .arrow-up:hover {
@@ -1428,16 +1432,16 @@ ol ol {
 
 header {
   padding: 10px 0;
-  background-color: #333;
+  background-color: #111;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 1;
   -webkit-transform: translateZ(0);
-  -webkit-box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
-     -moz-box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 3px 10px -1px rgba(255, 255, 255, 0.25);
+     -moz-box-shadow: 2px 3px 10px -1px rgba(255, 255, 255, 0.25);
+          box-shadow: 2px 3px 10px -1px rgba(255, 255, 255, 0.25);
 }
 
 header .container {
@@ -1511,7 +1515,7 @@ header nav {
   width: 280px;
   height: 100vh;
   overflow-y: auto;
-  background-color: #333;
+  background-color: #111;
   border-right: 2px solid #fff;
 }
 
@@ -1632,7 +1636,7 @@ header nav ul li:last-of-type a {
 
 footer {
   padding: 50px 0 20px;
-  background-color: #333;
+  background-color: #111;
   color: #fff;
   position: relative;
 }
@@ -1825,7 +1829,7 @@ footer .copy p a:hover {
       -ms-transform: skewX(45deg);
        -o-transform: skewX(45deg);
           transform: skewX(45deg);
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: rgba(17, 17, 17, 0.9);
   max-width: 60%;
   width: 900px;
   position: absolute;
@@ -1948,7 +1952,7 @@ footer .copy p a:hover {
 }
 
 .dental-braces {
-  background-color: #333;
+  background-color: #111;
 }
 
 .dental-braces h2 {
@@ -2025,7 +2029,7 @@ footer .copy p a:hover {
      -moz-border-radius: 8px;
           border-radius: 8px;
   background-color: #fff;
-  background-color: #333;
+  background-color: #111;
   color: #fff;
   text-align: center;
 }
@@ -2167,7 +2171,7 @@ footer .copy p a:hover {
   bottom: 0;
   left: 555px;
   width: 130px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #111;
 }
 
 .featured--single:last-of-type:after {
@@ -2346,7 +2350,7 @@ section.white a {
 }
 
 section.dark {
-  background-color: #333;
+  background-color: #111;
   color: #fff;
 }
 
@@ -2381,7 +2385,7 @@ section.grey {
 }
 
 section.grey h2 {
-  color: rgba(51, 51, 51, 0.9);
+  color: rgba(17, 17, 17, 0.9);
 }
 
 section.white {
@@ -2517,7 +2521,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
           transform: translateX(-50%);
   bottom: 0px;
   width: 70px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #111;
 }
 
 .price-box h2 span {
@@ -2525,7 +2529,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
   font-size: 14px;
   letter-spacing: .75px;
   font-weight: bold;
-  color: #333;
+  color: #111;
 }
 
 .price-box__price {
@@ -2559,7 +2563,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
      -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  background-color: #333;
+  background-color: #111;
   color: #fff;
   padding: 10px 15px;
   max-width: 300px;
@@ -2581,7 +2585,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 
 .price-box.highlight {
   color: #fff;
-  background-color: #333;
+  background-color: #111;
 }
 
 .price-box.highlight h2 span {
@@ -2594,7 +2598,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 
 .price-box.highlight .price-box__button a {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
+  color: #111;
 }
 
 .price-box.highlight .price-box__price h3 {
@@ -2607,7 +2611,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
      -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(51, 51, 51, 0.2);
+  border: 1px solid rgba(17, 17, 17, 0.2);
   -webkit-border-radius: 25px;
      -moz-border-radius: 25px;
           border-radius: 25px;
@@ -2632,7 +2636,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
           justify-content: space-between;
   padding: 10px 15px;
   min-height: 50px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 .cennik--wiersz:last-of-type {
@@ -2642,7 +2646,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 .cennik--wiersz.tytul {
   display: block;
   padding: 15px;
-  background-color: #333;
+  background-color: #111;
 }
 
 .cennik--wiersz.tytul h3 {
@@ -2689,7 +2693,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
   text-align: center;
   font-size: 60px;
   margin: 0;
-  color: #333333;
+  color: #111111;
 }
 
 .kontakt .hero-banner-simple .mask {
@@ -2808,7 +2812,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 .kontakt .icon-wrapper {
   height: 80px;
   width: 80px;
-  border: 1px solid #333;
+  border: 1px solid #111;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
@@ -2820,7 +2824,7 @@ ul.txt-ul li:nth-of-type(2n+2) {
 }
 
 .kontakt .icon-wrapper svg {
-  stroke: #333;
+  stroke: #111;
   height: 80px;
   width: 35px;
   text-align: center;
