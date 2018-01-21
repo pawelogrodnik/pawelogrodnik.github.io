@@ -2376,6 +2376,10 @@ footer .copy p a:hover {
   }
 }
 
+.sm-header h2:not(:first-of-type) {
+  margin-top: 10px;
+}
+
 .sm-header.gold {
   background-color: #111;
   border-top: 4px solid #e1c787;
@@ -2579,6 +2583,62 @@ ul.txt-ul li:nth-of-type(2n+2) {
 
 .separator a {
   margin-top: 30px;
+}
+
+.image-wrapper-big {
+  max-width: 600px;
+  margin: 60px auto 0;
+  padding: 0 15px;
+}
+
+.image-wrapper-big img {
+  max-width: 100% !important;
+}
+
+.text-slider {
+  border-top: 2px solid #e1c787;
+  border-bottom: 2px solid #e1c787;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #111;
+}
+
+.text-slider .text-single p {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #e1c787;
+  letter-spacing: .25px;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .text-slider .text-single p {
+    font-size: 0.9375em;
+  }
+}
+
+.certyfikaty {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 25px 0;
+}
+
+.certyfikaty div img {
+  max-width: 200px !important;
+  height: 150px;
+  margin: 5px !important;
 }
 
 .cennik {

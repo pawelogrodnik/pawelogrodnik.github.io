@@ -47,7 +47,21 @@ function scrollToAnchor() {
 		}
 	});
 }
+function slickInits() {
+	if ($('.text-slider').length > 0) {
+		$('.text-slider').slick({
+			infinite: true,
+			speed: 1000,
+			slidesToShow: 1,
+			cssEase: 'ease-in-out',
+			autoplay: true,
+			autoplaySpeed: 3000
+		});
+	}
+}
+
 $(document).ready(function () {
+	slickInits();
 	var browserWindow = $(window);
 
 	var arrowUp = $('<div class="arrow-up">\n                        <i class="fa fa-angle-double-up" aria-hidden="true"></i>\n                    </div>');

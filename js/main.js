@@ -50,7 +50,21 @@ function scrollToAnchor() {
 
 	});
 }
+function slickInits() {
+	if ($('.text-slider').length > 0) {
+		$('.text-slider').slick({
+			infinite: true,
+			speed: 1000,
+			slidesToShow: 1,
+			cssEase: 'ease-in-out',
+			autoplay: true,
+			autoplaySpeed: 3000
+		})
+	}
+}
+
 $(document).ready(function () {
+	slickInits();
 	const browserWindow = $(window);
 
 	const arrowUp = $(`<div class="arrow-up">
