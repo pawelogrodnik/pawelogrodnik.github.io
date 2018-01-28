@@ -779,7 +779,9 @@ body .page-container-wrapper {
   min-height: calc(100vh - 265px);
 }
 
-.heading-style, .call-us-popup__inner h2, .txt.aparaty h2, .txt.aparaty h3, .txt.aparaty h4, .sm-header h1,
+.heading-style, .call-us-popup__inner h2, .txt.aparaty h2,
+.txt.aparaty h3,
+.txt.aparaty h4, .sm-header h1,
 .sm-header h2, .kontakt .hero-banner-simple .content h2 {
   font-family: 'Exo 2';
   font-weight: 500;
@@ -1302,7 +1304,33 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-.txt.aparaty .dark h1, .txt.aparaty .dark h2, .txt.aparaty .dark h3, .txt.aparaty .dark h4, .txt.aparaty .dark h5, .txt.aparaty .dark h6, .txt.aparaty .dark p, .txt.aparaty .dark a, .txt.aparaty .dark blockquote, .txt.aparaty .white h1, .txt.aparaty .white h2, .txt.aparaty .white h3, .txt.aparaty .white h4, .txt.aparaty .white h5, .txt.aparaty .white h6, .txt.aparaty .white p, .txt.aparaty .white a, .txt.aparaty .white blockquote, .txt.aparaty .grey h1, .txt.aparaty .grey h2, .txt.aparaty .grey h3, .txt.aparaty .grey h4, .txt.aparaty .grey h5, .txt.aparaty .grey h6, .txt.aparaty .grey p, .txt.aparaty .grey a, .txt.aparaty .grey blockquote {
+.txt.aparaty .dark h1,
+.txt.aparaty .dark h2,
+.txt.aparaty .dark h3,
+.txt.aparaty .dark h4,
+.txt.aparaty .dark h5,
+.txt.aparaty .dark h6,
+.txt.aparaty .dark p,
+.txt.aparaty .dark a,
+.txt.aparaty .dark blockquote,
+.txt.aparaty .white h1,
+.txt.aparaty .white h2,
+.txt.aparaty .white h3,
+.txt.aparaty .white h4,
+.txt.aparaty .white h5,
+.txt.aparaty .white h6,
+.txt.aparaty .white p,
+.txt.aparaty .white a,
+.txt.aparaty .white blockquote,
+.txt.aparaty .grey h1,
+.txt.aparaty .grey h2,
+.txt.aparaty .grey h3,
+.txt.aparaty .grey h4,
+.txt.aparaty .grey h5,
+.txt.aparaty .grey h6,
+.txt.aparaty .grey p,
+.txt.aparaty .grey a,
+.txt.aparaty .grey blockquote {
   color: inherit;
 }
 
@@ -1408,26 +1436,31 @@ ol ol li:first-of-type {
   display: flex;
 }
 
-.custom-table .table-heading, .custom-table .table-cell {
+.custom-table .table-heading,
+.custom-table .table-cell {
   font-size: 1.125em;
 }
 
 @media (max-width: 500px) {
-  .custom-table .table-heading, .custom-table .table-cell {
+  .custom-table .table-heading,
+  .custom-table .table-cell {
     font-size: 0.875em;
     word-break: break-all;
   }
 }
 
-.custom-table .table-headings, .custom-table .table-row {
+.custom-table .table-headings,
+.custom-table .table-row {
   border-bottom: 2px solid #111;
 }
 
-.custom-table .table-headings:last-of-type, .custom-table .table-row:last-of-type {
+.custom-table .table-headings:last-of-type,
+.custom-table .table-row:last-of-type {
   border-bottom: 0px;
 }
 
-.custom-table .table-cell, .custom-table .table-heading {
+.custom-table .table-cell,
+.custom-table .table-heading {
   padding: 10px;
 }
 
@@ -1472,6 +1505,48 @@ ol ol li:first-of-type {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.double-image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.double-image .img-left img,
+.double-image .img-right img {
+  max-height: 150px;
+}
+
+.double-image .img-left {
+  margin-right: 10px;
+}
+
+.double-image .first {
+  margin-right: 10px;
+}
+
+.double-image img {
+  margin: 0 auto;
+  max-height: 150px;
+  max-width: 600px;
+  display: block;
+}
+
+.double-image.one img {
+  max-height: 200px;
 }
 
 .con {
@@ -2386,6 +2461,14 @@ footer .copy p a:hover {
   border-bottom: 4px solid #e1c787;
 }
 
+.sm-header.gold h1 {
+  margin-bottom: 15px;
+}
+
+.sm-header.gold h1, .sm-header.gold h2 {
+  text-align: center;
+}
+
 section.dark, section.grey, section.white {
   padding: 60px 0;
   font-weight: inherit;
@@ -2852,6 +2935,10 @@ ul.txt-ul li:nth-of-type(2n+2) {
   padding: 10px 15px;
   min-height: 50px;
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.cennik--wiersz p {
+  margin: 0;
 }
 
 .cennik--wiersz:last-of-type {
