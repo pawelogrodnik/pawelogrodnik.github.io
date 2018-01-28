@@ -6,7 +6,6 @@
     &:hover {
         cursor: pointer;
     }
-
     &.open {
         .top {
             transform: translateY(15px) rotateZ(45deg);
@@ -40,10 +39,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    -webkit-transform: translateZ(0);
-    // box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
+    -webkit-transform: translateZ(0); // box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.25);
     box-shadow: 2px 3px 10px -1px rgba(255, 255, 255, 0.25);
-    
     .container {
         display: flex;
         justify-content: space-between;
@@ -56,8 +53,7 @@ header {
             font-size: 55px;
             position: absolute;
             left: 0;
-            top: -5px;
-            // top: 50%;
+            top: -5px; // top: 50%;
             // transform: translateY(-50%);
         }
         a {
@@ -70,22 +66,22 @@ header {
                     animation-duration: .5s;
                     transform-origin: 50% 50%;
                 }
-
             }
-            @media (max-width: 600px) and (min-width: 450px){
+            @media (max-width: 600px) and (min-width: 450px) {
                 font-size: 25px;
-                padding-left: 30px;
+                padding-left: 35px;
                 i {
                     font-size: 35px;
                 }
             }
         }
-        i, a {
+        i,
+        a {
             color: $gold;
             text-decoration: none;
         }
-        @media (max-width: 449px){
-         display: none;   
+        @media (max-width: 449px) {
+            display: none;
         }
     }
     nav {
@@ -112,10 +108,8 @@ header {
                     border-bottom: 1px solid rgba(#ddd, .1);
                     position: relative;
                     z-index: 2;
-                    display: block;
-                    // margin: -1px;
+                    display: block; // margin: -1px;
                     font-size: 16px;
-                
                 }
                 &:last-of-type {
                     a {

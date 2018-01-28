@@ -3,6 +3,15 @@
 $(document).ready(() => {
 	const flipButtons = $('.flip-btn');
 	const exitButtons = $('.exit-btn');
+	const currentDate = new Date();
+	if (localStorage.date != currentDate.getDate() || localStorage.date == undefined) {
+		if (currentDate.getHours() > 8 && currentDate.getHours() < 24) {
+			setTimeout(function () {
+				$('.call-us-popup').fadeIn(700);
+			}, 4000)
+		}
+	}
+
 	var wow = new WOW(
 		{
 			mobile: false
@@ -16,14 +25,13 @@ $(document).ready(() => {
 		$(e.target).closest('.content').addClass('flipped');
 	})
 	exitButtons.on('click', (e) => {
-		console.log(e);
-
 		$(e.target).closest('.content').removeClass('flipped');
 	})
 
 	scrollToAnchor();
-	$('.call-us-popup .exit-btn, .call-us-popup').on('click', function () {
+	$('.call-us-popup .exit-btn-pop, .call-us-popup').on('click', function () {
 		$('.call-us-popup').fadeOut(700);
+		localStorage.setItem('date', currentDate);
 	})
 	$('.call-us-popup__inner').on('click', function (event) {
 		event.stopPropagation();

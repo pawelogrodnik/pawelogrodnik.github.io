@@ -1549,6 +1549,10 @@ ol ol li:first-of-type {
   max-height: 200px;
 }
 
+.bold span {
+  font-weight: inherit;
+}
+
 .con {
   display: block;
   position: relative;
@@ -1674,14 +1678,15 @@ header .phone a:hover i {
 @media (max-width: 600px) and (min-width: 450px) {
   header .phone a {
     font-size: 25px;
-    padding-left: 30px;
+    padding-left: 35px;
   }
   header .phone a i {
     font-size: 35px;
   }
 }
 
-header .phone i, header .phone a {
+header .phone i,
+header .phone a {
   color: #e1c787;
   text-decoration: none;
 }
@@ -2023,6 +2028,53 @@ footer .copy p a:hover {
   bottom: 20%;
 }
 
+@media (max-width: 1159px) and (min-width: 768px) {
+  .hero-banner .content {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-banner .content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    bottom: auto;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.hero-banner .content .hero-banner-phone {
+  display: none;
+}
+
+@media (max-width: 449px) {
+  .hero-banner .content .hero-banner-phone {
+    display: block;
+    border-top: 1px solid rgba(17, 17, 17, 0.9);
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.9);
+    text-align: center;
+  }
+  .hero-banner .content .hero-banner-phone a, .hero-banner .content .hero-banner-phone i {
+    color: #e1c787;
+    font-size: 35px;
+  }
+  .hero-banner .content .hero-banner-phone a {
+    text-decoration: none;
+  }
+}
+
 .hero-banner h1 {
   font-size: 80px;
   line-height: 60px;
@@ -2030,6 +2082,22 @@ footer .copy p a:hover {
 
 .hero-banner h1 span {
   font-size: 30px;
+}
+
+@media (max-width: 525px) {
+  .hero-banner h1 {
+    font-size: 60px;
+    line-height: .7;
+  }
+  .hero-banner h1 span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-banner h1 {
+    font-size: 50px;
+  }
 }
 
 .hero-banner h3 {
@@ -2042,7 +2110,7 @@ footer .copy p a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 30px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
   text-align: left;
   -webkit-transform: skewX(-45deg);
@@ -2050,6 +2118,32 @@ footer .copy p a:hover {
       -ms-transform: skewX(-45deg);
        -o-transform: skewX(-45deg);
           transform: skewX(-45deg);
+}
+
+@media (max-width: 1280px) and (min-width: 1160px) {
+  .hero-banner h1,
+  .hero-banner h3 {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 1159px) {
+  .hero-banner h1,
+  .hero-banner h3 {
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-banner h1,
+  .hero-banner h3 {
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+    text-align: center;
+  }
 }
 
 .hero-banner .animate {
@@ -2115,6 +2209,39 @@ footer .copy p a:hover {
 
 .intro .container .icon-wrapper svg {
   max-width: 300px;
+}
+
+@media (max-width: 767px) {
+  .intro .container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .intro .container .text-section,
+  .intro .container .icon-wrapper {
+    width: 100%;
+  }
+  .intro .container .text-section {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+       -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .intro .container .icon-wrapper {
+    display: none;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+       -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .intro .container .icon-wrapper svg {
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+    height: auto !important;
+  }
 }
 
 .intro h2 {
@@ -2257,6 +2384,15 @@ footer .copy p a:hover {
   color: #fff;
 }
 
+.dental-braces__single .content--front:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: '\f04e';
+  top: 5px;
+  right: 5px;
+  color: #111;
+}
+
 .dental-braces__single .content--back {
   -webkit-transform: rotateY(-180deg) rotate(0deg);
      -moz-transform: rotateY(-180deg) rotate(0deg);
@@ -2340,6 +2476,63 @@ footer .copy p a:hover {
   margin-bottom: 10px;
 }
 
+@media (max-width: 600px) {
+  .dental-braces__single {
+    margin: 20px 10px;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+  }
+  .dental-braces__single.sm {
+    width: 440px;
+    height: 240px;
+  }
+  .dental-braces__single .content--back {
+    padding: 40px 20px;
+  }
+  .dental-braces__single .content--back h3 {
+    margin-bottom: 15px;
+  }
+  .dental-braces__single .content--back p {
+    margin-bottom: 20px;
+  }
+  .dental-braces__single .content--back p:last-of-type {
+    display: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dental-braces__single.sm {
+    width: 330px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 360px) {
+  .dental-braces__single {
+    width: 270px;
+    height: 270px;
+  }
+  .dental-braces__single.sm {
+    width: 275px;
+    height: 195px;
+  }
+  .dental-braces__single.sm .content--back {
+    padding: 15px;
+  }
+  .dental-braces__single.sm .content--back h3 {
+    margin-bottom: 5px;
+  }
+  .dental-braces__single.sm .content--back p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .dental-braces__single.sm .content--back p.subtitle {
+    margin-bottom: 5px;
+  }
+}
+
 .featured--single {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2354,7 +2547,12 @@ footer .copy p a:hover {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 555px;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
   width: 130px;
   border-bottom: 2px solid #111;
 }
@@ -2363,38 +2561,37 @@ footer .copy p a:hover {
   content: none;
 }
 
-.featured--single:nth-of-type(2n+1) {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-     -moz-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.featured--single:nth-of-type(2n+2) {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-     -moz-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.featured--single:nth-of-type(2n+2) .featured--single__content {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-     -moz-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  padding-left: 20px;
-  padding-right: 30px;
-}
-
-.featured--single:nth-of-type(2n+2) .featured--single__img {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-     -moz-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+@media (min-width: 768px) {
+  .featured--single:nth-of-type(2n+1) {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .featured--single:nth-of-type(2n+2) {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .featured--single:nth-of-type(2n+2) .featured--single__content {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+       -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .featured--single:nth-of-type(2n+2) .featured--single__img {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+       -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .featured--single__img {
@@ -2424,6 +2621,28 @@ footer .copy p a:hover {
 .featured--single__content h3 {
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .featured--single {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .featured--single .featured--single__content {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .sm-header {
@@ -2465,7 +2684,8 @@ footer .copy p a:hover {
   margin-bottom: 15px;
 }
 
-.sm-header.gold h1, .sm-header.gold h2 {
+.sm-header.gold h1,
+.sm-header.gold h2 {
   text-align: center;
 }
 
