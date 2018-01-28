@@ -29,7 +29,7 @@ $(document).ready(function () {
 	scrollToAnchor();
 	$('.call-us-popup .exit-btn-pop, .call-us-popup').on('click', function () {
 		$('.call-us-popup').fadeOut(700);
-		localStorage.setItem('date', currentDate);
+		localStorage.setItem('date', currentDate.getDate());
 	});
 	$('.call-us-popup__inner').on('click', function (event) {
 		event.stopPropagation();
