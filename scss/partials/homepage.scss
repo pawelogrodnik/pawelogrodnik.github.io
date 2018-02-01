@@ -46,6 +46,10 @@
                 a {
                     text-decoration: none;
                 }
+                p {
+                    color: #fff;
+                    margin: 0;
+                }
             }
         }
     }
@@ -75,7 +79,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         padding-right: 30px;
-        font-weight: 600;
+        font-weight: 400;
         color: #fff;
         text-align: left;
         transform: skewX(-45deg);

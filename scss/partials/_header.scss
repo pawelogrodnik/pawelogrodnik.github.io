@@ -116,6 +116,13 @@ header {
                         border-bottom: 0;
                     }
                 }
+                &.highlight {
+                    background-color: rgba($gold, .7);
+
+                }
+                &.grey {
+                    background-color: rgba($lightGray, .7);
+                }
             }
         }
     }

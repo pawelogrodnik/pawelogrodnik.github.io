@@ -1732,6 +1732,14 @@ header nav ul li:last-of-type a {
   border-bottom: 0;
 }
 
+header nav ul li.highlight {
+  background-color: rgba(225, 199, 135, 0.7);
+}
+
+header nav ul li.grey {
+  background-color: rgba(191, 191, 191, 0.7);
+}
+
 @-webkit-keyframes shake {
   10%,
   90% {
@@ -2073,6 +2081,10 @@ footer .copy p a:hover {
   .hero-banner .content .hero-banner-phone a {
     text-decoration: none;
   }
+  .hero-banner .content .hero-banner-phone p {
+    color: #fff;
+    margin: 0;
+  }
 }
 
 .hero-banner h1 {
@@ -2110,7 +2122,7 @@ footer .copy p a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 30px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   text-align: left;
   -webkit-transform: skewX(-45deg);
