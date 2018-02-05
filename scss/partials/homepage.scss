@@ -55,15 +55,19 @@
         }
     }
     h1 {
-        font-size: 80px;
+        font-size: 58px;
         line-height: 60px;
         span {
+            font-weight: bold;
+        }
+        span.fake {
             font-size: 30px;
+            color: $gold;
         }
         @media (max-width: 525px) {
-            font-size: 60px;
+            font-size: 45px;
             line-height: .7;
-            span {
+            span.fake {
                 font-size: 20px;
             }
         }
@@ -93,6 +97,13 @@
         @media (max-width: 767px) {
             transform: none;
             text-align: center;
+        }
+    }
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        span.fake {
+            text-transform: initial;
         }
     }
     .animate {
@@ -278,6 +289,9 @@
                     color: $gold;
                     margin-top: 0;
                     margin-bottom: 30px;
+                    &.grey {
+                        color: $lightGrey;
+                    }
                     span {
                         font-size: 14px;
                         font-family: Montserrat;

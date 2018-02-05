@@ -1336,6 +1336,7 @@ input[type="submit"] {
 
 ol {
   list-style-type: decimal;
+  padding-left: 15px;
 }
 
 ol li {
@@ -1560,6 +1561,10 @@ ol ol li:first-of-type {
   font-weight: inherit;
 }
 
+.homepage p span {
+  color: #e1c787;
+}
+
 .con {
   display: block;
   position: relative;
@@ -1626,6 +1631,8 @@ header {
 
 header .logo-wrapper img {
   max-width: 200px;
+  max-height: 80px;
+  width: auto;
 }
 
 header .container {
@@ -1655,6 +1662,7 @@ header .phone {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 header .phone i {
@@ -1694,6 +1702,17 @@ header .phone a:hover i {
   header .phone a i {
     font-size: 35px;
   }
+}
+
+header .phone > p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
 }
 
 header .phone i,
@@ -1841,6 +1860,14 @@ header nav ul li.grey {
     -o-transform: rotate(10deg);
     transform: rotate(10deg);
   }
+}
+
+span.grey {
+  color: #bfbfbf;
+}
+
+span.big {
+  font-size: 1.25em;
 }
 
 footer {
@@ -2100,20 +2127,25 @@ footer .copy p a:hover {
 }
 
 .hero-banner h1 {
-  font-size: 80px;
+  font-size: 58px;
   line-height: 60px;
 }
 
 .hero-banner h1 span {
+  font-weight: bold;
+}
+
+.hero-banner h1 span.fake {
   font-size: 30px;
+  color: #e1c787;
 }
 
 @media (max-width: 525px) {
   .hero-banner h1 {
-    font-size: 60px;
+    font-size: 45px;
     line-height: .7;
   }
-  .hero-banner h1 span {
+  .hero-banner h1 span.fake {
     font-size: 20px;
   }
 }
@@ -2168,6 +2200,15 @@ footer .copy p a:hover {
             transform: none;
     text-align: center;
   }
+}
+
+.hero-banner h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero-banner h1 span.fake {
+  text-transform: initial;
 }
 
 .hero-banner .animate {

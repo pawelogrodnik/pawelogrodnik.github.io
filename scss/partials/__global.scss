@@ -415,6 +415,7 @@ input {
 
 ol {
     list-style-type: decimal;
+    padding-left: 15px;
     li {
         margin-bottom: 20px;
         a {
@@ -550,14 +551,10 @@ ol {
     .img-left img,
     .img-right img {
         max-height: 150px;
-        @media (max-width: 600px){
-        max-width: 100%;
-
-        
+        @media (max-width: 600px) {
+            max-width: 100%;
         }
-
     }
-
     .img-left {
         margin-right: 10px;
     }
@@ -580,5 +577,13 @@ ol {
 .bold {
     span {
         font-weight: inherit;
+    }
+}
+
+.homepage {
+    p {
+        span {
+            color: $gold;
+        }
     }
 }
