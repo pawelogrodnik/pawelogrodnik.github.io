@@ -39,7 +39,8 @@
                 left: 0;
                 background-color: rgba($mainDark, .9);
                 text-align: center;
-                a, i {
+                a,
+                i {
                     color: $gold;
                     font-size: 35px;
                 }
@@ -660,6 +661,30 @@ ul {
             max-width: 200px !important;
             height: 150px;
             margin: 5px !important;
+        }
+    }
+    &--tytuly {
+        >div {
+            @media (min-width: 768px) {
+                width: 33%;
+            }
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            .img-title {
+                margin-top: 20px;
+                text-transform: uppercase;
+                font-size: rem(13);
+            }
+            .img {
+                img {
+                    max-width: 300px !important;
+                    height: auto;
+                    max-height: 300px;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                }
+            }
         }
     }
 }

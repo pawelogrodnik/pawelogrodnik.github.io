@@ -550,9 +550,14 @@ ol {
     .img-left img,
     .img-right img {
         max-height: 150px;
+        @media (max-width: 600px){
+        max-width: 100%;
 
+        
+        }
 
     }
+
     .img-left {
         margin-right: 10px;
     }

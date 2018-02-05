@@ -32,6 +32,11 @@
 }
 
 header {
+    .logo-wrapper {
+        img {
+            max-width: 200px;
+        }
+    }
     padding: 10px 0;
     background-color: $mainDark;
     position: fixed;
