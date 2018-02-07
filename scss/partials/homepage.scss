@@ -704,9 +704,9 @@ ul {
             }
             .img {
                 img {
-                    max-width: 300px !important;
+                    max-width: 250px !important;
                     height: auto;
-                    max-height: 300px;
+                    max-height: 250px;
                     margin-left: auto !important;
                     margin-right: auto !important;
                 }
@@ -717,7 +717,7 @@ ul {
 
 span {
     &.brand {
-        color: #333 !important;
+        color: #fff !important;
         .gold {
             color: $gold;
         }
