@@ -15,10 +15,13 @@
         padding-left: 10%;
         left: -10%;
         bottom: 20%;
-        @media (max-width: 1159px) and (min-width: 768px) {
+        @media (min-width: 1880px) {
+            width: 50%;
+        }
+        @media (max-width: 1159px) and (min-width: 801px) {
             max-width: 75%;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 800px) {
             width: 100%;
             max-width: 100%;
             padding: 0;
@@ -61,8 +64,11 @@
             font-weight: bold;
         }
         span.fake {
-            font-size: 30px;
+            font-size: 28px;
             color: $gold;
+            @media (max-width: 1300px) {
+                font-size:25px;
+            }
         }
         @media (max-width: 525px) {
             font-size: 45px;
@@ -71,8 +77,8 @@
                 font-size: 20px;
             }
         }
-        @media (max-width: 360px) {
-            font-size: 50px;
+        @media (max-width: 400px) {
+            font-size: 40px;
         }
     }
     h3 {
@@ -80,7 +86,7 @@
     }
     h1,
     h3 {
-        padding-left: 30%;
+        padding-left: 25%;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-right: 30px;
@@ -88,13 +94,19 @@
         color: #fff;
         text-align: left;
         transform: skewX(-45deg);
-        @media (max-width: 1280px) and (min-width: 1160px) {
+        @media (max-width: 1420px) and (min-width: 1301px) {
             padding-left: 20%;
+        }
+        @media (max-width: 1300px) and (min-width: 1261px) {
+            padding-left: 15%;
+        }
+        @media (max-width: 1260px) and (min-width: 1160px) {
+            padding-left: 10%;
         }
         @media (max-width: 1159px) {
             padding-left: 5%;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 800px) {
             transform: none;
             text-align: center;
         }
@@ -103,7 +115,7 @@
         font-weight: bold;
         text-transform: uppercase;
         span.fake {
-            text-transform: initial;
+            // text-transform: initial;
         }
     }
     .animate {
@@ -144,7 +156,7 @@
                 max-width: 300px;
             }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 840px) {
             flex-wrap: wrap;
             .text-section,
             .icon-wrapper {
@@ -290,7 +302,7 @@
                     margin-top: 0;
                     margin-bottom: 30px;
                     &.grey {
-                        color: $lightGrey;
+                        color: $lightGray;
                     }
                     span {
                         font-size: 14px;
@@ -699,6 +711,15 @@ ul {
                     margin-right: auto !important;
                 }
             }
+        }
+    }
+}
+
+span {
+    &.brand {
+        color: #333 !important;
+        .gold {
+            color: $gold;
         }
     }
 }
