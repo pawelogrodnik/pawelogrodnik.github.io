@@ -178,7 +178,7 @@ header {
 
 span {
     &.grey {
-        color: $lightGray;
+        color: $lightGray !important;
     }
     &.big {
         font-size: 1.25em;

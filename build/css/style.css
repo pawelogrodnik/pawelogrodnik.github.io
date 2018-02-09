@@ -1479,6 +1479,10 @@ ol ol li:first-of-type {
   background-color: #d8bd56;
 }
 
+.custom-table .invisalign.grey {
+  background-color: #bfbfbf;
+}
+
 .custom-table .table-cell {
   width: 40%;
   border-right: 2px solid #111;
@@ -1880,7 +1884,7 @@ header nav ul li.grey {
 }
 
 span.grey {
-  color: #bfbfbf;
+  color: #bfbfbf !important;
 }
 
 span.big {
@@ -2142,6 +2146,7 @@ footer .copy p a:hover {
   }
   .hero-banner .content .hero-banner-phone a {
     text-decoration: none;
+    font-weight: bold;
   }
   .hero-banner .content .hero-banner-phone p {
     color: #fff;
@@ -2176,6 +2181,9 @@ footer .copy p a:hover {
   }
   .hero-banner h1 span.fake {
     font-size: 20px;
+    display: block;
+    line-height: 1.2;
+    margin-top: 25px;
   }
 }
 

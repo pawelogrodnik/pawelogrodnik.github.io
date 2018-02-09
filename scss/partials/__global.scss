@@ -518,6 +518,9 @@ ol {
     }
     .invisalign {
         background-color: $gold;
+        &.grey {
+            background-color: $lightGray;
+        }
     }
     .table-cell,
     {
