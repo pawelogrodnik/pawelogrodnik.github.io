@@ -1895,6 +1895,10 @@ span.big {
   margin: 0 0 10px !important;
 }
 
+.newHeading.fs {
+  font-size: 24px !important;
+}
+
 footer {
   padding: 50px 0 20px;
   background-color: #111;
