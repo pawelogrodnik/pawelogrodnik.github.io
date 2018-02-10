@@ -34,14 +34,14 @@
 header {
     .logo-wrapper {
         padding: 5px 0;
-        @media (max-width: 730px){
+        @media (max-width: 730px) {
             padding: 15px 0;
         }
         img {
             max-width: 255px;
             max-height: 80px;
             width: auto;
-            @media (max-width: 730px){
+            @media (max-width: 730px) {
                 max-width: 200px;
             }
         }
@@ -75,7 +75,7 @@ header {
             font-size: 40px;
             position: relative;
             padding-left: 50px;
-            margin-top: 20px;
+            margin-top: 15px;
             &:hover {
                 i {
                     animation-name: shake;
@@ -95,10 +95,10 @@ header {
             position: absolute;
             left: 0;
             bottom: 0;
-            margin: 0;    
+            margin: 0;
             width: 100%;
             text-align: center;
-            font-size: 13px;        
+            font-size: 13px;
             color: #fff;
         }
         i,
@@ -188,7 +188,6 @@ span {
 .newHeading {
     margin: 0 0 10px !important;
     &.fs {
-    font-size: 24px !important;
-        
+        font-size: 24px !important;
     }
 }

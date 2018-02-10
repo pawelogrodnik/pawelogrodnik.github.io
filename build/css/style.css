@@ -1696,7 +1696,7 @@ header .phone a {
   font-size: 40px;
   position: relative;
   padding-left: 50px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 header .phone a:hover i {
@@ -2956,6 +2956,13 @@ section.white iframe, section.dark iframe {
   section.white iframe, section.dark iframe {
     width: 320px !important;
     height: 240px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  section.white iframe, section.dark iframe {
+    width: 256px !important;
+    height: 192px !important;
   }
 }
 

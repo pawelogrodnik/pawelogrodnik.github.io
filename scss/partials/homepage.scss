@@ -593,6 +593,10 @@ section {
                 width: 320px !important;
                 height: 240px !important;
             }
+            @media (max-width: 400px) {
+                width: 256px !important;
+                height: 192px !important;
+            }
         }
         img {
             max-width: 320px;
