@@ -1,11 +1,83 @@
-$mainDark: #111;
-// $gold: #e1c787;
-$gold: rgb(216,189,86);
-// $darkLight: #ababab;
-$darkLight: #C0C0C0;
-$lightGray: #bfbfbf;
-
+$mainDark: #4f4f4f;
+$blue: #2a83a6;
+$green: #8fc533;
+$greenLight: #edefd9;
+$greenSecondary: #38b87d;
+$yellow: #937900;
+$grey: #838383;
+$borderColor: #a9a9a9;
 $browser-context: 16; // Default
 @function em($pixels, $context: $browser-context) {
     @return #{$pixels/$context}em;
+}
+
+.font-big {
+    font-size: 36px;
+}
+
+.font-semi-big {
+    font-size: 28px;
+}
+.font-mid {
+    font-size: 20px;
+}
+
+.font-white {
+    color: #fff;
+    line-height: 1.1;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.background-standard {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.green {
+    color: $green;
+}
+.greenSecondary {
+    color: $greenSecondary;
+}
+.blue {
+    color: $blue;
+}
+.yellow {
+    color: $yellow;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $mainDark;
+}
+
+h1 {
+    @extend .font-big;
+}
+h2 {
+    @extend .font-semi-big;
+}
+h3 {
+    @extend .font-mid;
+    margin: 20px 0;
+}
+p {
+    margin-bottom: 15px;
 }
