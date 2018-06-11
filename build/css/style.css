@@ -137,12 +137,20 @@ img {
   height: auto;
 }
 
-.font-big, h1, .intro-section__description.main, .intro-section__description.faded {
+.giant {
+  font-size: 46px;
+}
+
+.font-big, h1, .intro-section__description.main, .intro-section__description.faded, .image-big__subheading--md {
   font-size: 36px;
 }
 
 .font-semi-big, h2 {
   font-size: 28px;
+}
+
+.font-mid-plus {
+  font-size: 23px;
 }
 
 .font-mid, h3 {
@@ -158,15 +166,26 @@ img {
   font-weight: bold;
 }
 
-.font-light, .promo-section__left, .promo-section__right, .green-section__title, .green-section__desc, .green-section__items a, .product-details__desc, .product-details h3, .product-details__cert-text {
+.font-light, .promo-section__left, .promo-section__right, .green-section__title, .green-section__desc, .green-section__items a, .product-details__desc, .product-details h3, .product-details__cert-text, .product-preparing__heading, .product-hurt__subheading, .sequoyalife-intro h2, .sequoyalife-intro p, .sequoya-knowledge__left p, .sequoya-knowledge__right p, .sequoya-chta__desc p, .product-quality__title, .product-quality p {
   font-weight: 300;
 }
 
-.background-standard, .intro-section__image--main, .intro-section__image--single {
+.background-standard, .intro-section__image--main, .intro-section__image--single, .product-preparing, .image-big {
   -moz-background-size: cover;
        background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.bg-bottom {
+  -moz-background-size: contain;
+       background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.bg-bottom--nodesc {
+  min-height: 220px;
 }
 
 .green {
@@ -200,6 +219,10 @@ h4,
 h5,
 h6 {
   color: #4f4f4f;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -249,7 +272,7 @@ body .page-container-wrapper {
   min-height: calc(100vh - 265px);
 }
 
-.container {
+.container, .blue-section__inner {
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -629,4 +652,143 @@ body {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+
+.product-preparing {
+  padding: 70px;
+  margin: 50px 0;
+  min-height: 320px;
+}
+
+.product-preparing__heading {
+  margin-top: 40px;
+}
+
+.product-hurt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-hurt__heading {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding-right: 30px;
+}
+
+.product-hurt__subheading, .product-hurt__text {
+  padding-left: 30px;
+}
+
+.product-hurt__text {
+  border-left: 1px solid #a9a9a9;
+}
+
+.product-hurt__subheading {
+  margin-top: 0;
+}
+
+.sequoya-logo-section {
+  padding: 40px 0 20px;
+}
+
+.blue-section {
+  background-color: #2a83a6;
+}
+
+.blue-section__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 50px;
+}
+
+.blue-section__image-wrapper {
+  width: 30%;
+  text-align: center;
+}
+
+.image-big {
+  min-height: 660px;
+  color: #fff;
+}
+
+.image-big__heading-main, .image-big__subheading {
+  color: #fff;
+}
+
+.image-big__heading-main {
+  padding-top: 480px;
+}
+
+.image-big--md {
+  min-height: 550px;
+  padding: 90px 90px 70px;
+}
+
+.sequoyalife-intro {
+  border-bottom: 1px solid #a9a9a9;
+  padding: 35px 50px;
+}
+
+.sequoya-knowledge {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+.sequoya-knowledge__left, .sequoya-knowledge__right {
+  width: 50%;
+}
+
+.sequoya-knowledge__left {
+  padding: 20px 40px 20px 20px;
+}
+
+.sequoya-knowledge__right {
+  padding: 20px 20px 20px 40px;
+  border-left: 1px solid #a9a9a9;
+}
+
+.sequoya-chta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  border-top: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.sequoya-chta__image {
+  width: 33%;
+  text-align: center;
+}
+
+.sequoya-chta__desc {
+  width: 67%;
 }

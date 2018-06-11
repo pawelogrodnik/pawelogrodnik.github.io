@@ -1,0 +1,69 @@
+.image-big {
+    @extend .background-standard;
+    min-height: 660px;
+    color: #fff;
+    &__heading-main,
+    &__subheading {
+        color: #fff;
+    }
+    &__heading-main {
+        padding-top: 480px;
+    }
+    &--md {
+        min-height: 550px;
+        padding: 90px 90px 70px;
+    }
+    &__subheading {
+        &--md {
+            @extend .font-big;
+        }
+    }
+}
+
+.sequoyalife-intro {
+    border-bottom: 1px solid $borderColor;
+    padding: 35px 50px;
+    h2, p {
+        @extend .font-light;
+    }
+}
+
+.sequoya-knowledge {
+    display: flex;
+    margin: 15px 0;
+    &__left, &__right {
+        width: 50%;
+        p {
+            @extend .font-light;
+        }
+    }
+    &__left {
+        padding: 20px 40px 20px 20px;
+    }
+    &__right {
+        padding: 20px 20px 20px 40px;
+        border-left: 1px solid $borderColor;
+    }
+}
+.sequoya-chta {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    &__image {
+        width: 33%;
+        text-align: center;
+    }
+    &__desc {
+        width: 67%;
+        p {
+            @extend .font-light;
+        }
+    }
+}
+.product-quality {
+    &__title, p {
+        @extend .font-light;
+    }
+}
