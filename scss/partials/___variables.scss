@@ -26,6 +26,9 @@ $browser-context: 16; // Default
 .font-mid {
     font-size: 20px;
 }
+.font-sm {
+    font-size: 18px;
+}
 
 .font-white {
     color: #fff;
@@ -93,6 +96,20 @@ h3 {
     @extend .font-mid;
     margin: 20px 0;
 }
+h4 {
+    @extend .font-sm;
+    margin: 0 0 20px;
+}
 p {
     margin-bottom: 15px;
+}
+.separator {
+    max-width: 1030px;
+    margin: 15px auto;
+    height: 1px;
+    width: 100%;
+    background-color: $borderColor;
+}
+.section-margin {
+    margin-bottom: 30px;
 }
