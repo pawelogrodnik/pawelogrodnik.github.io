@@ -109,6 +109,9 @@ p {
     height: 1px;
     width: 100%;
     background-color: $borderColor;
+    &--full {
+        max-width: 100%;
+    }
 }
 .section-margin {
     margin-bottom: 30px;
