@@ -29,6 +29,9 @@
         &.double-inner {
             display: flex;
         }
+        &_no-padding {
+            padding-bottom: 0px !important;
+        }
     }
     &--left {
         &.image-container,

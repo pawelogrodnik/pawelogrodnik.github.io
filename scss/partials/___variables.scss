@@ -58,7 +58,6 @@ $browser-context: 16; // Default
         min-height: 220px;
     }
 }
-
 .green {
     color: $green;
 }
@@ -169,4 +168,10 @@ span {
         @extend .font-light;
         margin-bottom: 5px;
     }
+}
+.border-bottom {
+    border-bottom: 1px solid $borderColor;
+}
+.no-padding {
+    border-bottom: 0px;
 }

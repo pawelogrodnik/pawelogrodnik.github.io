@@ -84,6 +84,11 @@
 }
 
 .sequoya-advantages {
+    &__image-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+        height: 100px;
+    }
     display: flex;
     margin-top: 15px;
     @extend .section-margin;
@@ -93,6 +98,11 @@
         padding: 40px 25px;
         &:last-of-type {
             border-right: 0px;
+        }
+    }
+    &__title {
+        &.sm {
+            @extend .font-mid;
         }
     }
     &__title,

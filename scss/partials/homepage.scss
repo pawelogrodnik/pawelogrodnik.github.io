@@ -1,4 +1,10 @@
 .intro-section {
+    &__sliding-desc {
+        padding: 25px 40px;
+        >div {
+            display: none;
+        }
+    }
     &__image {
         &--main {
             @extend .background-standard;
@@ -53,6 +59,15 @@
         }
         img {
             margin-top: 5px;
+        }
+        &--numbers {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            @extend .font-bold;
+            position: absolute;
+            color: #fff;
         }
     }
 }

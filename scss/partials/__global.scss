@@ -47,3 +47,29 @@ a {
         text-decoration: underline;
     }
 }
+.three-col {
+    display: flex;
+    &--margin-bottom {
+        margin-bottom: 30px;
+    }
+    &__image-wrapper {
+        // text-align: center;
+        margin-bottom: 25px;
+     
+    }
+    &__image-middle {
+        display: flex;
+
+    }
+    &--left, &--right {
+        width: 37%;
+        padding: 10px 20px;
+    }
+    &--middle {
+        width: 24%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
