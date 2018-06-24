@@ -17,9 +17,18 @@
             border-left: 0px;
         }
     }
+    &__inner-text {
+        width: calc(100% - 140px);
+    }
+    &__inner-image {
+        width: 140px;
+    }
     &--right,
     &--left {
         width: 50%;
+        &.double-inner {
+            display: flex;
+        }
     }
     &--left {
         &.image-container,
@@ -158,6 +167,7 @@
 .quadra-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     &__single {
         width: 50%;
         display: flex;
@@ -212,3 +222,4 @@
         @extend .blue;
     }
 }
+

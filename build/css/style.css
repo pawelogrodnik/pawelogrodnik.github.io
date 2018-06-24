@@ -170,7 +170,7 @@ img {
   font-weight: bold;
 }
 
-.font-light, .footer__upper-list li a, .footer__upper-desc, .footer__mid-desc, .footer__mid-list ul li a, .footer__disclaimer, .promo-section__left, .promo-section__right, .green-section__title, .green-section__desc, .green-section__items a, .product-details__desc, .product-details h3, .product-details__cert-text, .product-preparing__heading, .product-hurt__subheading, .image-bigger h2, .sequoyalife-intro h2,
+.font-light, .oval-list li, .footer__upper-list li a, .footer__upper-desc, .footer__mid-desc, .footer__mid-list ul li a, .footer__disclaimer, .promo-section__left, .promo-section__right, .green-section__title, .green-section__desc, .green-section__items a, .product-details__desc, .product-details h3, .product-details__cert-text, .product-preparing__heading, .product-hurt__subheading, .image-bigger h2, .sequoyalife-intro h2,
 .sequoyalife-intro p, .sequoya-knowledge__left p, .sequoya-knowledge__right p, .sequoya-chta__desc p, .product-quality__title,
 .product-quality p, .sequoya-advantages__title, .sequoya-advantages__desc, .sequoya-bottom-ep__heading, .intro-product__heading, .intro-product__desc, .two-cols__title-mid, .two-cols__title, .two-cols__desc, .two-cols__icon-title, .extract-section__title, .extract-section__desc, .img-horizontal__text_big, .img-horizontal__title, .img-horizontal__title-mid, .img-horizontal__desc, .image-text__desc, .image-text__heading {
   font-weight: 300;
@@ -204,6 +204,10 @@ img {
 
 .blue, .sequoya-bottom-ep__heading, .img-horizontal__title, .quadra-section__title, .quadra-section__purpose {
   color: #2a83a6;
+}
+
+.orange {
+  color: #ca7f2f;
 }
 
 .yellow {
@@ -257,6 +261,80 @@ p {
 
 .section-margin, .image-bigger, .sequoya-advantages, .intro-product {
   margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.images-section, .product-details__image-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.images-section--center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images-section--center .images-section__single-image {
+  text-align: center;
+}
+
+.images-section__single-image {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .images-section, .product-details__image-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .images-section__single-image {
+    width: 100%;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.border-left {
+  border-left: 1px solid #a9a9a9;
+}
+
+.third {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third__two-thirds {
+  width: 66.66%;
+  padding: 10px 20px;
+}
+
+.third__one-third {
+  width: 33.333%;
+  padding: 10px 20px;
+}
+
+span.underline {
+  text-decoration: underline;
+}
+
+.oval-list li {
+  margin-bottom: 5px;
 }
 
 .slick-arrow {
@@ -319,6 +397,14 @@ body .page-container-wrapper {
 
 .btn--blue {
   color: #2a83a6;
+}
+
+.btn-redirect {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 img {
@@ -686,14 +772,6 @@ footer {
   padding: 0 40px;
 }
 
-.product-details__image-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .product-details__cert {
   display: -webkit-box;
   display: -webkit-flex;
@@ -941,8 +1019,26 @@ footer {
   border-left: 0px;
 }
 
+.two-cols__inner-text {
+  width: -webkit-calc(100% - 140px);
+  width: -moz-calc(100% - 140px);
+  width: calc(100% - 140px);
+}
+
+.two-cols__inner-image {
+  width: 140px;
+}
+
 .two-cols--right, .two-cols--left {
   width: 50%;
+}
+
+.two-cols--right.double-inner, .two-cols--left.double-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .two-cols--left.image-container,
@@ -1080,6 +1176,11 @@ footer {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quadra-section__single {

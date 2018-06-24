@@ -4,6 +4,7 @@ $green: #8fc533;
 $greenLight: #edefd9;
 $greenSecondary: #38b87d;
 $yellow: #937900;
+$orange: #ca7f2f;
 $grey: #838383;
 $borderColor: #a9a9a9;
 $browser-context: 16; // Default
@@ -67,6 +68,9 @@ $browser-context: 16; // Default
 .blue {
     color: $blue;
 }
+.orange {
+    color: $orange;
+}
 .yellow {
     color: $yellow;
 }
@@ -115,4 +119,54 @@ p {
 }
 .section-margin {
     margin-bottom: 30px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.images-section {
+    display: flex;
+    &--center {
+        justify-content: center;
+        .images-section__single-image {
+            text-align: center;
+        }
+    }
+    &__single-image {
+        width: 50%;
+    }
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        &__single-image {
+            width: 100%;
+        }
+    }
+}
+.text-left {
+    text-align: left;
+}
+.border-left {
+    border-left: 1px solid $borderColor;
+}
+.third {
+    display: flex;
+    &__two-thirds {
+        width: 66.66%;
+        padding: 10px 20px;
+    }
+    &__one-third {
+        width: 33.333%;
+        padding: 10px 20px;
+    }
+}
+span {
+    &.underline {
+        text-decoration: underline;
+    }
+}
+.oval-list {
+    li {
+        @extend .font-light;
+        margin-bottom: 5px;
+    }
 }
