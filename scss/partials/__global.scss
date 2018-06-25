@@ -27,6 +27,9 @@ body {
         color: $blue;
     
     }
+    &--no_border {
+        border: 0px;
+    }
     &-redirect {
         display: inline-block;
         margin-bottom: 20px;
@@ -71,5 +74,50 @@ a {
         align-items: center;
         display: flex;
         justify-content: center;
+    }
+}
+
+form {
+    max-width: 570px;
+    margin: 30px auto;
+    .input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        label {
+            @extend .font-sm;
+            @extend .font-light;
+        }
+        input, textarea {
+            border:none;
+            background-image:none;
+            background-color:transparent;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            max-width: 370px;
+            background-color: #f9f9f9;
+            border: 1px solid $borderColor;
+            padding: 5px 10px;
+        }
+        textarea {
+            min-height: 180px;
+            overflow: scroll-y;
+        }
+        &.submit {
+            width: 100%;
+            input {
+                background-color: #fff;
+                border: 0px;
+                max-width: 100%;
+                text-align: right;
+                display: inline-block;
+            }
+        }
+
+    }
+    .required {
+        color: red;
     }
 }

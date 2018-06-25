@@ -5,6 +5,10 @@
             display: none;
         }
     }
+    &__heading-light {
+        @extend .font-light;
+        font-size: 28px;
+    }
     &__image {
         &--main {
             @extend .background-standard;

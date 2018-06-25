@@ -157,7 +157,7 @@ img {
   font-size: 20px;
 }
 
-.font-sm, h4, .footer__upper-heading, .footer__mid-heading {
+.font-sm, h4, form .input label, .footer__upper-heading, .footer__mid-heading {
   font-size: 18px;
 }
 
@@ -170,7 +170,7 @@ img {
   font-weight: bold;
 }
 
-.font-light, .oval-list li, .footer__upper-list li a, .footer__upper-desc, .footer__mid-desc, .footer__mid-list ul li a, .footer__disclaimer, .promo-section__left, .promo-section__right, .green-section__title, .green-section__desc, .green-section__items a, .product-details__desc, .product-details h3, .product-details__cert-text, .product-preparing__heading, .product-hurt__subheading, .image-bigger h2, .sequoyalife-intro h2,
+.font-light, .oval-list li, form .input label, .footer__upper-list li a, .footer__upper-desc, .footer__mid-desc, .footer__mid-list ul li a, .footer__disclaimer, .intro-section__heading-light, .promo-section__left, .promo-section__right, .green-section__title, .green-section__desc, .green-section__items a, .product-details__desc, .product-details h3, .product-details__cert-text, .product-preparing__heading, .product-hurt__subheading, .image-bigger h2, .sequoyalife-intro h2,
 .sequoyalife-intro p, .sequoya-knowledge__left p, .sequoya-knowledge__right p, .sequoya-chta__desc p, .product-quality__title,
 .product-quality p, .sequoya-advantages__title, .sequoya-advantages__desc, .sequoya-bottom-ep__heading, .intro-product__heading, .intro-product__desc, .two-cols__title-mid, .two-cols__title, .two-cols__desc, .two-cols__icon-title, .extract-section__title, .extract-section__desc, .img-horizontal__text_big, .img-horizontal__title, .img-horizontal__title-mid, .img-horizontal__desc, .image-text__desc, .image-text__heading {
   font-weight: 300;
@@ -345,6 +345,14 @@ span.underline {
   border-bottom: 0px;
 }
 
+.padding-section {
+  padding: 50px 15px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -405,6 +413,10 @@ body .page-container-wrapper {
 
 .btn--blue {
   color: #2a83a6;
+}
+
+.btn--no_border {
+  border: 0px;
 }
 
 .btn-redirect {
@@ -477,6 +489,59 @@ a:hover {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+form {
+  max-width: 570px;
+  margin: 30px auto;
+}
+
+form .input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+form .input input, form .input textarea {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  max-width: 370px;
+  background-color: #f9f9f9;
+  border: 1px solid #a9a9a9;
+  padding: 5px 10px;
+}
+
+form .input textarea {
+  min-height: 180px;
+  overflow: scroll-y;
+}
+
+form .input.submit {
+  width: 100%;
+}
+
+form .input.submit input {
+  background-color: #fff;
+  border: 0px;
+  max-width: 100%;
+  text-align: right;
+}
+
+form .required {
+  color: red;
 }
 
 footer {
@@ -556,6 +621,10 @@ footer {
 
 .intro-section__sliding-desc > div {
   display: none;
+}
+
+.intro-section__heading-light {
+  font-size: 28px;
 }
 
 .intro-section__image--main {
