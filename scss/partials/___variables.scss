@@ -13,6 +13,9 @@ $browser-context: 16; // Default
 }
 .giant {
     font-size: 46px;
+    @media (max-width: 450px) {
+        font-size: 36px;
+    }
 }
 .font-big {
     font-size: 36px;
@@ -149,6 +152,9 @@ img {
 }
 .third {
     display: flex;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
     &__two-thirds {
         width: 66.66%;
         padding: 10px 20px;
@@ -156,6 +162,14 @@ img {
     &__one-third {
         width: 33.333%;
         padding: 10px 20px;
+    }
+    @media (max-width: 767px) {
+        &__one-third, &__two-thirds {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10 15px;
+            border: 0px;
+        }
     }
 }
 span {
@@ -177,6 +191,7 @@ span {
 }
 .padding-section {
     padding: 50px 15px;
+    
 }
 .margin-bottom-30 {
     margin-bottom: 30px;

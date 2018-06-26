@@ -1,17 +1,29 @@
 .image-big {
+    min-height: 330px;
     @extend .background-standard;
-    min-height: 660px;
+    min-height: 330px;
+    @media (min-width: 768px) {
+        min-height: 660px;
+
+    }
     color: #fff;
     &__heading-main,
     &__subheading {
         color: #fff;
     }
     &__heading-main {
+        padding-top: 38%;
+        @media (min-width: 768px) {
         padding-top: 480px;
+        }
     }
     &--md {
         min-height: 550px;
-        padding: 90px 90px 70px;
+        padding: 30px;
+        @media (min-width: 768px) {
+            padding: 90px 90px 70px;
+
+        }
     }
     &__subheading {
         &--md {
@@ -42,19 +54,32 @@
 .sequoya-knowledge {
     display: flex;
     margin: 15px 0;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
     &__left,
     &__right {
         width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
         p {
             @extend .font-light;
         }
     }
     &__left {
-        padding: 20px 40px 20px 20px;
+        padding: 0 15px;
+        @media (min-width: 768px){
+            padding: 20px 40px 20px 20px;
+        }
     }
     &__right {
-        padding: 20px 20px 20px 40px;
-        border-left: 1px solid $borderColor;
+        padding: 0 15px;
+        @media (min-width: 768px){
+            padding: 20px 20px 20px 40px;
+            border-left: 1px solid $borderColor;
+        }
     }
 }
 
@@ -64,6 +89,10 @@
     padding: 30px;
     border-top: 1px solid $borderColor;
     border-bottom: 1px solid $borderColor;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
     &__image {
         width: 33%;
         text-align: center;
@@ -73,6 +102,11 @@
         p {
             @extend .font-light;
         }
+    }
+    @media (max-width: 767px) {
+       &__image, &__desc {
+           width: 100%;
+       }
     }
 }
 
@@ -92,10 +126,18 @@
     display: flex;
     margin-top: 15px;
     @extend .section-margin;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
     &__single-block {
         width: calc(100% / 3);
         border-right: 1px solid $borderColor;
         padding: 40px 25px;
+        @media (max-width: 767px) {
+           width: 100%;
+           padding: 25px 15px;
+           border: 0px;
+        }
         &:last-of-type {
             border-right: 0px;
         }

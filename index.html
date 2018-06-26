@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,follow">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
     <script src="https://cdn.fontawesome.com:443/js/stats.js"></script>
     <link href="https://use.fontawesome.com/27ee110de8.css" media="all" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./build/css/style.css">
-    <link rel="stylesheet" href="./build/js/main.js">
+    <!-- <script src="./build/js/main.js" /> -->
 
 </head>
 
@@ -32,26 +33,60 @@
                 </div>
                 <div class="intro-section__image--wrapper">
                     <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)">
+                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="first">
                             <div class="intro-section__description secondary">Czym jest CBD</div>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)">
+                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="second">
                             <div class="intro-section__description secondary">Czym jest CBD</div>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)">
+                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="third">
                             <div class="intro-section__description secondary">Czym jest CBD</div>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)">
+                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="fourth">
                             <div class="intro-section__description secondary">Czym jest CBD</div>
                         </div>
                     </a>
                 </div>
+                <div class="intro-section__sliding-desc">
+                        <div id="first">
+                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
+                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
+                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
+                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
+                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
+                                hepatocytów i endokrynnej części trzustki.</p>
+                        </div>
+                        <div id="second">
+                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
+                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
+                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
+                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
+                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
+                                hepatocytów i endokrynnej części trzustki.</p>
+                        </div>
+                        <div id="third">
+                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
+                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
+                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
+                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
+                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
+                                hepatocytów i endokrynnej części trzustki.</p>
+                        </div>
+                        <div id="fourth">
+                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
+                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
+                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
+                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
+                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
+                                hepatocytów i endokrynnej części trzustki.</p>
+                        </div>
+                    </div>
             </div>
             <div class="three-col">
                 <div class="three-col__left">
@@ -304,7 +339,168 @@
                 </div>
             </div>
         </div>
-        .
+        <div class="container">
+                <footer>
+                        <div class="footer__upper">
+                            <div class="footer__upper-block">
+                                <div class="footer__upper-heading">Sequoyalife</div>
+                                <ul class="footer__upper-list">
+                                    <li>
+                                        <a href="/">Strona główna</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">O jakości produktów</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Edukacja i wiedza o CBD</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">O Sequoyalife</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__upper-block">
+                                <div class="footer__upper-heading">Sklep</div>
+                                <ul class="footer__upper-list">
+                                    <li>
+                                        <a href="/">Produkty Konopne i CBD</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Formy płatności</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Czas i koszty dostawy</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Czas realizacji zamówienia</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Zwroty i reklamacje</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Regulamin</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Polityka prywatności</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__upper-block">
+                                <div class="footer__upper-heading">Moje konto</div>
+                                <ul class="footer__upper-list">
+                                    <li>
+                                        <a href="/">Moje zamówienia</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Ustawienia konta</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Czas i koszty dostawy</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Czas realizacj zamówienia</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Zwroty i reklamacje</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Regulamin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__upper-block">
+                                <div class="footer__upper-heading">Sequoyalife</div>
+                                <p class="footer__upper-desc">We are the UK's Premium CBD Oil, Cannabidiol Supplier! Our CBD oils are derived from cannabis sativa,
+                                    a legally produced substance. Buy Our oil sourced from leading producers in Europe! You will
+                                    not be sorry.</p>
+                            </div>
+                            <div class="footer__upper-block">
+                                <div class="footer__upper-heading">Sequoyalife</div>
+                                <p class="footer__upper-desc">CBD Oils UK offer wholesale distribution of all its CBD products at discounted prices. Our Manufacturing
+                                    partnerships allow us to offer the most aggressive pricing without compromising quality.</p>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="footer__mid text-center">
+                            <h5 class="footer__mid-heading">
+                                Sprzedaż Hurtowna Produktów CBD i Konopnych
+                            </h5>
+                            <div class="footer__mid-desc">
+                                Oferujemy możliwość zamówienia produktów oraz oleju CBD w ilościach hurtowych. Mamy szeroki zakres produktów zawierajace
+                                substancje CBD (Cannabidiol) w róznych poziomach stęzenia. Jednak do sprzedaży hurt na terenie Polski
+                                podchodzimy indiwidualnie. W wielu przypadkach zamówienia hurtowe jesteśmy wstanie zrealizowac w
+                                ciągu 5-6 dni roboczych. Prosimy o kontakt aby zapoznać się z Państwa zapotrzebowaniem Hurt CBD.
+                                <a href="#" class="greenSecondary">Wiecej Informacji ></a>
+                            </div>
+                            <div class="footer__mid-list">
+                                <ul>
+                                    <li>
+                                        <a href="">Olej CBD</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Proteina Konopna</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Proteina Konopna</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Proteina Konopna</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Proteina Konopna</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kremy z CBD</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Olej CBD</a>
+                                    </li>
+        
+                                    <li>
+                                        <a href="">Kremy z CBD</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Olej CBD</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Proteina Konopna</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Proteina Konopna</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kremy z CBD</a>
+                                    </li>
+        
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="footer__bottom">
+                            <div class="footer__bottom-block">
+                                <img src="/img/sequoya-logo-grey.png" alt="">
+                            </div>
+                            <div class="footer__bottom-block">
+                                <img src="/img/chta-accc.png" alt="">
+                            </div>
+                            <div class="footer__bottom-block">
+                                <img src="/img/non-gmo.png" alt="">
+                            </div>
+                            <div class="footer__bottom-block">
+                                <img src="/img/gluten-free.png" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__disclaimer text-center">
+                            Wszystkie Prawa zastrzezone, Sequoyalife Sp. zoo,
+                            <span class="footer__disclaimer-year">2018</span>
+                            <br/>All rIghts reserved, Sequoyalife Inc.
+                            <span class="footer__disclaimer-year">2018</span>
+                        </div>
+                    </footer>
+        </div>
     </div>
 
 </body>

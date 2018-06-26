@@ -9,11 +9,13 @@ body {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1260px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 .container-small {
-    max-width: 1060px;
+    max-width: 1080px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 .btn {
@@ -52,6 +54,7 @@ a {
 }
 .three-col {
     display: flex;
+ 
     &--margin-bottom {
         margin-bottom: 30px;
     }
@@ -62,11 +65,18 @@ a {
     }
     &__image-middle {
         display: flex;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
 
     }
     &--left, &--right {
         width: 37%;
         padding: 10px 20px;
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 10px 15px;
+        }
     }
     &--middle {
         width: 24%;
@@ -74,6 +84,9 @@ a {
         align-items: center;
         display: flex;
         justify-content: center;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 }
 
@@ -84,6 +97,7 @@ form {
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
+       
         label {
             @extend .font-sm;
             @extend .font-light;
@@ -113,6 +127,15 @@ form {
                 max-width: 100%;
                 text-align: right;
                 display: inline-block;
+            }
+        }
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            label, input {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 10px;
             }
         }
 

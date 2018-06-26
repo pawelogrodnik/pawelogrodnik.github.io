@@ -9,6 +9,9 @@
 .two-cols {
     margin: 25px 0;
     display: flex;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
     &__align-center {
         align-items: center;
     }
@@ -19,15 +22,25 @@
     }
     &__inner-text {
         width: calc(100% - 140px);
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
     &__inner-image {
         width: 140px;
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+        }
     }
     &--right,
     &--left {
         width: 50%;
         &.double-inner {
             display: flex;
+            @media (max-width: 767px) {
+                flex-wrap: wrap;
+            }
         }
         &_no-padding {
             padding-bottom: 0px !important;
@@ -37,6 +50,14 @@
         &.image-container,
         .image-container {
             text-align: center;
+        }
+        &.double-inner {
+            .two-cols__inner-image {
+                order: 1;
+            }
+            .two-cols__inner-text {
+                order: 2;
+            }
         }
     }
     &--left,
@@ -74,6 +95,12 @@
         @extend .font-mid-plus;
         @extend .font-light;
     }
+    @media (max-width: 767px) {
+      &--left, &--right {
+          width: 100%;
+          border: 0px;
+      }
+    }
 }
 
 .extract-section {
@@ -90,6 +117,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: 767px) {
+            width: 100%;
+            transform: translateY(-50%);
+            left: 0;
+        }
     }
     &__title,
     &__desc {
@@ -101,6 +133,10 @@
     display: flex;
     align-items: center;
     padding: 15px 50px;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
     &--left {
         width: 60%;
     }
@@ -140,10 +176,23 @@
     &__desc {
         @extend .font-light;
     }
+    @media (max-width: 767px) {
+        &--text, &--image {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &--image {
+            text-align: center;
+        }
+    }
 }
 
 .image-text {
     display: flex;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        padding: 0;
+    }
     &__align-center {
         align-items: center;
     }
@@ -165,39 +214,57 @@
             @extend .font-mid;
         }
     }
+    @media (max-width: 767px) {
+        &__image-wrapper, &__text-wrapper {
+            width: 100%;
+        }
+    }
 }
 
 .quadra-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
     &__single {
+       
         width: 50%;
+       
         display: flex;
         padding: 15px;
         position: relative;
-        &:nth-of-type(2n+1) {
-            border-right: 1px solid $borderColor;
-        }
-        &:first-of-type, &:nth-of-type(2) {
-            &:before {
-                content: '';
-                width: 40%;
-                height: 1px;
-                background-color: $borderColor;
-                position: absolute;
-                bottom: 0px;
+        @media (min-width: 768px) {
+            &:nth-of-type(2n+1) {
+                border-right: 1px solid $borderColor;
+            }
+            &:first-of-type, &:nth-of-type(2) {
+                &:before {
+                    content: '';
+                    width: 40%;
+                    height: 1px;
+                    background-color: $borderColor;
+                    position: absolute;
+                    bottom: 0px;
+                }
+            }
+            &:first-of-type {
+                &:before {
+                    right: 0px;
+                }
+            }
+            &:nth-of-type(2) {
+                &:before {
+                    left: 0;
+                }
             }
         }
-        &:first-of-type {
-            &:before {
-                right: 0px;
-            }
-        }
-        &:nth-of-type(2) {
-            &:before {
-                left: 0;
-            }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            border-right: 0px;
+            border-bottom: 1px solid $borderColor;
         }
     }
     &__text {
