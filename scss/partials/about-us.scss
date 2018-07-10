@@ -126,13 +126,23 @@
     display: flex;
     margin-top: 15px;
     @extend .section-margin;
+    margin-bottom: 50px;
     @media (max-width: 767px) {
         flex-wrap: wrap;
     }
+    &__inner {
+        padding: 10px 25px;
+        border-right: 1px solid $borderColor;
+        @media (max-width: 767px) {
+        border: 0px;
+        }
+    }
     &__single-block {
         width: calc(100% / 3);
-        border-right: 1px solid $borderColor;
-        padding: 40px 25px;
+        // border-right: 1px solid $borderColor;
+        // padding: 40px 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         @media (max-width: 767px) {
            width: 100%;
            padding: 25px 15px;
@@ -140,6 +150,10 @@
         }
         &:last-of-type {
             border-right: 0px;
+            .sequoya-advantages__inner {
+            border-right: 0px;
+
+            }
         }
     }
     &__title {

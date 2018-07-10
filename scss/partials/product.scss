@@ -1,5 +1,6 @@
 .intro-product {
     @extend .section-margin;
+    margin-top: 30px;
     &__heading,
     &__desc {
         @extend .font-light;

@@ -1,7 +1,13 @@
 footer {
     margin-top: 70px;
-}
+    p, li, a {
+        @extend .footer-fs;
 
+    }
+}
+.footer-fs {
+    font-size: 14px;
+}
 .footer {
     &__upper {
         display: flex;
@@ -39,6 +45,7 @@ footer {
         }
         &-desc {
             @extend .font-light;
+            @extend .footer-fs;
         }
         &-list {
             ul {
@@ -53,6 +60,7 @@ footer {
                 }
                 li {
                     width: 25%;
+
                     @media (max-width: 767px) {
                         width: 50%;
                     }

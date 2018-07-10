@@ -1,11 +1,12 @@
 $mainDark: #4f4f4f;
 $blue: #2a83a6;
+$blueLight: #4e94b0;
 $green: #8fc533;
 $greenLight: #edefd9;
 $greenSecondary: #38b87d;
 $yellow: #937900;
 $orange: #ca7f2f;
-$grey: #838383;
+$grey: #e0e0e0;
 $borderColor: #a9a9a9;
 $browser-context: 16; // Default
 @function em($pixels, $context: $browser-context) {
