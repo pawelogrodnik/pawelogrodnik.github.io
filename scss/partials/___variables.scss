@@ -4,11 +4,12 @@ $blueLight: #4e94b0;
 $green: #8fc533;
 $greenLight: #edefd9;
 $greenSecondary: #38b87d;
+$multimediaColor: #009694;
 $yellow: #937900;
 $orange: #ca7f2f;
 $grey: #e0e0e0;
 $borderColor: #a9a9a9;
-$browser-context: 16; // Default
+$browser-context: 16;
 @function em($pixels, $context: $browser-context) {
     @return #{$pixels/$context}em;
 }
@@ -61,6 +62,9 @@ $browser-context: 16; // Default
     &--nodesc {
         min-height: 220px;
     }
+}
+.multimedia-color {
+    color: $multimediaColor;
 }
 .green {
     color: $green;

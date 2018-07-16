@@ -155,7 +155,7 @@ img {
   font-size: 28px;
 }
 
-.font-mid-plus, .sequoya-bottom-ep__heading, .two-cols__title, .two-cols__icon-title, .img-horizontal__text_big, .img-horizontal__title_big, .image-text__heading, .quadra-section__title {
+.font-mid-plus, .image-big--sm h1 span, .sequoya-bottom-ep__heading, .two-cols__title, .two-cols__icon-title, .img-horizontal__text_big, .img-horizontal__title_big, .image-text__heading, .quadra-section__title {
   font-size: 23px;
 }
 
@@ -198,6 +198,10 @@ img {
 
 .bg-bottom--nodesc {
   min-height: 220px;
+}
+
+.multimedia-color, .latest-multimedia--link, .multimedia-main--right a {
+  color: #009694;
 }
 
 .green {
@@ -421,7 +425,7 @@ body .page-container-wrapper {
   margin: 0 auto;
 }
 
-.container-small, .news-section {
+.container-small, .news-section, .multimedia-main {
   max-width: 1080px;
   padding: 0 10px;
   margin: 0 auto;
@@ -1468,6 +1472,20 @@ footer {
   }
 }
 
+.image-big--sm {
+  min-height: 480px;
+  height: 480px;
+}
+
+.image-big--sm h1 {
+  padding-top: 31%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  line-height: 1.1;
+  text-align: left;
+}
+
 .image-bigger {
   padding-top: 200px;
   min-height: 720px;
@@ -1628,6 +1646,166 @@ footer {
 
 .sequoya-advantages__single-block:last-of-type .sequoya-advantages__inner {
   border-right: 0px;
+}
+
+.intro-multimedia {
+  padding: 60px 0 30px;
+  border-bottom: 1px solid #a9a9a9;
+  margin-bottom: 30px;
+}
+
+.latest-multimedia-news .container-small, .latest-multimedia-news .news-section, .latest-multimedia-news .multimedia-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.latest-multimedia--left, .latest-multimedia--right {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .latest-multimedia--left, .latest-multimedia--right {
+    width: 50%;
+  }
+}
+
+.latest-multimedia--left .latest-multimedia--link {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .latest-multimedia--left .latest-multimedia--link {
+    padding-right: 10px;
+    width: 50%;
+  }
+}
+
+.latest-multimedia-images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.latest-multimedia--link {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .latest-multimedia--link {
+    padding-right: 10px;
+  }
+}
+
+.latest-multimedia--link_image {
+  margin-bottom: 25px;
+}
+
+.multimedia-main h2 {
+  margin: 50px 0 30px;
+}
+
+.multimedia-main--wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.multimedia-main--left {
+  width: 75%;
+}
+
+.multimedia-main--right {
+  width: 25%;
+  padding-left: 15px;
+}
+
+.multimedia-main--right p {
+  margin-bottom: 25px;
+}
+
+.multimedia-main--right img {
+  margin-bottom: 15px;
+}
+
+.multimedia-main-inner {
+  border-right: 1px solid #a9a9a9;
+}
+
+.multimedia-main__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.multimedia-main__inner--left {
+  width: 66.6%;
+}
+
+@media (min-width: 768px) {
+  .multimedia-main__inner--left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .multimedia-main__inner--left .latest-multimedia--link_image,
+  .multimedia-main__inner--left .latest-multimedia--link {
+    width: 50%;
+  }
+}
+
+.multimedia-main__inner--right {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.multimedia-main__inner--right .latest-multimedia--link_image {
+  margin-bottom: 20px;
 }
 
 .intro-product {
