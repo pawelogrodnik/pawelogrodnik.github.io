@@ -33,6 +33,10 @@
             padding-bottom: 20px;
             line-height: 1.1;
             text-align: left;
+            @media (max-width: 767px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
             span {
                 @extend .font-mid-plus;
             }
@@ -240,6 +244,7 @@
     h2 {
         margin: 50px 0 30px;
     }
+  
     &--wrapper {
         display: flex;
     }
@@ -288,5 +293,32 @@
            
 
         }
+    }
+    @media (max-width: 767px) {
+        &--wrapper {
+            flex-wrap: wrap;
+        }
+        &--left, &--right {
+            width: 100%;
+        }
+        &-inner {
+            border-right: 0px;
+            border-bottom: 1px solid $borderColor;
+        }
+        &__inner {
+            &--left, &--right {
+                width: 100%;
+            }
+            &--right {
+               justify-content: space-around;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .latest-multimedia--link_image,
+    .latest-multimedia--link {
+        display: block;
+        margin-bottom: 15px;
     }
 }
