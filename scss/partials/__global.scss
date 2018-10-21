@@ -47,7 +47,11 @@ a {
     }
     .parallax-window {
         height: 630px;
-        background: transparent;
+        background-size: contain;
+        background-position: top center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        // background: transparent;
     }
 }
 
@@ -59,11 +63,17 @@ a {
     }
     &--slider {
         margin-top: 60px;
+        max-height: 200px;
         @extend .margin-bottom;
     }
     &__slide {
         width: 30%;
+        cursor: pointer;
+        max-height: 200px;
         padding: 0 30px;
+        &:focus {
+            outline: none;
+        }
     }
 }
 

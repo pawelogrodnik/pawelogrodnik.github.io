@@ -184,7 +184,13 @@ a {
 
 .intro-section .parallax-window {
   height: 630px;
-  background: transparent;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .our-offer {
@@ -197,11 +203,18 @@ a {
 
 .our-offer--slider {
   margin-top: 60px;
+  max-height: 200px;
 }
 
 .our-offer__slide {
   width: 30%;
+  cursor: pointer;
+  max-height: 200px;
   padding: 0 30px;
+}
+
+.our-offer__slide:focus {
+  outline: none;
 }
 
 .cennik__title {
