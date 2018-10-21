@@ -2,505 +2,220 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> » Sequoyalife</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,follow">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <link href="https://use.fontawesome.com/27ee110de8.css" media="all" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha256-v00gso3ox/d0KLJDJew6+zm29+J39rYWZvOgoXzDtCs="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css"
+        integrity="sha256-tvMfJNd9XmPJg9/xw6SxikSYS8cp+B9RYMCBAb7qBL0=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js" integrity="sha256-OLiEcNEIZGWkNyg3xyIseEaWJTa7FjFvxQuU6pKKDEs="
+        crossorigin="anonymous"></script>
+    <script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQj9LPHlR6FA0WYPfvx70Rclv2oSyTEnc&amp;libraries=geometry&amp;"></script>
+
+    <title>Front Art</title>
     <link rel="stylesheet" href="./build/css/style.css">
-    <script src="./build/js/main.js" ></script>
+    <script src="./build/js/main.js"></script>
+
 
 </head>
 
 <body>
-    <div class="page-container-wrapper">
+    <header class="header">
+        <div class="header__menu--main">
+            <div class="menu-mainmenu-container">
+                <ul id="menu-mainmenu" class="menu">
+                    <li class="active"><a href="#strona-glowna">Strona główna</a></li>
+                    <li><a href="#nasza-oferta">Nasza oferta</a></li>
+                    <li><a href="#cennik">Cennik</a></li>
+                    <li><a href="#atrakcje-w-okolicy">Atrakcje w okolicy</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="body-container-wrapper">
         <div class="container">
             <div class="intro-section">
-                <div class="intro-section__image--main" style="background-image:url(img/main-img.png)">
-                    <div class="intro-section__description main">
-                        Zdrowe życie
-                        <br />z czystej natury
-                        <br />
-                        <img src="img/sequoya-logo-homepage.png" alt="sequoyalife" />
-                    </div>
-                    <h1 class="intro-section__description faded">
-                        Canadian pure & natural oil
-                    </h1>
+                <div class="anchor" id="strona-glowna"></div>
+                <div class="intro-section__logo-wrapper">
+                    <img src="./img/logo-zielony-zakatek_new.png" alt="">
                 </div>
-                <div class="intro-section__image--wrapper">
-                    <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="first">
-                            <div class="intro-section__description secondary">Czym jest CBD</div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="second">
-                            <div class="intro-section__description secondary">Czym jest CBD</div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="third">
-                            <div class="intro-section__description secondary">Czym jest CBD</div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="intro-section__image--single" style="background-image: url(img/czym-jest-cbd.png)" data-tab="fourth">
-                            <div class="intro-section__description secondary">Czym jest CBD</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="intro-section__sliding-desc">
-                        <div id="first">
-                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
-                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
-                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
-                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
-                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
-                                hepatocytów i endokrynnej części trzustki.</p>
-                        </div>
-                        <div id="second">
-                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
-                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
-                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
-                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
-                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
-                                hepatocytów i endokrynnej części trzustki.</p>
-                        </div>
-                        <div id="third">
-                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
-                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
-                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
-                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
-                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
-                                hepatocytów i endokrynnej części trzustki.</p>
-                        </div>
-                        <div id="fourth">
-                            <p class="font-light">Układ endokannabinoidowy – system organizmu biorący udział w wielu fizjologicznych procesach, między
-                                innymi regulacji gospodarki energetycznej, regulacji powiązań neurohormonalnych, neuroimmunologicznych,
-                                aktywności motorycznej, nastroju, motywacji, głodu i sytości, użytkowania energii oraz kontroli
-                                metabolizmu lipidów i węglowodanów. Układ ten działa przez wpływ ośrodkowy na podwzgórzowe i
-                                mezolimbiczne neurony regulujące łaknienie, a także obwodowy, wpływając na czynność adipocytów,
-                                hepatocytów i endokrynnej części trzustki.</p>
-                        </div>
-                    </div>
+                <div class="parallax-window" data-parallax="scroll" data-image-src="./img/gora_pok_1/_MG_5208.jpg"></div>
             </div>
-            <div class="three-col">
-                <div class="three-col__left">
-                    <img src="img/after-intro-img1.png" alt="" />
-                </div>
-                <div class="three-col__mid">Olej konopny premium CBD marki Sequoyalife ze specjalnie wyselekcjonowanych gospodarstw ekologicznych w Ameryce
-                    Północnej to jedyny produkt w Europie, który zawiera czysty ekstrakt CBD, gwarantujtąc maksymalną skuteczność
-                    działania.
-                </div>
-                <div class="three-col__right">
-                    <img src="img/after-intro-img2.png" alt="" />
-                </div>
+            <div class="our-offer">
+                <div class="anchor" id="nasza-oferta"></div>
+                <h1 class="h2 our-offer__title">NASZA OFERTA</h1>
+                <p class="our-offer__description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
-            <div class="product">
-                <div class="product--single">
-                    <div class="product__image">
-                        <img src="img/prod-1.png" alt="prod=1" />
-                    </div>
-                    <div class="product__title">
-                        CBD 10%
-                    </div>
-                    <div class="product__subtitle">
-                        natural hemp
-                    </div>
-                    <button class="btn btn--blue product__url">Do sklepu</button>
+            <div class="our-offer--slider">
+                <div class="our-offer__slide">
+                    <img src="./img/gora_pok_1/_MG_5208.jpg" alt="">
                 </div>
-                <div class="product--single">
-                    <div class="product__image">
-                        <img src="img/prod-1.png" alt="prod=1" />
-                    </div>
-                    <div class="product__title">
-                        CBD 10%
-                    </div>
-                    <div class="product__subtitle">
-                        natural hemp
-                    </div>
-                    <button class="btn btn--blue product__url">Do sklepu</button>
-                </div>
-                <div class="product--single">
-                    <div class="product__image">
-                        <img src="img/prod-1.png" alt="prod=1" />
-                    </div>
-                    <div class="product__title">
-                        CBD 10%
-                    </div>
-                    <div class="product__subtitle">
-                        natural hemp
-                    </div>
-                    <button class="btn btn--blue product__url">Do sklepu</button>
-                </div>
-                <div class="product--single">
-                    <div class="product__image">
-                        <img src="img/prod-1.png" alt="prod=1" />
-                    </div>
-                    <div class="product__title">
-                        CBD 10%
-                    </div>
-                    <div class="product__subtitle">
-                        natural hemp
-                    </div>
-                    <button class="btn btn--blue product__url">Do sklepu</button>
-                </div>
-            </div>
-            <div class="promo-section">
-                <div class="promo-section__inner">
-                    <div class="promo-section__left">
-                        <div class="promo-section__image-wrapper">
-                            <img src="img/promo-green.png" alt="promocja" />
+                <div class="our-offer__slide">
 
-                        </div>
-                        <div class="promo-section__desc">
-                            Teraz dystrybuujemy z magazynów w Polsce.
-                            <br />
-                            <span class="green">Mamy z tej okazji wielką promocję</span>
-                        </div>
+                    <img src="./img/gora_pok_1/_MG_5213.jpg" alt="">
+                </div>
+                <div class="our-offer__slide">
 
-                    </div>
-                    <div class="promo-section__right">
-                        <ol>
-                            <li>Wszystkie produkty CBD ofertujemy za
-                                <span class="green">25%</span> do
-                                <span class="green">31%</span>zniżki</li>
-                            <li>
-                                <span class="green">Darmowa dostawa</span> na trenie Polski do końca promocji</li>
-                        </ol>
-                    </div>
+                    <img src="./img/gora_pok_1/_MG_5219.jpg" alt="">
                 </div>
-                <div class="promo-section__disclaimer">
-                    ( Oferta ważna do wyczerpania pierwszej dostawy towaru w Polsce)
+                <div class="our-offer__slide">
+
+                    <img src="./img/gora_pok_2/_MG_5227.jpg" alt="">
                 </div>
-            </div>
-            <div class="green-section">
-                <div class="green-section__left">
-                    <img src="img/green-img.png" alt="" />
+                <div class="our-offer__slide">
+
+                    <img src="./img/gora_pok_2/_MG_5231.jpg" alt="">
                 </div>
-                <div class="green-section__right">
-                    <div class="green-section__inner">
-                        <h2 class="green-section__title">Żyj pełnym Życiem</h2>
-                        <div class="green-section__desc">Ciesz się dobrym zdrowiem płynącym z natury i korzystaj z pełni życia! Nasze oleje CBD to 100% naturalne,
-                            wytwarzane z całej rośliny produkty o bogactwie właściwości. Wybierz to, co najcenniejsze z natury.
-                            Odkryj nasze produkty.</div>
-                    </div>
-                    <div class="green-section__menu">
-                        <ul class="green-section__items">
-                            <li>
-                                <a href="#" class="yellow">Dowiedz si o CBD (Cannabidiol)</a>
-                            </li>
-                            <li>
-                                <a href="#" class="yellow">O produkcji oleju CBD</a>
-                            </li>
-                            <li>
-                                <a href="#" class="yellow">Jak się odróżniamy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="yellow">Idź do sklepu</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="our-offer__slide">
+
+                    <img src="./img/gora_pok_2/IMG_0352.jpg" alt="">
+                </div>
+                <div class="our-offer__slide">
+
+                    <img src="./img/gora_pok_3/_MG_5236.jpg" alt="">
                 </div>
 
-            </div>
-            <div class="product-details">
-                <div class="product-details__left">
-                    <img src="img/pelne-spektrum.png" alt="Pelne spektrum" />
-                    <h3 class="blue">
-                        Pełne spektrum
-                    </h3>
-                    <p class="product-details__desc">
-                        CBD Sequoyalife to ekstrakt konopny pozyskiwany z całej rośliny, dzięki czemu posiada pełne spektrum kannabinoidów. Dzięki
-                        temu, że wytwarzamy olej z całej rośliny, zachowujemy pełnię jej właściwości, która pozwala na niezwykle
-                        efektywne działanie i czerpanie maksymalnych korzyści z produktu.
+                <div class="our-offer__slide">
+                    <img src="./img/gora_pok_3/_MG_5239.jpg" alt="">
+                </div>
+                <div class="our-offer__slide">
 
+                    <img src="./img/gora_pok_3/_MG_5242.jpg" alt="">
+                </div>
+            </div>
+            <div class="cennik">
+                <div class="anchor" id="cennik"></div>
+                <div class="container">
+                    <h2 class="cennik__title">CENNIK</h2>
+
+                    <div class="cennik--wrapper">
+                        <div class="cennik--wiersz">
+                            <p class="cennik--opis">Pokój 1</p>
+                            <p class="cennik--cena">200 PLN</p>
+                        </div>
+                        <div class="cennik--wiersz">
+                            <p class="cennik--opis">Pokój 1</p>
+                            <p class="cennik--cena">250 PLN</p>
+                        </div>
+                        <div class="cennik--wiersz">
+                            <p class="cennik--opis">Pokój 1</p>
+                            <p class="cennik--cena">150 PLN</p>
+                        </div>
+                        <div class="cennik--wiersz">
+                            <p class="cennik--opis">Pokój 1</p>
+                            <p class="cennik--cena">150 PLN</p>
+                        </div>
+                        <div class="cennik--wiersz">
+                            <p class="cennik--opis">Pokój 1</p>
+                            <p class="cennik--cena">100 PLN</p>
+                        </div>
+                        <div class="cennik--wiersz">
+                            <p class="cennik--opis">Pokój 1</p>
+                            <p class="cennik--cena">80 PLN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="things-to-do">
+                <div class="anchor" id="atrakcje-w-okolicy"></div>
+
+                <div class="things-to-do__intro">
+                    <h2 class="things-to-do__title">ATRAKCJE W OKOLICY</h2>
+                    <p class="things-to-do__description">
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                    <img src="img/bezpieczne-legalne.png" alt="Pelne spektrum" />
-                    <h3 class="blue">
-                        Bezpieczne i legalne
-                    </h3>
-                    <p class="product-details__desc">
-                        CBD (kanabidiol) to substancja nie psychoaktywna pozyskiwana z odmian konopi hodowanych dla celów leczniczych. Kontrolujemy
-                        proces produkcji na każdym etapie i usuwamy w jego trakcie THC z rośliny, gwarantując czysty, zdrowy
-                        i bezpieczny produkt.
-
-                    </p>
-                    <div class="product-details__desc">
-                        Nasz olej CBD nie zawiera substancji psychoaktywnych, dzięki czemu jest bezpieczny w użyciu i zalecany do codziennego stosowania.
-                    </div>
-                </div>
-                <div class="product-details__right">
-                    <div class="product-details__image-wrapper">
-                        <div class="product-details__image-single">
-                            <img src="img/premium-1.png" alt="" />
-                        </div>
-                        <div class="product-details__image-single">
-                            <img src="img/premium-2.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="product-details__text-wrapper">
-                        <h3 class="blue">Gwarancja klasy premium</h3>
-                        <p class="product-details__desc">Olej konopny CBD naszej firmy to produkt klasy premium, który wyróżnia się czystym ekstraktem CBD,
-                            gwarantując maksymalną skuteczność działania. To ekstrakt konopny o pełnym spektrum charakteryzujący
-                            się bogatymi właściwościami i korzyściam. </p>
-                        <h3 class="blue">
-                            Gwarancja deklarowana zawartośći Canabidiolu
-                        </h3>
-                        <p class="product-details__desc">
-                            Olej zawiera faktyczną zawartość CBD deklarowanego na etykiecie. Dzięki temu jest 100% bezpieczny i charakteryzuje się większą
-                            efektywnością niż podobne produkty.
-                        </p>
-                        <h3 class="blue">
-                            Certifikat badań CBD, THC surowca Sequoyalife
-                        </h3>
-                        <div class="product-details__cert">
-                            <div class="product-details__cert-image">
-                                <img src="img/certyfikat-1.png" alt="certyfikat" />
-                            </div>
-                            <div class="product-details__cert-text">Przedstawiamy Państwu wyniki labolatorium dla surowca będącego bazą naszych produktów.</div>
-                        </div>
-                    </div>
                 </div>
 
-            </div>
-            <div class="blog-section">
-                <h2 class="blue uppercase text-center font-light">Blog</h2>
-                <div class="blog-section__inner">
+                <div class="things-to-do__wrapper">
+                    <div class="things-to-do__element">
+                        <div class="things-to-do__element-title">Tytuł atrakcji</div>
+                        <div class="things-to-do__element-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                    <div class="things-to-do__element">
+                        <div class="things-to-do__element-title">Tytuł atrakcji</div>
+                        <div class="things-to-do__element-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                    <div class="things-to-do__element">
+                        <div class="things-to-do__element-title">Tytuł atrakcji</div>
+                        <div class="things-to-do__element-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                    <div class="things-to-do__element">
+                        <div class="things-to-do__element-title">Tytuł atrakcji</div>
+                        <div class="things-to-do__element-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                    <div class="things-to-do__element">
+                        <div class="things-to-do__element-title">Tytuł atrakcji</div>
+                        <div class="things-to-do__element-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                    <div class="things-to-do__element">
+                        <div class="things-to-do__element-title">Tytuł atrakcji</div>
+                        <div class="things-to-do__element-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
 
-                    <div class="blog-section__post">
-                        <a href="#">
-                            <img src="https://placehold.it/300x300" alt="" />
-                        </a>
-                    </div>
-                    <div class="blog-section__post">
-                        <a href="#">
-                            <img src="https://placehold.it/300x300" alt="" />
-                        </a>
-                    </div>
-                    <div class="blog-section__post">
-                        <a href="#">
-                            <img src="https://placehold.it/300x300" alt="" />
-                        </a>
-                    </div>
-                    <div class="blog-section__post">
-                        <a href="#">
-                            <img src="https://placehold.it/300x300" alt="" />
-                        </a>
-                    </div>
                 </div>
             </div>
-            <div class="news-section">
-                <h2 class="blue text-center font-light">Istotne Aktualności</h3>
-                    <div class="news-section__wrapper">
-                        <div class="news-section__single">
-                            <a href="#" class="greenSecondary">Badania i Wnioski (WHO) World Health
-                                <br />Organization w temacie Cannabidiol (CBD)</a>
-                        </div>
-                        <div class="news-section__single">
-                            <a href="#" class="greenSecondary">World Anti-Doping Agency usuwa CBD z listy
-                                <br />zabronionych substancji</a>
-                        </div>
+            <div class="contact">
+                <div class="anchor" id="kontakt"></div>
+                <h2 class="contact__title">KONTAKT</h2>
+                <div class="contact__intro">
+                    <div class="contact__intro-el">
+                        <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
                     </div>
-            </div>
-            <div class="product-preparing" style="background-image: url(img/naturalna-hodowla.png)">
-                <h2 class="giant text-center product-preparing__heading">Naturalne hodowanie surowca w celu produkcji CBD</h2>
-            </div>
-            <div class="product-hurt">
-                <h2 class="product-hurt__heading greenSecondary">CBD Produkty Hurt</h2>
-                <div class="product-hurt__description">
-                    <h3 class="product-hurt__subheading font-mid-plus blue">Sprzedaż Oleju i Produktów CBD Hurtowo</h3>
-                    <p class="product-hurt__text">Oferujemy możliwość zamówienia produktów oraz oleju CBD w ilościach hurtowych. Mamy szeroki zakres produktów
-                        zawierajace substancje CBD (Cannabidiol) w róznych poziomach stęzenia. Jednak do sprzedaży hurt na
-                        terenie Polski podchodzimy indiwidualnie. W wielu przypadkach zamówienia hurtowe jesteśmy wstanie
-                        zrealizowac w ciągu 5-6 dni roboczych. Prosimy o kontakt aby zapoznać się z Państwa zapotrzebowaniem
-                        Hurt CBD. </p>
+                    <div class="contact__intro-el">
+                        <p>Josepha Conrada 66, 31-357 Kraków</p>
+                    </div>
+                    <div class="contact__intro-el">
+                        <p><a href="tel:123456789">Tel: +48 123456789</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="sequoya-logo-section text-center">
-                <img src="img/sequoya-logo-grey.png" alt="Logo Sequoya Grey" />
             </div>
 
         </div>
-        <div class="blue-section">
-            <div class="blue-section__inner">
-                <div class="blue-section__image-wrapper">
-                    <img src="img/chta-accc.png" alt="" />
-                </div>
-                <div class="blue-section__image-wrapper">
-                    <img src="img/non-gmo.png" alt="" />
-                </div>
-                <div class="blue-section__image-wrapper">
-                    <img src="img/gluten-free.png" alt="" />
-                </div>
-            </div>
-        </div>
-        <div class="container">
-                <footer>
-                        <div class="footer__upper">
-                            <div class="footer__upper-block">
-                                <div class="footer__upper-heading">Sequoyalife</div>
-                                <ul class="footer__upper-list">
-                                    <li>
-                                        <a href="/">Strona główna</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">O jakości produktów</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Edukacja i wiedza o CBD</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">O Sequoyalife</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Kontakt</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer__upper-block">
-                                <div class="footer__upper-heading">Sklep</div>
-                                <ul class="footer__upper-list">
-                                    <li>
-                                        <a href="/">Produkty Konopne i CBD</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Formy płatności</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Czas i koszty dostawy</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Czas realizacji zamówienia</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Zwroty i reklamacje</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Regulamin</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Polityka prywatności</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer__upper-block">
-                                <div class="footer__upper-heading">Moje konto</div>
-                                <ul class="footer__upper-list">
-                                    <li>
-                                        <a href="/">Moje zamówienia</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Ustawienia konta</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Czas i koszty dostawy</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Czas realizacj zamówienia</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Zwroty i reklamacje</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Regulamin</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer__upper-block">
-                                <div class="footer__upper-heading">Sequoyalife</div>
-                                <p class="footer__upper-desc">We are the UK's Premium CBD Oil, Cannabidiol Supplier! Our CBD oils are derived from cannabis sativa,
-                                    a legally produced substance. Buy Our oil sourced from leading producers in Europe! You will
-                                    not be sorry.</p>
-                            </div>
-                            <div class="footer__upper-block">
-                                <div class="footer__upper-heading">Sequoyalife</div>
-                                <p class="footer__upper-desc">CBD Oils UK offer wholesale distribution of all its CBD products at discounted prices. Our Manufacturing
-                                    partnerships allow us to offer the most aggressive pricing without compromising quality.</p>
-                            </div>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="footer__mid text-center">
-                            <h5 class="footer__mid-heading">
-                                Sprzedaż Hurtowna Produktów CBD i Konopnych
-                            </h5>
-                            <div class="footer__mid-desc">
-                                Oferujemy możliwość zamówienia produktów oraz oleju CBD w ilościach hurtowych. Mamy szeroki zakres produktów zawierajace
-                                substancje CBD (Cannabidiol) w róznych poziomach stęzenia. Jednak do sprzedaży hurt na terenie Polski
-                                podchodzimy indiwidualnie. W wielu przypadkach zamówienia hurtowe jesteśmy wstanie zrealizowac w
-                                ciągu 5-6 dni roboczych. Prosimy o kontakt aby zapoznać się z Państwa zapotrzebowaniem Hurt CBD.
-                                <a href="#" class="greenSecondary">Wiecej Informacji ></a>
-                            </div>
-                            <div class="footer__mid-list">
-                                <ul>
-                                    <li>
-                                        <a href="">Olej CBD</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Proteina Konopna</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Proteina Konopna</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Proteina Konopna</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Proteina Konopna</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Kremy z CBD</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Olej CBD</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="">Kremy z CBD</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Olej CBD</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Proteina Konopna</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Proteina Konopna</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Kremy z CBD</a>
-                                    </li>
-        
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="footer__bottom">
-                            <div class="footer__bottom-block">
-                                <img src="/img/sequoya-logo-grey.png" alt="">
-                            </div>
-                            <div class="footer__bottom-block">
-                                <img src="/img/chta-accc.png" alt="">
-                            </div>
-                            <div class="footer__bottom-block">
-                                <img src="/img/non-gmo.png" alt="">
-                            </div>
-                            <div class="footer__bottom-block">
-                                <img src="/img/gluten-free.png" alt="">
-                            </div>
-                        </div>
-                        <div class="footer__disclaimer text-center">
-                            Wszystkie Prawa zastrzezone, Sequoyalife Sp. zoo,
-                            <span class="footer__disclaimer-year">2018</span>
-                            <br/>All rIghts reserved, Sequoyalife Inc.
-                            <span class="footer__disclaimer-year">2018</span>
-                        </div>
-                    </footer>
-        </div>
+        <div id="map"></div>
+
+        <footer>
+            <div class="p">@Copyright Zielony Zakątek 2018</div>
+        </footer>
     </div>
-
+    </div>
 </body>
 
 </html>

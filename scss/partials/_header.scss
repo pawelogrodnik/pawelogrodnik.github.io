@@ -1,0 +1,40 @@
+.header {
+    background-color: $mainGreen;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    min-height: 70px;
+    z-index: 9;
+    &__logo-wrapper {
+        max-width: 125px;
+        display: flex;
+        align-items: center;
+    }
+    &__menu {
+        &--main {
+            @extend .container;
+            ul {
+                display: flex;
+                justify-content: center;
+                padding-top: 23px;
+                padding-bottom: 23px;
+                li {
+                    text-align: center;
+                    a {
+                        color: #fff;
+                        padding: 0 20px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                    // &.active {
+                    //     a {
+                    //         opacity: .7;
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+}
