@@ -8,6 +8,7 @@ body {
 p {
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -50,8 +51,7 @@ a {
         background-size: contain;
         background-position: top center;
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        // background: transparent;
+        background-repeat: no-repeat; // background: transparent;
     }
 }
 
@@ -62,8 +62,7 @@ a {
         font-style: italic;
     }
     &--slider {
-        margin-top: 60px;
-        max-height: 200px;
+        margin-top: 60px; // max-height: 200px;
         @extend .margin-bottom;
     }
     &__slide {
@@ -73,6 +72,18 @@ a {
         padding: 0 30px;
         &:focus {
             outline: none;
+        }
+    }
+    &__description-slide {
+        h3 {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 0;
+        }
+        .slick-slide {
+            height: auto;
         }
     }
 }
@@ -120,6 +131,7 @@ a {
         flex-basis: 150px;
     }
 }
+
 .things-to-do {
     @extend .margin-bottom;
     &__intro {
@@ -131,7 +143,6 @@ a {
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-
     }
     &__element {
         width: calc(100% / 3);
@@ -149,6 +160,7 @@ a {
         }
     }
 }
+
 .contact {
     @extend .margin-bottom;
     &__title {
@@ -162,7 +174,9 @@ a {
             width: calc(100% / 3);
             text-align: center;
             &:last-of-type {
-                &:after {content: none;}
+                &:after {
+                    content: none;
+                }
             }
             &:after {
                 content: '/';
@@ -171,24 +185,59 @@ a {
                 top: 50%;
                 transform: translateY(-50%);
             }
+            p {
+                margin-bottom: 0;
+            }
             a {
                 color: #333;
             }
         }
     }
 }
+
 footer {
     text-align: center;
     background-color: #333;
-    color:rgba(#fff, .7);
+    color: rgba(#fff, .7);
     padding: 20px;
 }
+
 #map {
     height: 500px;
 }
+
 .anchor {
     display: block;
     position: relative;
     top: -100px;
     visibility: hidden;
+}
+
+button {
+    &.previousSlide,
+    &.nextSlide {
+        background-color: transparent;
+        cursor: pointer;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .2s linear opacity;
+        opacity: .4;
+        &:hover {
+            opacity: 1;
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+    &.previousSlide {
+        left: 0;
+    }
+    &.nextSlide {
+        right: 0;
+    }
 }

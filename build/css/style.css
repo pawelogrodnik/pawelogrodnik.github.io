@@ -146,6 +146,7 @@ body {
 p {
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .container, .header__menu--main {
@@ -203,7 +204,6 @@ a {
 
 .our-offer--slider {
   margin-top: 60px;
-  max-height: 200px;
 }
 
 .our-offer__slide {
@@ -215,6 +215,18 @@ a {
 
 .our-offer__slide:focus {
   outline: none;
+}
+
+.our-offer__description-slide h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
+
+.our-offer__description-slide .slick-slide {
+  height: auto;
 }
 
 .cennik__title {
@@ -352,6 +364,10 @@ a {
           transform: translateY(-50%);
 }
 
+.contact__intro-el p {
+  margin-bottom: 0;
+}
+
 .contact__intro-el a {
   color: #333;
 }
@@ -374,6 +390,45 @@ footer {
   visibility: hidden;
 }
 
+button.previousSlide, button.nextSlide {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .2s linear opacity;
+  -o-transition: .2s linear opacity;
+  -moz-transition: .2s linear opacity;
+  transition: .2s linear opacity;
+  opacity: .4;
+}
+
+button.previousSlide:hover, button.nextSlide:hover {
+  opacity: 1;
+}
+
+button.previousSlide i, button.nextSlide i {
+  font-size: 20px;
+}
+
+button.previousSlide {
+  left: 0;
+}
+
+button.nextSlide {
+  right: 0;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   line-height: 1.2;
   margin: 50px 0;
@@ -387,6 +442,24 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 25px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+h2:before, .h2:before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40px;
+  height: 2px;
+  background-color: #005b30;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 p {

@@ -10,6 +10,19 @@ h1, .h1 {
 }
 h2, .h2 {
     font-size: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        width: 40px;
+        height: 2px;
+        background-color: $mainGreen;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 p {
     font-weight: 300;

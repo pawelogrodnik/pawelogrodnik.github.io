@@ -13,11 +13,21 @@ $(document).ready(function () {
 	});
 	$(".our-offer--slider").slick({
 		autoplay: true,
-		arrows: false,
+		arrows: true,
+		dots: true,
 		infinite: true,
 		autoplaySpeed: 5000,
 		slidesToShow: 3,
-		slidesToScroll: 3
+		slidesToScroll: 3,
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				arrows: false,
+				slidesToShow: 1
+			  }
+			},
+		]
 	});
 
 	$('.our-offer--slider').slickLightbox({
