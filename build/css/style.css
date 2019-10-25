@@ -505,3 +505,7 @@ h2:before, .h2:before {
 p {
   font-weight: 300;
 }
+
+body {
+  background-color: red;
+}

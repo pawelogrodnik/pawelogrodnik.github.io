@@ -21,7 +21,7 @@
     "gulp-autoprefixer": "",
     "gulp-babel": "",
     "gulp-clean-css": "^3.9.0",
-    "gulp-eslint": "",
+    "gulp-eslint": "^6.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.6"
