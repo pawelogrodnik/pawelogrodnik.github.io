@@ -47,11 +47,16 @@ a {
         max-width: 250px;
     }
     .parallax-window {
-        height: 630px;
-        background-size: contain;
-        background-position: top center;
-        background-attachment: fixed;
-        background-repeat: no-repeat; // background: transparent;
+        @media (min-width: 992px) {
+            height: 630px;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: contain;
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
     }
 }
 
@@ -75,6 +80,9 @@ a {
         }
     }
     &__description-slide {
+        @media (max-width: 768px) {
+            display: none;
+        }
         h3 {
             font-size: 20px;
             text-transform: uppercase;
@@ -145,6 +153,7 @@ a {
         flex-wrap: wrap;
     }
     &__element {
+        
         width: calc(100% / 3);
         padding: 15px 20px;
         text-align: center;
@@ -158,6 +167,9 @@ a {
         &-description {
             font-weight: 300;
         }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 }
 
@@ -169,22 +181,32 @@ a {
     &__intro {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
         &-el {
             position: relative;
             width: calc(100% / 3);
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
             text-align: center;
             &:last-of-type {
                 &:after {
                     content: none;
                 }
             }
-            &:after {
-                content: '/';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
+            @media (min-width: 769px) {
+                &:after {
+                    content: '/';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
+           
             p {
                 margin-bottom: 0;
             }
