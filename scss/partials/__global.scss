@@ -197,6 +197,9 @@ a {
 
       #map {
         height: 640px;
+        @media (max-width: 768px) {
+          height: 350px;
+         }
       }
     }
 
@@ -212,12 +215,25 @@ a {
           align-items: center;
           width: 100%;
           justify-content: space-between;
+          li {
+            display: flex;
+            font-weight: bold;
+            width: 25%;
+          }
+          @media (max-width: 768px) {
+            flex-wrap: wrap;
+            li {
+              width: 50%;
+              margin-bottom: 15px;
+            }
+          }
+          @media (max-width: 450px) {
+            li {
+              width: 100%;
+            }
+          }
         }
-        li {
-          display: flex;
-          font-weight: bold;
-      
-        }
+       
         .contact {
           &__icon {
             width: 45px;

@@ -403,6 +403,12 @@ a:hover {
   height: 640px;
 }
 
+@media (max-width: 768px) {
+  .contact__inner--right #map {
+    height: 350px;
+  }
+}
+
 .contact__inner--left {
   width: 100%;
   margin-bottom: 30px;
@@ -440,13 +446,32 @@ a:hover {
           justify-content: space-between;
 }
 
-.contact__inner--left .container li {
+.contact__inner--left .container ul li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .contact__inner--left .container ul {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .contact__inner--left .container ul li {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact__inner--left .container ul li {
+    width: 100%;
+  }
 }
 
 .contact__inner--left .container .contact__icon {
@@ -590,6 +615,7 @@ header nav ul li {
   -moz-transition: .3s linear all;
   transition: .3s linear all;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 header nav ul li a {
