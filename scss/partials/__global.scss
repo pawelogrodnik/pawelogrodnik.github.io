@@ -1,265 +1,153 @@
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(247, 247, 247);
 }
-
-p {
+ol {
+  list-style-type: decimal;
+}
+#container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  display: flex;
+  .logo {
+    width: 30%;
+    height: 20%;
+    padding-top: 10px;
+    color: black;
+  }
+  .nav {
+    width: 70%;
+    height: 20%;
+    padding: 5px;
+    #oNas,
+    #Współpraca,
+    #Kontakt {
+      width: 33%;
+      padding: 50px;
+      float: left;
+      color: black;
+    }
+  }
+}
+.heading{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+.content {
+  width: 100%;
+  padding: 40px;
+  color: black;
+  .zawartosc {
+    display: flex;
+    margin-bottom: 20px;
+    .photo,
+    .text {
+      width: 50%;
+    }
+    .text {
+      margin-top: 10px;
+      padding: 10px;
+    }
+    
+  }
+  #dane {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    color: black;
     font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-.container {
-    max-width: 990px;
+    h1 {
+      margin-left: 20px;
+    }
+  }
+  .rectangle {
+    // align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
-.wrapper-sm {
-    max-width: 585px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.body-container-wrapper {
-    padding-top: 80px;
-}
-
-.margin-bottom {
-    margin-bottom: 80px;
-}
-
-.intro-section {
-    @extend .margin-bottom;
-    &__logo-wrapper {
-        text-align: center;
-        margin: 30px auto;
-        max-width: 250px;
-    }
-    .parallax-window {
-        @media (min-width: 992px) {
-            height: 630px;
-            background-attachment: fixed;
-            background-position: top center;
-            background-size: contain;
-        }
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-    }
-}
-
-.our-offer {
-    text-align: center;
-    &__description {
-        @extend .wrapper-sm;
-        font-style: italic;
-    }
-    &--slider {
-        margin-top: 60px; // max-height: 200px;
-        @extend .margin-bottom;
-    }
-    &__slide {
-        width: 30%;
-        cursor: pointer;
-        max-height: 200px;
-        padding: 0 30px;
-        &:focus {
-            outline: none;
-        }
-    }
-    &__description-slide {
-        @media (max-width: 768px) {
-            display: none;
-        }
-        h3 {
-            font-size: 20px;
-            text-transform: uppercase;
-            font-weight: 400;
-            text-align: center;
-            margin-top: 0;
-        }
-        .slick-slide {
-            height: auto;
-        }
-    }
-}
-
-.cennik {
-    @extend .margin-bottom;
-    &__title {
-        text-align: center;
-    }
-    p {
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0;
+    .tile1 {
+      width: 30%;
+      padding: 10px;
+      position: relative;
+      min-height: 300px;
+      background-color: white;
+      margin-bottom: 20px;
+    //   border: 1px solid black;
+      .Qform {
         padding: 10px;
-        width: 100%;
-        margin-right: 20px;
-        @media (max-width: 400px) {
-            font-size: 16px;
-        }
-    }
-    &--wrapper {
-        @extend .wrapper-sm;
-    }
-    &--wiersz {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2px solid $mainGreen;
-        &:last-child {
-            border-bottom: none;
-        }
-        &:nth-child(2n) {
-            background-color: rgba($mainGreen, .1);
-        }
-    }
-    &--cena {
-        flex-basis: 200px;
-    }
-    &--opis {
-        border-right: 2px solid $mainGreen;
-    }
-}
-
-@media (max-width: 400px) {
-    section.cennik .cennik--cena {
-        flex-basis: 150px;
-    }
-}
-
-.things-to-do {
-    @extend .margin-bottom;
-    &__intro {
-        @extend .margin-bottom;
-    }
-    &__title {
-        text-align: center;
-    }
-    &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    &__element {
-        
-        width: calc(100% / 3);
-        padding: 15px 20px;
-        text-align: center;
-        margin-bottom: 30px;
-        &-title {
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: $mainGreen;
-        }
-        &-description {
-            font-weight: 300;
-        }
-        @media (max-width: 768px) {
-            width: 100%;
-        }
-    }
-}
-
-.contact {
-    @extend .margin-bottom;
-    &__title {
-        text-align: center;
-    }
-    &__intro {
-        display: flex;
-        justify-content: space-between;
-        @media (max-width: 768px) {
-            flex-wrap: wrap;
-        }
-        &-el {
-            position: relative;
-            width: calc(100% / 3);
-            @media (max-width: 768px) {
-                width: 100%;
-                margin-bottom: 15px;
-            }
-            text-align: center;
-            &:last-of-type {
-                &:after {
-                    content: none;
-                }
-            }
-            @media (min-width: 769px) {
-                &:after {
-                    content: '/';
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-           
-            p {
-                margin-bottom: 0;
-            }
-            a {
-                color: #333;
-            }
-        }
-    }
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: rgba(#fff, .7);
-    padding: 20px;
-}
-
-#map {
-    height: 500px;
-}
-
-.anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
-}
-
-button {
-    &.previousSlide,
-    &.nextSlide {
-        background-color: transparent;
-        cursor: pointer;
-        border: 0px;
-        box-shadow: none;
-        outline: none;
         position: absolute;
-        z-index: 4;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: .2s linear opacity;
-        opacity: .4;
-        &:hover {
-            opacity: 1;
-        }
-        i {
-            font-size: 20px;
-        }
-    }
-    &.previousSlide {
         left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .zdjecie {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: 1s opacity;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+        background-color: white;
+      }
+      &:hover {
+        .zdjecie {
+          opacity: 0;
+        }
+      }
     }
-    &.nextSlide {
-        right: 0;
+    .tile2 {
+      width: 20%;
+      height: 20%;
+      margin: 10px;
+      background-color: grey;
+      float: left;
     }
+  }
+
+  table {
+    color: black;
+    float: left;
+    margin-top: 30px;
+  }
+  #map {
+    float: left;
+  }
+}
+.footer {
+  clear: both;
+  height: 5%;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+a.link {
+  color: black;
+  text-decoration: none;
+}
+a.logolink {
+  color: white;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
