@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: $black;
@@ -13,7 +13,6 @@ ol {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
 }
 
 .content {
@@ -82,7 +81,7 @@ ol {
       padding: 0 15px;
     }
 
-    .tile1 {
+    .tile {
       width: 30%;
       padding: 10px;
       position: relative;
@@ -94,8 +93,12 @@ ol {
       @media (max-width: 768px) {
         width: 100%;
       }
-      
-      .Qform {
+      &__img-wrapper {
+        img {
+          margin: 0 auto;
+        }
+      }
+      &--description {
         padding: 10px;
         position: absolute;
         left: 0;
@@ -103,10 +106,15 @@ ol {
         height: 100%;
         width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        &__inner {
+          text-align: center;
+        }
       }
 
-      .zdjecie {
+      &--photo {
         position: absolute;
         display: flex;
         align-items: center;
@@ -123,63 +131,26 @@ ol {
       }
 
       &:hover {
-        cursor: help;
+        cursor: pointer;
 
-        .zdjecie {
+        .tile--photo {
           opacity: 0;
         }
       }
-    }
 
-    .tile2 {
+      &--big {
         width: 100%;
-        padding: 10px;
-        position: relative;
-        min-height: 300px;
-        background-color: white;
-        margin-bottom: 45px;
-        box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.15);
-  
-        @media (max-width: 768px) {
-          width: 100%;
-        
-    }
-    .Qform {
-        padding: 10px;
+      }
+
+      a {
+        color: inherit;
         position: absolute;
+        width: 100%;
+        height: 100%;
         left: 0;
         top: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-      }
-
-      .zdjecie {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 1;
-        padding: 15px;
-        transition: 1s opacity;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 9;
-        background-color: white;
-      }
-
-      &:hover {
-        cursor: help;
-
-        .zdjecie {
-          opacity: 0;
-        }
       }
     }
-
   }
 
   table {
@@ -220,17 +191,20 @@ p {
 .body-container-wrapper {
   margin-top: 110px;
   min-height: calc(100vh - 160px);
-  padding: 25px 0;
+  padding: 25px 15px;
 }
+
 a {
   text-decoration: none;
   color: $black;
+
   &:hover {
     color: $red;
   }
 }
+
 .contact {
-   &__inner {
+  &__inner {
     display: flex;
     flex-wrap: wrap;
 
@@ -239,9 +213,10 @@ a {
 
       #map {
         height: 640px;
+
         @media (max-width: 768px) {
           height: 350px;
-         }
+        }
       }
     }
 
@@ -252,30 +227,35 @@ a {
       .container {
         display: flex;
         justify-content: center;
-        ul  {
+
+        ul {
           display: flex;
           align-items: center;
           width: 100%;
           justify-content: space-between;
+
           li {
             display: flex;
             font-weight: bold;
             width: 25%;
           }
+
           @media (max-width: 768px) {
             flex-wrap: wrap;
+
             li {
               width: 50%;
               margin-bottom: 15px;
             }
           }
+
           @media (max-width: 450px) {
             li {
               width: 100%;
             }
           }
         }
-       
+
         .contact {
           &__icon {
             width: 45px;
