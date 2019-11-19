@@ -1,59 +1,58 @@
 body {
-    position: relative;
+  position: relative;
 }
 header {
-    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-    .header {
-        &__inner {
-            display: flex;
-            align-items: center;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  .header {
+    &__inner {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    width: 30%;
+    height: 20%;
+    color: black;
+  }
+
+  nav {
+    width: 70%;
+    height: 20%;
+    padding: 5px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        padding: 15px;
+        float: left;
+        color: $black;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s linear all;
+        text-transform: uppercase;
+        font-weight: bold;
+        a {
+          transition: inherit;
         }
-    }
-
-    .logo {
-        width: 30%;
-        height: 20%;
-        color: black;
-    }
-
-    nav {
-        width: 70%;
-        height: 20%;
-        padding: 5px;
-
-        ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            li {
-                padding: 15px;
-                float: left;
-                color: $black;
-                border-bottom: 1px solid transparent;
-                transition: .3s linear all;
-                text-transform: uppercase;
-                font-weight: bold;
-                a {
-                    transition: inherit;
-
-                }
-                &:hover,
-                &.active {
-                    border-color: $red;
-                    a {
-                        color: $red;
-                        transition: inherit;
-                    }
-                }
-            }
+        &:hover,
+        &.active {
+          border-color: $red;
+          a {
+            color: $red;
+            transition: inherit;
+          }
         }
+      }
     }
+  }
 }
