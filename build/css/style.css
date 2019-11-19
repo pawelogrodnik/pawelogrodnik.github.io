@@ -656,3 +656,10 @@ header nav ul li:hover a, header nav ul li.active a {
   -moz-transition: inherit;
   transition: inherit;
 }
+
+@media (max-width: 450px) {
+  header nav ul li {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

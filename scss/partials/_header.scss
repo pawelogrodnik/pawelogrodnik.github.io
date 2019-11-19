@@ -52,6 +52,10 @@ header {
             transition: inherit;
           }
         }
+        @media (max-width: 450px) {
+          font-size: 12px;
+          padding: 10px;
+        }
       }
     }
   }
