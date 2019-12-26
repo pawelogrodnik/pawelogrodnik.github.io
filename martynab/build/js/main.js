@@ -1,6 +1,5 @@
 $(document).ready(function() {
   "use strict";
-  //   initCursor();
   const squareInner = $(".square__inner");
   if (squareInner) {
     squareInner.mouseover(function() {
@@ -18,41 +17,15 @@ $(document).ready(function() {
       }, 200);
     });
   }
+  const images = $('.single-page--image');
+  if (images) {
+    const popup = $('.single-page__image_view');
+    images.on('click', function() {
+      const src = $(this).find('img').attr('src')
+      popup.find('img').attr('src', src)
+      popup.css('display', 'flex');
+      console.log($(this).find('img').attr('src'));
+    })
+    $('.single-page__image_view--exit').on('click', () => popup.css('display', 'none'))
+  }
 });
-
-// function initCursor() {
-// 	var follower, init, mouseX, mouseY, positionElement, printout, timer;
-
-// 	follower = document.getElementById('follower');
-
-// 	printout = document.getElementById('printout');
-
-// 	mouseX = event => {
-// 	  return event.clientX;
-// 	};
-
-// 	mouseY = event => {
-// 	  return event.clientY;
-// 	};
-
-// 	positionElement = event => {
-// 	  var mouse;
-// 	  mouse = {
-// 		x: mouseX(event),
-// 		y: mouseY(event) };
-
-// 	  follower.style.top = mouse.y + 'px';
-// 	  return follower.style.left = mouse.x + 'px';
-// 	};
-
-// 	timer = false;
-
-// 	window.onmousemove = init = event => {
-// 	  var _event;
-// 	  _event = event;
-// 	  return timer = setTimeout(() => {
-// 		return positionElement(_event);
-// 	  }, 1);
-// 	};
-
-//   };
