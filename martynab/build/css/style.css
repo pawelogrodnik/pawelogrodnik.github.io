@@ -578,3 +578,9 @@ header h3 {
 header h1, header h3 {
   font-size: 1.1rem;
 }
+
+@media (max-width: 350px) {
+  header h1, header h3 {
+    font-size: 0.9rem;
+  }
+}
