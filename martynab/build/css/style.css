@@ -317,6 +317,12 @@ a {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .single-page__title {
+    font-size: 3.5rem;
+  }
+}
+
 .single-page__main {
   padding-top: 30px;
 }
@@ -373,7 +379,6 @@ a {
 
 .single-page h4 {
   margin-bottom: 8px;
-  line-height: 1;
 }
 
 .single-page h3, .single-page h4 {
@@ -570,10 +575,6 @@ header h3 {
   text-transform: uppercase;
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
-header h3 {
-  font-size: 2rem;
+header h1, header h3 {
+  font-size: 1.1rem;
 }
